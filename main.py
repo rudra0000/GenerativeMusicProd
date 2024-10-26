@@ -3,7 +3,7 @@ import random,math
 import matplotlib.pyplot as plt
 POPULATION_SIZE=10
 MUTATE_FRACTION=0.3
-MUTATION_ITERATIONS=500
+MUTATION_ITERATIONS=2000
 # Load the original MIDI file (for example, 'finalcountdown.mid')
 cv1 = mido.MidiFile('alan_walker_-_alone.mid', clip=True)
 # cv1 = mido.MidiFile('finalcountdown.mid', clip=True)
@@ -43,12 +43,12 @@ for msg in source_track:
             msg = mido.Message('note_on', channel=7, note=msg.note, velocity=msg.velocity, time=msg.time)
             new_track.append(msg)
         else:
-            print(msg.type)
+            # print(msg.type)
             if msg.type not in ['program_change','pitchwheel','control_change']:
                 meta_messages.append(msg)
             
 
-print(meta_messages)
+# print(meta_messages)
 
 # new_track.append(mido.MetaMessage('end_of_track'))
 
@@ -103,48 +103,48 @@ def evolve(individual):
     size=len(individual)
     # assert(size%2==0)
     # print(size)
-    start=2*random.randint(1,size//2)-1
+    if size < 2:
+        print('Individual is too small')
+        return
+    start=2*(random.randint(1,size//2)-1)
     end=start+math.ceil(size*MUTATE_FRACTION)
-
 
     if end>=size:
         end=size-1
 
-    if end%2==1:
-        end+=1
+    if end%2 == 0:
+        end-=1
+
+    
     assert((end-start+1)%2==0)
     # print(len(mutate(individual=individual,start_index=start,end_index=end)))
     # print(end-start+1)
-    individual[start:end+1]=mutate(individual=individual,start_index=start,end_index=end)
+    b4 = len(individual)
+    temp_list = mutate(individual=individual,start_index=start,end_index=end)
+    individual[start:end+1]=temp_list
+    if b4-len(individual) != 0:
+        print('the difference is', b4-len(individual))
+        print('rhs lenght returned', len(temp_list))
+        print('lhs lenght is', len(individual[start:end+1]))
+        # this means that the mutate length returned is lesser
+    assert(b4-len(individual) == 0)
     
 
 #chromosome:subpart of a track
 #takes a chromosome and randomly mutate note(s) (returns)
-ITERSTOP = 3
 def mutate(individual,start_index,end_index):
-    ITERSTOP-=1
-    if ITERSTOP == 0:
-        return
     old_l =  individual[start_index:end_index+1]
-    l =[]
-
-    # test
-    print('old_l is ', len(old_l))
-    print('individual lenght is ', len(individual))
-    #test
-    indexes=[i for i in range(0,(end_index-start_index)//2)] ##########################
+    l = []
+    indexes=[i for i in range(0,(end_index-start_index+1)//2)] ##########################
     random.shuffle(indexes)
-    print('hello world')
-    print(indexes)
-    print('end world')
 
     
     for index in indexes:
         l.append(old_l[2*index])
         l.append(old_l[2*index+1])
 
-    print('l is ', len(l))
-    print('individual lengthhh is ', len(individual))
+    # print('l is ', len(l))
+    # print('individual lengthhh is ', len(individual))
     flag = all(x == y for x, y in zip(old_l, l))
     # assert(not flag)
     return l
