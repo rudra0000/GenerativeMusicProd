@@ -174,15 +174,7 @@ def conv_from_midi(track):
             # print(intermediate[i].type)
             print("-------")
             for j in range(i+1,len(intermediate)):
-                if isinstance(intermediate[j], CustomMessage):
-                    higher_lvl_message = intermediate[j]
-                elif isinstance(intermediate[j], CustomMetaMessage):
-                    higher_lvl_message = intermediate[j]
-                elif isinstance(intermediate[j], mido.messages.messages.Message):
-                    higher_lvl_message = intermediate[j]
-                else:
-                    print("Unexpected type:", type(intermediate[j]))  # This shouldn't be triggered if the logic is correct
-                    pass
+                higher_lvl_message = intermediate[j]
                 print("---- Debug Info ----")
                 print("higher_lvl_message:", higher_lvl_message)
                 print("higher_lvl_message.type:", getattr(higher_lvl_message, 'type', None))
