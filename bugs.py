@@ -90,39 +90,83 @@ class Note_rep:
         self.note = obj.note
         self.velocity = obj.velocity
         self.start_time = obj.actual_time
-        self.duration = obj.duration
+        self.duration = duration
 
     def __init__(self, obj: CustomMetaMessage, duration=0):
         self.channel = obj.channel
         self.note = obj.note
         self.velocity = obj.velocity
         self.start_time = obj.actual_time
-        self.duration = obj.duration
+        self.duration = duration
 
 
 #output intermediate
 def conv_from_midi(track):
-    intermediate=[] 
-    curr_time=0
+    # intermediate=[] 
+    # curr_time=0
+    # desirable = []
+    # for msg in track:
+    #     curr_time+=msg.time
+    #     if msg.is_meta:
+    #         custom_meta = CustomMetaMessage(type=msg.type)
+    #         custom_meta.meta_message = msg
+    #         custom_meta.actual_time = curr_time
+    #         intermediate.append(custom_meta) # should convert this also
+    #     elif msg.type in ['note_on','note_off']:
+    #         # print(msg)
+    #         custom_message=CustomMessage(msg.type)
+    #         custom_message.time = msg.time
+
+    #         custom_message.actual_time=curr_time
+    #         intermediate.append(custom_message)
+    #     else:
+    #         intermediate.append(msg)
+    intermediate = []
+    curr_time = 0
     desirable = []
+
     for msg in track:
-        curr_time+=msg.time
+        curr_time += msg.time
         if msg.is_meta:
             custom_meta = CustomMetaMessage(type=msg.type)
             custom_meta.meta_message = msg
             custom_meta.actual_time = curr_time
-            intermediate.append(custom_meta) # should convert this also
-        elif msg.type in ['note_on','note_off']:
-            # print(msg)
-            custom_message=CustomMessage(msg.type)
+            intermediate.append(custom_meta)
+        elif msg.type in ['note_on', 'note_off']:
+            custom_message = CustomMessage(msg.type)
+            
+            # Copy attributes from msg to custom_message
             custom_message.time = msg.time
+            custom_message.actual_time = curr_time
+            custom_message.velocity = msg.velocity  # Ensure velocity is copied correctly
+            custom_message.note = msg.note          # Copy note if needed
 
-            custom_message.actual_time=curr_time
             intermediate.append(custom_message)
         else:
             intermediate.append(msg)
-        
-    
+    print_object_attributes(intermediate)
+    # for i in range(len(intermediate)):
+    #     custom_msg=intermediate[i]
+    #     if custom_msg.type=='note_on':
+    #         # print(intermediate[i].type)
+    #         print("-------")
+    #         for j in range(i+1,len(intermediate)):
+    #             if isinstance(intermediate[j], CustomMessage):
+    #                 higher_lvl_message = intermediate[j]
+    #             elif isinstance(intermediate[j], CustomMetaMessage):
+    #                 higher_lvl_message = intermediate[j]
+    #             elif isinstance(intermediate[j], mido.messages.messages.Message):
+    #                 higher_lvl_message = intermediate[j]
+    #             else:
+    #                 print("Unexpected type:", type(intermediate[j]))  # This shouldn't be triggered if the logic is correct
+    #                 pass
+    #             print("---- Debug Info ----")
+    #             print("higher_lvl_message:", higher_lvl_message)
+    #             print("higher_lvl_message.type:", getattr(higher_lvl_message, 'type', None))
+    #             print("higher_lvl_message.note:", getattr(higher_lvl_message, 'note', None))
+    #             print("higher_lvl_message.velocity:", getattr(higher_lvl_message, 'velocity', None))
+    #             print("custom_msg.note:", getattr(custom_msg, 'note', None))
+                # print("---------------------")
     for i in range(len(intermediate)):
         custom_msg=intermediate[i]
         
@@ -131,16 +175,23 @@ def conv_from_midi(track):
             print("-------")
             for j in range(i+1,len(intermediate)):
                 if isinstance(intermediate[j], CustomMessage):
-                    higher_lvl_message = intermediate[j].message
+                    higher_lvl_message = intermediate[j]
                 elif isinstance(intermediate[j], CustomMetaMessage):
-                    higher_lvl_message = intermediate[j].meta_message
+                    higher_lvl_message = intermediate[j]
                 elif isinstance(intermediate[j], mido.messages.messages.Message):
                     higher_lvl_message = intermediate[j]
                 else:
-                    print(type(intermediate[j])) # won't come here
+                    print("Unexpected type:", type(intermediate[j]))  # This shouldn't be triggered if the logic is correct
                     pass
-                condition1 = (isinstance(intermediate[j], CustomMessage)) and   (higher_lvl_message.type=='note_off') and (higher_lvl_message.note==custom_msg.note)
-                condition2 = (higher_lvl_message.type=='note_on') and (higher_lvl_message.note==custom_msg.note) and (higher_lvl_message.velocity==0)
+                print("---- Debug Info ----")
+                print("higher_lvl_message:", higher_lvl_message)
+                print("higher_lvl_message.type:", getattr(higher_lvl_message, 'type', None))
+                print("higher_lvl_message.note:", getattr(higher_lvl_message, 'note', None))
+                print("higher_lvl_message.velocity:", getattr(higher_lvl_message, 'velocity', None))
+                print("custom_msg.note:", getattr(custom_msg, 'note', None))
+                print("---------------------")
+                condition1 = (isinstance(intermediate[j], CustomMessage)) and (higher_lvl_message.type == 'note_off') and (higher_lvl_message.note == custom_msg.note)
+                condition2 = (higher_lvl_message.type == 'note_on') and (higher_lvl_message.note == custom_msg.note) and (higher_lvl_message.velocity == 0)
                 if condition1 or condition2 :
                     # assume that all note_on with vel=0 are converted to note_off events
                     duration = intermediate[j].actual_time - custom_msg.actual_time
@@ -161,9 +212,6 @@ def conv_from_midi(track):
             # print(line)
             f.write(line.__str__())
 
-    for line in track:
-        with open('track.txt') as f:
-            print(line)
     
     return desirable
 
