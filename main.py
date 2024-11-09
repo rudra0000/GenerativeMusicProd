@@ -1,173 +1,154 @@
 import mido
-import random,math
-import matplotlib.pyplot as plt
-POPULATION_SIZE=10
-MUTATE_FRACTION=0.3
-MUTATION_ITERATIONS=2000
-# Load the original MIDI file (for example, 'finalcountdown.mid')
-cv1 = mido.MidiFile('alan_walker_-_alone.mid', clip=True)
-# cv1 = mido.MidiFile('finalcountdown.mid', clip=True)
+FILENAME='alan_walker_-_alone.mid'
+midi_data=mido.MidiFile(filename=f'./midi_files/{FILENAME}')
 
-# Select the track you want to isolate (for example, track 0)
-source_track = cv1.tracks[1]
-# print('source trtack len', len(source_track))
-# print('source trtac',(source_track))
+# class CustomMetaMessage(mido.MetaMessage):
+#     def __init__(self, type, skip_checks=False, **kwargs):
+#         super().__init__(type, skip_checks=False, **kwargs)
 
-# Create a new MIDI file and a new track
-new_mid = mido.MidiFile()
-new_track = mido.MidiTrack()
-# print(source_track)
-# Optional: Add some meta messages for tempo, key signature, etc.
-# new_track.append(mido.MetaMessage('key_signature', key='C'))
-# new_track.append(mido.MetaMessage('set_tempo', tempo=mido.bpm2tempo(40)))
-# new_track.append(mido.MetaMessage('time_signature', numerator=6, denominator=8))
+#         self.actual_time = 0
+def pretty_print_arr(arr):
+    print("[")
+    for i in arr:
+        print(i)
+    print("]")
 
-# Copy the events from the source track to the new track
-# abc = 5
-
-
-filterthese = ['track_name', 'end_of_track', 'key_signature', 'set_tempo', 'time_signature']
-meta_messages=[]
-for msg in source_track:
-    # We only append musical or relevant events, skipping others like SysEx, etc.
-    # msg.is_meta or type(msg) is mido.messages.messages.Message or 
-    # if msg.type in filterthese:
-    #     print('incoming kombucha - ', msg)
-    #     # above this we see the req meta messgaeese
-    # else:
-    #     if msg.type == 'note_on' or msg.type == 'note_off':
-    #         msg = mido.Message('note_on', channel=7, note=msg.note, velocity=msg.velocity, time=msg.time)
-    #         new_track.append(msg)
-    #     pass
-        if msg.type == 'note_on' or msg.type == 'note_off':
-            msg = mido.Message('note_on', channel=7, note=msg.note, velocity=msg.velocity, time=msg.time)
-            new_track.append(msg)
-        else:
-            # print(msg.type)
-            if msg.type not in ['program_change','pitchwheel','control_change']:
-                meta_messages.append(msg)
-            
-
-# print(meta_messages)
-
-# new_track.append(mido.MetaMessage('end_of_track'))
-
-
-# new track does not have any 
-
-# Append the new track to the new MIDI file
-
-new_mid.tracks.append(new_track)
-# print('new track 5f 5l')
-# print(new_track[:5], new_track[-5:])
-
-
-
-# Save the new MIDI file with the isolated track and added notes
-new_mid.save('isolated_track_with_notes.mid')
-
-# print("Isolated track with added notes saved to 'isolated_track_with_notes.mid'")
-# print(new_track)
-
-
-#takes a track and returns list of inidviduals(tracks)
-def generatePopulation(track):
-    population = [track.copy() for _ in range(POPULATION_SIZE)]
+f = open("intermediate.txt","w")
+def print_object_attributes(objects):
+    for obj in objects:
+        # Get the attributes of the object as a dictionary
+        attributes = vars(obj)
+        # Print each attribute's name and value in a single line
+        # print(" | ".join(f"{key}={value}" for key, value in attributes.items()))
         
-    for i in range(len(population)):
-        individual=population[i]
-        for j in range(MUTATION_ITERATIONS):
-            evolve(individual)
-        meta_messages.append(mido.MetaMessage('key_signature', key='C'))
-        meta_messages.append(mido.MetaMessage('set_tempo', tempo=mido.bpm2tempo(20)))
-        meta_messages.append(mido.MetaMessage('time_signature', numerator=6, denominator=8))
-        for msg in meta_messages:
-            if msg.type=='end_of_track':
-                individual.append(msg)
-            else:
-                individual[:0]=[msg]
-        new_mid = mido.MidiFile()
-        # new_track = mido.MidiTrack()
-        new_mid.tracks.append(individual)
-        new_mid.save(f'isolated_track_with_notes{i}.mid')
+        f.write(" | ".join(f"{key}={value}" for key, value in attributes.items()))
+        f.write("\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n")
+
+
+class CustomMetaMessage:
+    def __init__(self, type, skip_checks=False, **kwargs):
+        # Initialize the MetaMessage
+        self.meta_message = mido.MetaMessage(type, skip_checks=skip_checks, **kwargs)
+        # Store the actual time separately
+        self.actual_time = 0
+
+    def __getattr__(self, name):
+        # Forward any attribute lookup to the underlying MetaMessage object
+        return getattr(self.meta_message, name)
+
+    def __setattr__(self, name, value):
+        if name != "meta_message" and name != "actual_time":
+            # Forward setting other attributes to the underlying MetaMessage object
+            setattr(self.meta_message, name, value)
+        else:
+            super().__setattr__(name, value)
+
+
+
+class CustomMessage:
+    def __init__(self, type, skip_checks=False, extra_info=None, **args):
+        # Initialize the base Message object
+        self.message = mido.Message(type, **args)
+        # Store the actual time separately
+        self.actual_time = 0
+        if extra_info is not None:
+            # Additional handling if extra_info is needed
+            self.extra_info = extra_info
+        else:
+            self.extra_info = None
+
+    def __getattr__(self, name):
+        # Forward any attribute lookup to the underlying mido.Message object
+        return getattr(self.message, name)
+
+    def __setattr__(self, name, value):
+        if name not in ['message', 'actual_time', 'extra_info']:
+            # Forward setting other attributes to the underlying mido.Message object
+            setattr(self.message, name, value)
+        else:
+            super().__setattr__(name, value)
+
+
+
+class Note_rep:
+    def __init__(self):
+        self.channel=0
+        self.note = ''
+        self.velocity=0
+        self.start_time=0
+        self.duration=0
     
-    return population
+    def __init__(self, channel=0, note='', velocity=0, start_time=0, duration=0):
+        self.channel=channel
+        self.note = note
+        self.velocity=velocity
+        self.start_time=start_time
+        self.duration=duration
     
-# def generateWorld(track):
-#     for i in range(MUTATION_ITERATIONS):
-#         population=generatePopulation(track)
-#         track=population[1][:]
-#     return population
+    def __init__(self, obj: CustomMessage, duration=0):
+        self.channel = obj.channel
+        self.note = obj.note
+        self.velocity = obj.velocity
+        self.start_time = obj.actual_time
+        self.duration = obj.duration
 
-def evolve(individual):
-    size=len(individual)
-    # assert(size%2==0)
-    # print(size)
-    if size < 2:
-        print('Individual is too small')
-        return
-    start=2*(random.randint(1,size//2)-1)
-    end=start+math.ceil(size*MUTATE_FRACTION)
+    def __init__(self, obj: CustomMetaMessage, duration=0):
+        self.channel = obj.channel
+        self.note = obj.note
+        self.velocity = obj.velocity
+        self.start_time = obj.actual_time
+        self.duration = obj.duration
 
-    if end>=size:
-        end=size-1
 
-    if end%2 == 0:
-        end-=1
-
+#output intermediate
+def conv_from_midi(track):
+    intermediate=[] 
+    curr_time=0
+    desirable = []
+    for msg in track:
+        curr_time+=msg.time
+        if msg.is_meta:
+            custom_meta = CustomMetaMessage(type=msg.type)
+            custom_meta.actual_time = curr_time
+            intermediate.append(custom_meta) # should convert this also
+        elif msg.type in ['note_on','note_off']:
+            print(msg)
+            custom_message=CustomMessage(msg.type)
+            custom_message.actual_time=curr_time
+            intermediate.append(custom_message)
+        else:
+            intermediate.append(msg)
+        
     
-    assert((end-start+1)%2==0)
-    # print(len(mutate(individual=individual,start_index=start,end_index=end)))
-    # print(end-start+1)
-    b4 = len(individual)
-    temp_list = mutate(individual=individual,start_index=start,end_index=end)
-    individual[start:end+1]=temp_list
-    if b4-len(individual) != 0:
-        print('the difference is', b4-len(individual))
-        print('rhs lenght returned', len(temp_list))
-        print('lhs lenght is', len(individual[start:end+1]))
-        # this means that the mutate length returned is lesser
-    assert(b4-len(individual) == 0)
+    for i in range(len(intermediate)):
+        custom_msg=intermediate[i]
+        
+        if custom_msg.type=='note_on':
+            print(intermediate[i].type)
+            print("-------")
+            for j in range(i+1,len(intermediate)):
+                condition1 = intermediate[j].type=='note_off' and intermediate[j].note==custom_msg.note
+                condition2 = intermediate[j].type=='note_on' and intermediate[j].note==custom_msg.note and intermediate[j].velocity==0
+                if condition1 or condition2 :
+                    # assume that all note_on with vel=0 are converted to note_off events
+                    duration = intermediate[j].actual_time - custom_msg.actual_time
+                    note_rep = Note_rep(custom_message, duration=duration)
+                    desirable.append(note_rep)
     
+    print_object_attributes(intermediate)
+    print("ddeffgtg")
+    # print_object_attributes(desirable)
+    for line in desirable:
+        with open('desirable.txt', 'w') as f:
+            # print(line)
+            f.write(line.__str__())
 
-#chromosome:subpart of a track
-#takes a chromosome and randomly mutate note(s) (returns)
-def mutate(individual,start_index,end_index):
-    old_l =  individual[start_index:end_index+1]
-    l = []
-    indexes=[i for i in range(0,(end_index-start_index+1)//2)] ##########################
-    random.shuffle(indexes)
-
+    for line in track:
+        with open('track.txt') as f:
+            print(line)
     
-    for index in indexes:
-        l.append(old_l[2*index])
-        l.append(old_l[2*index+1])
+    return desirable
 
-    # print('l is ', len(l))
-    # print('individual lengthhh is ', len(individual))
-    flag = all(x == y for x, y in zip(old_l, l))
-    # assert(not flag)
-    return l
+conv_from_midi(midi_data.tracks[1])
 
-
-
-#takes two individuals
-#crossover about a point
-def crossover():
-    pass
-
-# population=generateWorld(new_track)
-population=generatePopulation(new_track)
-# print(len(population[0]))
-
-
-# x_list = [i for i in range(0,len(population[0]))]
-# y_list=[msg.note for msg in population[0]]
-# plt.scatter(x_list, y_list, label="track1",color='blue')
-
-# x_list2 = [i for i in range(0,len(population[1]))]
-# y_list2=[msg.note for msg in population[1]]
-# plt.scatter(x_list, y_list2, label="track2",color='red')
-
-# plt.show()
-# plt.close(
+f.close()

@@ -1,0 +1,666 @@
+meta_message=MetaMessage('track_name', name='', time=0) | actual_time=0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=program_change | time=0 | program=81 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=7 | value=100 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=10 | value=64 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=pitchwheel | time=0 | channel=7 | pitch=0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=101 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=100 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=6 | value=12 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=38 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=10 | value=64 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=7 | value=100 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=pitchwheel | time=0 | channel=7 | pitch=0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=101 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=100 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=6 | value=12 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=38 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=10 | value=64 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=7 | value=100 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=pitchwheel | time=0 | channel=7 | pitch=0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=program_change | time=0 | program=81 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=101 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=100 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=6 | value=12 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=38 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=10 | value=64 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=7 | value=100 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=pitchwheel | time=0 | channel=7 | pitch=0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=program_change | time=0 | program=81 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=9 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=48 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=72 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=120 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=144 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=192 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=192 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=216 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=224 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=240 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=240 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=264 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=272 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=288 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=288 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=312 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=336 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=368 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=384 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=432 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=456 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=504 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=528 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=576 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=576 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=600 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=608 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=624 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=624 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=648 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=656 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=672 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=672 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=704 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=720 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=752 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=768 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=816 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=840 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=888 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=912 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=960 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=960 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=984 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=992 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1008 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1008 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1032 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1040 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1056 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1056 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1096 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1104 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1144 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1152 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1200 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1224 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1272 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1296 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1344 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1376 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1392 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1392 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1424 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1424 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1440 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1440 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1480 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1488 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1528 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1536 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1584 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1608 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1656 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1680 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1728 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1728 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1760 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1760 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1776 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1776 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1808 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1808 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1824 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1824 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1864 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1872 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1912 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1920 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1960 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=1992 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2032 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2064 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2104 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2112 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2144 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2144 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2160 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2160 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2192 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2192 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2208 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2208 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2248 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2256 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2296 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2304 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2352 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2376 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2424 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2448 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2496 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2496 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2528 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2528 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2544 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2544 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2576 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2576 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2592 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2592 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2632 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2640 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2680 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2688 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2736 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2760 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2808 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2832 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2880 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2912 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2928 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2928 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2960 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2960 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2976 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=2976 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3016 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3024 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3064 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3072 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3120 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3144 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3192 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3216 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3264 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3264 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3288 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3296 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3312 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3312 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3336 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3344 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3360 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3360 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3384 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3408 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3440 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3456 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3504 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3528 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3576 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3600 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3648 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3648 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3672 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3680 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3696 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3696 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3720 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3728 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3744 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3744 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3776 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3792 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3824 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3840 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3888 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3912 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3960 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=3984 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4032 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4032 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4056 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4064 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4080 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4080 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4104 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4112 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4128 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4128 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4168 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4176 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4216 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4224 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4272 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4296 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4344 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4368 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4416 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4448 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4464 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4464 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4496 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4496 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4512 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4512 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4552 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4560 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4600 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4608 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4656 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4680 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4728 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4752 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4800 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4800 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4832 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4832 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4848 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4848 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4880 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4880 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4896 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4896 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4936 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4944 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4984 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=4992 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5032 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5064 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5104 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5136 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5176 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5184 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5216 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5216 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5232 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5232 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5264 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5264 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5280 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5280 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5320 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5328 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5368 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5376 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5424 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5448 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5496 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5520 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5568 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5568 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5600 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5600 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5616 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5616 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5648 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5648 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5664 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5664 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5704 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5712 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5752 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5760 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5808 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5832 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5880 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5904 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5952 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=5984 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6000 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6000 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6032 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6032 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6048 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6048 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6088 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6096 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+message=note_on channel=0 note=0 velocity=64 time=0 | actual_time=6136 | extra_info=None
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=389 | control=101 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=100 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=6 | value=12 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=38 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=10 | value=64 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=7 | value=100 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=pitchwheel | time=0 | channel=7 | pitch=0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=program_change | time=0 | program=81 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=101 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=100 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=6 | value=12 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=38 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=10 | value=64 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=7 | value=100 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=pitchwheel | time=0 | channel=7 | pitch=0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=program_change | time=0 | program=81 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=101 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=100 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=6 | value=12 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=1 | control=38 | value=0 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=10 | value=64 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=control_change | time=0 | control=7 | value=100 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=pitchwheel | time=0 | channel=7 | pitch=0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+type=program_change | time=0 | program=81 | channel=7
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+meta_message=MetaMessage('end_of_track', time=0) | actual_time=6534
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
