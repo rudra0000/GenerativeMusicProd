@@ -1,5 +1,5 @@
 import mido
-FILENAME='alan_walker_-_alone.mid'
+FILENAME='./duckandrun.mid'
 midi_data=mido.MidiFile(filename=f'./midi_files/{FILENAME}')
 
 # class CustomMetaMessage(mido.MetaMessage):
@@ -7,6 +7,7 @@ midi_data=mido.MidiFile(filename=f'./midi_files/{FILENAME}')
 #         super().__init__(type, skip_checks=False, **kwargs)
 
 #         self.actual_time = 0
+midi_track0 = midi_data.tracks[0]
 
 def fwrite(str1, filename):
     with open(filename, 'a') as f:
@@ -188,11 +189,58 @@ def conv_from_midi(track):
 
     return desirable
 
+def save_track_to_midi(track2, output_file_path):
+    # Create a new MIDI file and a track
+    global midi_track0
+    midi = mido.MidiFile()
+    midi_track = mido.MidiTrack()
+    midi.tracks.append(midi_track0)
+    midi.tracks.append(midi_track)
+    
+    # Add messages to the track
+    for msg in track2:
+        if isinstance(msg, mido.MetaMessage):
+            midi_track.append(msg)  # Add meta messages directly
+        elif isinstance(msg, mido.messages.messages.Message):
+            midi_track.append(msg)  # Add regular messages directly
+        else:
+            print(f"Skipping unknown message type: {msg}")
+
+    # Save the MIDI file
+    midi.save(output_file_path)
+    print(f"MIDI file saved to {output_file_path}")
+
 def conv_to_midi(converted):
-    pass
+    intermediate2 = []
+    for note_rep in converted:
+        if note_rep.type == 'note':
+            note_on = CustomMessage('note_on', channel=note_rep.channel, note=note_rep.note, velocity=note_rep.velocity, time=note_rep.start_time)
+            note_off = CustomMessage('note_off', channel=note_rep.channel, note=note_rep.note, velocity=0, time=note_rep.start_time+note_rep.duration)
+            intermediate2.append(note_on)
+            intermediate2.append(note_off)
+        else:
+            intermediate2.append(note_rep.obj)
+    for line in intermediate2:
+        fwrite(line.__str__(), 'intermediate2.txt')
+    track2 = []
+    for msg in intermediate2:
+        if isinstance(msg, CustomMetaMessage):
+            track2.append(msg.meta_message)
+        elif isinstance(msg, CustomMessage):
+            track2.append(msg.message)
+        else:
+            track2.append(msg)
+    # put this track2 in a midi file    
+    save_track_to_midi(track2, 'output.mid')
+    return track2
 
-
-converted=conv_from_midi(midi_data.tracks[3])
+converted=conv_from_midi(midi_data.tracks[1])
+track2 = conv_to_midi(converted)
 print(len(converted))
 
+track = midi_data.tracks[1]
+save_track_to_midi(track, 'input.mid')
+
+
+# print(midi_data.tracks[0]['set_tempo'])
 f.close()

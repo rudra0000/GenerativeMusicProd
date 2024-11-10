@@ -1,220 +1,185 @@
 import mido
-from extra import get_midi_duration
 
+FILENAME = './duckandrun.mid'
+midi_data = mido.MidiFile(filename=f'./midi_files/{FILENAME}')
+midi_track0 = midi_data.tracks[0]
 
-class note_rep:
-    def __init__(self):
-        self.channel=0
-        self.note = ''
-        self.velocity=0
-        self.start_time=0
-        self.duration=0
+def fwrite(str1, filename):
+    with open(filename, 'a') as f:
+        f.write(str1 + "\n")
+
+f = open("intermediate.txt", "w")
+
+def print_object_attributes(objects):
+    for obj in objects:
+        attributes = vars(obj)
+        f.write(" | ".join(f"{key}={value}" for key, value in attributes.items()))
+        f.write("\n")
+
+class CustomMetaMessage:
+    def __init__(self, type, skip_checks=False, **kwargs):
+        self.meta_message = mido.MetaMessage(type, skip_checks=skip_checks, **kwargs)
+        self.actual_time = 0
+
+    def __getattr__(self, name):
+        return getattr(self.meta_message, name)
+
+    def __setattr__(self, name, value):
+        if name != "meta_message" and name != "actual_time":
+            setattr(self.meta_message, name, value)
+        else:
+            super().__setattr__(name, value)
+
+    def __str__(self):
+        return f'MetaMessage type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
+
+class CustomMessage:
+    def __init__(self, type, skip_checks=False, extra_info=None, **args):
+        self.message = mido.messages.messages.Message(type, **args)
+        self.actual_time = 0
+
+    def __getattr__(self, name):
+        return getattr(self.message, name)
+
+    def __setattr__(self, name, value):
+        if name not in ['message', 'actual_time']:
+            setattr(self.message, name, value)
+        else:
+            super().__setattr__(name, value)
     
-    def __init__(self, channel=0, note='', velocity=0, start_time=0, duration=0):
-        self.channel=channel
-        self.note = note
-        self.velocity=velocity
-        self.start_time=start_time
-        self.duration=duration
-        pass
+    def __str__(self):
+        if self.type == 'note_on':
+            return f'Message(notes) type: {self.type}, time: {self.time}, actual_time: {self.actual_time}, note: {self.note}, velocity: {self.velocity}'
+        else:
+            return f'Program change type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
+
+class Note_rep:
+    def __init__(self, obj, duration=0):
+        self.type = 'note'
+        self.obj = obj
+        if obj.type == 'note_on':
+            self.channel = obj.channel
+            self.note = obj.note
+            self.velocity = obj.velocity
+            self.start_time = obj.actual_time
+            self.duration = duration
+        else:
+            self.type = 'not_note'
+            self.obj = obj
+
+    def __str__(self):
+        if self.type == 'note':
+            return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'      
+        else:
+            return f'type: {self.type}, obj: {self.obj}'
+
+LIM = 10
+
+def conv_from_midi(track):
+    global LIM
+    intermediate = []
+    curr_time = 0
+    desirable = []
+    for msg in track:
+        curr_time += msg.time
+        if msg.is_meta:
+            custom_meta = CustomMetaMessage(type=msg.type)
+            custom_meta.meta_message = msg
+            custom_meta.actual_time = curr_time
+            intermediate.append(custom_meta)
+        elif msg.type in ['note_on', 'note_off']:
+            if LIM >= 6:
+                LIM -= 1
+            custom_message = CustomMessage(msg.type)
+            custom_message.time = msg.time
+            custom_message.actual_time = curr_time
+            custom_message.velocity = msg.velocity
+            custom_message.note = msg.note
+            intermediate.append(custom_message)
+        else:
+            intermediate.append(msg)
+    print_object_attributes(intermediate)
     
-class CustomMessage(mido.messages.messages.Message):
-    def __init__(self, type, extra_info=None, skip_checks=False, **args):
-        # Call the parent constructor to set up the existing message structure
-        super().__init__(type, skip_checks=skip_checks, **args)
-
-        # Add the extra attribute
-        self.time_actual = 0 # this is not delta time, it is the actual time
-
-
-
-def pretty_print_arr(arr):
-    print("[")
-    for i in arr:
-        print(i)
-    print("]")
-
-class Store:
-    def __init__(self, mid):
-        self.mid = mid
-        self.tracks = mid.tracks
-        self.ticks_per_beat = mid.ticks_per_beat
-        flag  = False
-        # find the tempo of the song
-        for track in self.tracks:
-            if flag:
-                break
-            for msg in track:
-                if msg.type == 'set_tempo':
-                    # print(msg)
-                    self.tempo = msg.tempo # something like 352941 microseconds per beat
-                    flag = True
+    for i in range(len(intermediate)):
+        custom_msg = intermediate[i]
+        if custom_msg.type == 'note_on':
+            for j in range(i + 1, len(intermediate)):
+                higher_lvl_message = intermediate[j]
+                condition1 = (isinstance(intermediate[j], CustomMessage)) and (higher_lvl_message.type == 'note_off') and (higher_lvl_message.note == custom_msg.note)
+                condition2 = (higher_lvl_message.type == 'note_on') and (higher_lvl_message.note == custom_msg.note) and (higher_lvl_message.velocity == 0)
+                if condition1 or condition2:
+                    duration = intermediate[j].actual_time - custom_msg.actual_time
+                    note_rep = Note_rep(custom_msg, duration=duration)
+                    desirable.append(note_rep)
                     break
-        
-        # turn all note_on events with velocity=0 to note_off events
-        for track in self.tracks:
-            if flag:
-                break
-            for i in range(len(track)):
-                msg = track[i]
-                if msg.type == 'note_on' and msg.velocity == 0:
-                    msg.type = 'note_off'
-                    track[i] = msg
-
-    def print(self, i=None,msg_count=None):
-        if i is None or msg_count is None:
-            print('provide proper parameters')
         else:
-            for j in range(msg_count):
-                print(self.tracks[i][j])
+            note_rep = Note_rep(custom_msg, duration=0)
+            desirable.append(note_rep)
+
+    for line in intermediate:
+        fwrite(line.__str__(), 'intermediate.txt')
+    for line in desirable:
+        fwrite(line.__str__(), 'desirable.txt')
+
+    return desirable
+
+def save_track_to_midi(track2, output_file_path, tempo):
+    global midi_track0
+    midi = mido.MidiFile()
+    midi_track = mido.MidiTrack()
+    midi.tracks.append(midi_track0)
+    midi.tracks.append(midi_track)
     
-
-    def get_ith_tracks_midi_file(self, i):
-        ith_track = self.tracks[i]
-        return ith_track
+    midi_track.append(mido.MetaMessage('set_tempo', tempo=tempo))
     
-    def conv_to_my_notation(self,  track): # returns a new array with notes, start times and durations i.e. a conversion of the ith track
-        # assume that the tempo of a piece is 120 BPM 
-        # we will see messages like 
-        # 1. note_on channel=0 note=50 velocity=50 time=0 # note that time here is delta time in some other unit not seconds
-        # 2. program_change channel=0 program=0 time=0
-        # 3. we need to convert this to an object and we can ignore note_off and program change events
-        # the main challenge is that a note_on need not be followed immidiately by a note_off!!!!
-        if track == None:
-            print('will implement this later if needed')
-            return
-        ans = []
-        cur_time = 0
-        
-        #first remove instead of time delta compute actual times
-        f = open('a.txt', 'w')
-        for i in range(0, len(track)):
-            message = track[i]
-            if message.is_meta or message.type == 'program_change':
-                ans.append(message)
-                continue # leave it unchanged
-
-            elif message.type in ['note_on', 'note_off']:
-                start_time = message.time + cur_time
-                cur_time += message.time
-                duration = 0
-                # for j in range(i+1, len(track)):
-                #     message2 = track[j]
-                #     if message2.type == 'note_off' and message2.note == message.note:
-                #         pass
-                # note_rep(channel=message.channel, note=message.note, velocity=float(message.velocity), start_time=start_time, duration=duration)
-                f.write(str(message) + "\n")
-                f.write(str(type(message)))
-                pass
-            else:
-                print(message, 'I do not like this')
-
-        return ans
-
-        pass
-
-    def conv_to_original_notation(self, track):
-        ans = []
-        if track is None:
-            print('will be implemented later')
-            return
+    for msg in track2:
+        if isinstance(msg, mido.MetaMessage):
+            midi_track.append(msg)
+        elif isinstance(msg, mido.messages.messages.Message):
+            midi_track.append(msg)
         else:
-            for j in range (len(track)):
-                message = track[j]
-                if j > 0:
-                    prev_message = track[j-1]
-                # print('---------------', 'message is', message)
-                # print('the type(message) gives', type(message))
-                if isinstance(message, (mido.messages.messages.Message, mido.midifiles.meta.MetaMessage)):
-                    ans.append(message)
-                elif message['type'] != 'note_on':
-                    ans.append(message)
-                else:
-                    new_message = {}
-                    new_message['type']=message['type']
-                    new_message['velocity']=message['velocity']
-                    if j == 0:
-                        new_message['time'] = message['start_time']
-                    else:
-                        if isinstance(prev_message, (mido.messages.messages.Message)):
-                            req_start_time = prev_message.time
-                        else:
-                            req_start_time = prev_message['start_time']
-                        new_message['time'] = message['start_time'] - req_start_time
-                    new_message2 = {}
-                    new_message2['type'] = 'note_off'
-                    new_message2['velocity'] = 0
-                    new_message2['start_time'] = message['start_time'] + message['duration']
-                    new_message['note'] = message['note']
-                    new_message2['note'] = message['note']
-                    new_message['channel'] = message['channel']
-                    new_message2['channel'] = message['channel']
-                    ans.append(new_message)
-                    ans.append(new_message2)
-        return ans
-        pass
+            print(f"Skipping unknown message type: {msg}")
 
+    midi.save(output_file_path)
+    print(f"MIDI file saved to {output_file_path}")
 
-POPULATION_SIZE = 20
+def conv_to_midi(converted, tempo):
+    intermediate2 = []
+    for note_rep in converted:
+        if note_rep.type == 'note':
+            note_on = CustomMessage('note_on', channel=note_rep.channel, note=note_rep.note, velocity=note_rep.velocity, time=note_rep.start_time)
+            note_off = CustomMessage('note_off', channel=note_rep.channel, note=note_rep.note, velocity=0, time=note_rep.start_time + note_rep.duration)
+            intermediate2.append(note_on)
+            intermediate2.append(note_off)
+        else:
+            intermediate2.append(note_rep.obj)
 
-#based on the initial song, we need to get a population
+    for line in intermediate2:
+        fwrite(line.__str__(), 'intermediate2.txt')
 
+    track2 = []
+    for msg in intermediate2:
+        if isinstance(msg, CustomMetaMessage):
+            track2.append(msg.meta_message)
+        elif isinstance(msg, CustomMessage):
+            track2.append(msg.message)
+        else:
+            track2.append(msg)
+    
+    save_track_to_midi(track2, 'output.mid', tempo)
+    return track2
 
-mid = mido.MidiFile('./midi_files/FOB_swgd.mid')
-store = Store(mid)
+# Get tempo from the first track
+for msg in midi_data.tracks[0]:
+    if msg.type == 'set_tempo':
+        input_tempo = msg.tempo
+        break
 
-i=0
-end=15
+converted = conv_from_midi(midi_data.tracks[1])
+track2 = conv_to_midi(converted, input_tempo)
+print(len(converted))
 
-print('ith track is:')
-# print(store.tracks[i])
+track = midi_data.tracks[1]
+save_track_to_midi(track, 'input.mid', input_tempo)
 
-print(store.tracks[i][0:end])
-print('-------------------------------------------')
-x = store.conv_to_my_notation(store.tracks[i])
-# pretty_print_arr(x[0:end])
-# print('-------------------------------------------')
-# y = store.conv_to_original_notation(x)
-# pretty_print_arr(y[0:end])
-# print('-------------------------------------------')
-
-
-
-
-
-
-
-
-def experiment1():
-    # Load the MIDI file
-    file_path = './midi_files/FOB_swgd.mid'
-    mid = mido.MidiFile(file_path)
-    print('duration is', get_midi_duration(mid), 'seconds')
-    store = Store(mid)
-
-    # let's try to create a new midi file using only the ith track of the old one
-    i=1
-    req_track = store.get_ith_tracks_midi_file(i)
-
-    new_track_messages  = []
-    for msg in req_track:
-        new_track_messages.append(msg)
-
-
-    new_mid = mido.MidiFile()
-    new_mid.add_track('track0')
-    new_mid.tracks[0] += new_track_messages
-    # print(new_mid.tracks)
-
-
-    new_mid.save('./midi_files/new.mid')
-
-
-
-
-# experiment1()
-
-
-
-
-
+f.close()
