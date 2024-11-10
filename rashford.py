@@ -73,6 +73,7 @@ class CustomMessage:
 
 class Note_rep:
     def __init__(self):
+        self.type = ''
         self.channel=0
         self.note = ''
         self.velocity=0
@@ -87,13 +88,20 @@ class Note_rep:
         self.duration=duration
     
     def __init__(self, obj: CustomMessage, duration=0): # use this
-        self.channel = obj.channel
-        self.note = obj.note
-        self.velocity = obj.velocity
-        self.start_time = obj.actual_time
-        self.duration = duration
+        print('called')
+        self.type = 'note'
+        if obj.type == 'note_on':
+            self.channel = obj.channel
+            self.note = obj.note
+            self.velocity = obj.velocity
+            self.start_time = obj.actual_time
+            self.duration = duration
+        else:
+            print(f'kombucha {obj.type}')
+            self.type = 'not_note'
 
     def __init__(self, obj: CustomMetaMessage, duration=0): # we use the last two constructors
+        self.type = 'not_note'
         self.channel = obj.channel
         self.note = obj.note
         self.velocity = obj.velocity
@@ -101,23 +109,29 @@ class Note_rep:
         self.duration = duration
 
     def __str__(self):
-        return f'channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'
+        return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'
 
 
 #output intermediate
 def conv_from_midi(track):
+    if True:
+        print('I am function')
     intermediate = []
     curr_time = 0
     desirable = []
-
+    print('ur len ')
+    print(len(track))
     for msg in track:
         curr_time += msg.time
+        print(f'hello this is ur msg')
         if msg.is_meta:
+            print(f'Meta type is {msg.type}')
             custom_meta = CustomMetaMessage(type=msg.type)
             custom_meta.meta_message = msg
             custom_meta.actual_time = curr_time
             intermediate.append(custom_meta)
         elif msg.type in ['note_on', 'note_off']:
+            print('bak to they')
             custom_message = CustomMessage(msg.type)
             
             # Copy attributes from msg to custom_message
@@ -198,6 +212,12 @@ def conv_from_midi(track):
     
     return desirable
 
-conv_from_midi(midi_data.tracks[1])
+def conv_to_midi(converted):
+    pass
+
+
+converted=conv_from_midi(midi_data.tracks[1])
+print(len(converted))
 
 f.close()
+print('srinvas vivek')

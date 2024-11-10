@@ -202,7 +202,7 @@ def conv_from_midi(track):
     for line in desirable:
         with open('desirable.txt', 'w') as f:
             # print(line)
-            f.write(line.__str__())
+            print_object_attributes(desirable)
 
     
     return desirable
