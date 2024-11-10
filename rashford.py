@@ -7,6 +7,12 @@ midi_data=mido.MidiFile(filename=f'./midi_files/{FILENAME}')
 #         super().__init__(type, skip_checks=False, **kwargs)
 
 #         self.actual_time = 0
+
+def fwrite(str1, filename):
+    with open(filename, 'a') as f:
+        f.write(str1 + "\n")
+
+
 def pretty_print_arr(arr):
     print("[")
     for i in arr:
@@ -43,8 +49,8 @@ class CustomMetaMessage:
         else:
             super().__setattr__(name, value)
 
-    # def __str__(self):
-    #     return f'MetaMessage type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
+    def __str__(self):
+        return f'MetaMessage type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
 
 
 
@@ -65,11 +71,11 @@ class CustomMessage:
             setattr(self.message, name, value)
         else:
             super().__setattr__(name, value)
-    # def __str__(self):
-    #     if self.type == 'note_on':
-    #         return f'Message(notes) type: {self.type}, time: {self.time}, actual_time: {self.actual_time}, note: {self.note}, velocity: {self.velocity}'
-    #     else:
-    #         return f'Program change type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
+    def __str__(self):
+        if self.type == 'note_on':
+            return f'Message(notes) type: {self.type}, time: {self.time}, actual_time: {self.actual_time}, note: {self.note}, velocity: {self.velocity}'
+        else:
+            return f'Program change type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
 
 class Note_rep:
     def __init__(self):
@@ -88,7 +94,6 @@ class Note_rep:
         self.duration=duration
     
     def __init__(self, obj: CustomMessage, duration=0): # use this
-        print('called')
         self.type = 'note'
         if obj.type == 'note_on':
             self.channel = obj.channel
@@ -97,7 +102,6 @@ class Note_rep:
             self.start_time = obj.actual_time
             self.duration = duration
         else:
-            print(f'kombucha {obj.type}')
             self.type = 'not_note'
 
     def __init__(self, obj: CustomMetaMessage, duration=0): # we use the last two constructors
@@ -108,31 +112,27 @@ class Note_rep:
         self.start_time = obj.actual_time
         self.duration = duration
 
-    # def __str__(self):
-    #     return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'
+    def __str__(self):
+        return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'
 
-
+LIM=10
 #output intermediate
 def conv_from_midi(track):
-    if True:
-        print("I am function")
-    print("hoobastank is great")
+    global LIM
     intermediate = []
     curr_time = 0
     desirable = []
-    print('ur len ')
-    print(len(track))
     for msg in track:
         curr_time += msg.time
-        print(f'hello this is ur msg')
         if msg.is_meta:
-            print(f'Meta type is {msg.type}')
             custom_meta = CustomMetaMessage(type=msg.type)
             custom_meta.meta_message = msg
             custom_meta.actual_time = curr_time
             intermediate.append(custom_meta)
         elif msg.type in ['note_on', 'note_off']:
-            print('bak to they')
+            if LIM >= 6:
+                print('bak to they')
+                LIM-=1
             custom_message = CustomMessage(msg.type)
             
             # Copy attributes from msg to custom_message
@@ -145,28 +145,6 @@ def conv_from_midi(track):
         else:
             intermediate.append(msg)
     print_object_attributes(intermediate)
-    # for i in range(len(intermediate)):
-    #     custom_msg=intermediate[i]
-    #     if custom_msg.type=='note_on':
-    #         # print(intermediate[i].type)
-    #         print("-------")
-    #         for j in range(i+1,len(intermediate)):
-    #             if isinstance(intermediate[j], CustomMessage):
-    #                 higher_lvl_message = intermediate[j]
-    #             elif isinstance(intermediate[j], CustomMetaMessage):
-    #                 higher_lvl_message = intermediate[j]
-    #             elif isinstance(intermediate[j], mido.messages.messages.Message):
-    #                 higher_lvl_message = intermediate[j]
-    #             else:
-    #                 print("Unexpected type:", type(intermediate[j]))  # This shouldn't be triggered if the logic is correct
-    #                 pass
-    #             print("---- Debug Info ----")
-    #             print("higher_lvl_message:", higher_lvl_message)
-    #             print("higher_lvl_message.type:", getattr(higher_lvl_message, 'type', None))
-    #             print("higher_lvl_message.note:", getattr(higher_lvl_message, 'note', None))
-    #             print("higher_lvl_message.velocity:", getattr(higher_lvl_message, 'velocity', None))
-    #             print("custom_msg.note:", getattr(custom_msg, 'note', None))
-                # print("---------------------")
     for i in range(len(intermediate)):
         custom_msg=intermediate[i]
         
@@ -175,13 +153,6 @@ def conv_from_midi(track):
             print("-------")
             for j in range(i+1,len(intermediate)):
                 higher_lvl_message = intermediate[j]
-                print("---- Debug Info ----")
-                print("higher_lvl_message:", higher_lvl_message)
-                print("higher_lvl_message.type:", getattr(higher_lvl_message, 'type', None))
-                print("higher_lvl_message.note:", getattr(higher_lvl_message, 'note', None))
-                print("higher_lvl_message.velocity:", getattr(higher_lvl_message, 'velocity', None))
-                print("custom_msg.note:", getattr(custom_msg, 'note', None))
-                print("---------------------")
                 condition1 = (isinstance(intermediate[j], CustomMessage)) and (higher_lvl_message.type == 'note_off') and (higher_lvl_message.note == custom_msg.note)
                 condition2 = (higher_lvl_message.type == 'note_on') and (higher_lvl_message.note == custom_msg.note) and (higher_lvl_message.velocity == 0)
                 if condition1 or condition2 :
@@ -189,28 +160,18 @@ def conv_from_midi(track):
                     duration = intermediate[j].actual_time - custom_msg.actual_time
                     note_rep = Note_rep(custom_msg, duration=duration)
                     desirable.append(note_rep)
-                    print('brokean')
                     break
                 else:
-                    print('NOTA')
+                    # print('NOTA')
+                    pass
                     # print(intermediate[j].velocity)
                     # print(intermediate[j].type)
     
-    # print_object_attributes(intermediate)
-    print("ddeffgtg")
-    print('hello world')
-    # print_object_attributes(desirable)
-    print('here3')
+    for line in intermediate:
+        fwrite(line.__str__(), 'intermediate.txt')
     for line in desirable:
-        with open('desirable.txt', 'w') as f:
-            # print(line)
-            # f.write(line.__str__())
-            # print_object_attributes(desirable)
-            print('**********************************************************')
-            for i in desirable:
-                print(i)
+        fwrite(line.__str__(), 'desirable.txt')
 
-    print('hoobastank')
     return desirable
 
 def conv_to_midi(converted):

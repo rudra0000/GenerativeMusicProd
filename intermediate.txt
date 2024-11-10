@@ -484,3 +484,145 @@ type=program_change | time=0 | program=0 | channel=9
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 meta_message=MetaMessage('end_of_track', time=0) | actual_time=6534
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 2400, note: 42, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 2400, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 2448, note: 36, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 2448, note: 42, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 2496, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 2544, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 2592, note: 42, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 2592, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 2640, note: 36, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 2640, note: 42, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 2688, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 2736, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 2784, note: 42, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 2832, note: 42, velocity: 0
+Message(notes) type: note_on, time: 144, actual_time: 2976, note: 42, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3024, note: 42, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3072, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3120, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3168, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 3168, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3216, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 3216, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3264, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3312, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3360, note: 39, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 3360, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3408, note: 36, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 3408, note: 39, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3456, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3504, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3552, note: 39, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 3552, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3600, note: 36, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 3600, note: 39, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3648, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3696, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3744, note: 39, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 3744, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3792, note: 36, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 3792, note: 39, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3840, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3888, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 3936, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 3936, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 3984, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 3984, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4032, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4080, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4128, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 4128, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4176, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 4176, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4224, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4272, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4320, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 4320, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4368, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 4368, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4416, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4464, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4512, note: 39, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 4512, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4560, note: 36, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 4560, note: 39, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4608, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4656, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4704, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 4704, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4752, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 4752, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4800, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4848, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4896, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 4896, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 4944, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 4944, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 4992, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5040, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5088, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 5088, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5136, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 5136, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5184, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5232, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5280, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 5280, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5328, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 5328, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5376, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5424, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5472, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 5472, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5520, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 5520, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5568, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5616, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5664, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 5664, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5712, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 5712, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5760, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5808, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5856, note: 39, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 5856, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 5904, note: 36, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 5904, note: 39, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 5952, note: 36, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 6000, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 6048, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 6048, note: 39, velocity: 98
+Message(notes) type: note_on, time: 48, actual_time: 6096, note: 39, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 6096, note: 36, velocity: 0
+Message(notes) type: note_on, time: 48, actual_time: 6144, note: 36, velocity: 98
+Message(notes) type: note_on, time: 0, actual_time: 6144, note: 49, velocity: 98
+Message(notes) type: note_on, time: 72, actual_time: 6216, note: 49, velocity: 0
+Message(notes) type: note_on, time: 0, actual_time: 6216, note: 36, velocity: 0
+control_change channel=9 control=101 value=0 time=309
+control_change channel=9 control=100 value=0 time=1
+control_change channel=9 control=6 value=12 time=1
+control_change channel=9 control=38 value=0 time=1
+control_change channel=9 control=10 value=64 time=0
+control_change channel=9 control=7 value=100 time=0
+pitchwheel channel=9 pitch=0 time=0
+program_change channel=9 program=0 time=0
+control_change channel=9 control=101 value=0 time=0
+control_change channel=9 control=100 value=0 time=1
+control_change channel=9 control=6 value=12 time=1
+control_change channel=9 control=38 value=0 time=1
+control_change channel=9 control=10 value=64 time=0
+control_change channel=9 control=7 value=100 time=0
+pitchwheel channel=9 pitch=0 time=0
+program_change channel=9 program=0 time=0
+control_change channel=9 control=101 value=0 time=0
+control_change channel=9 control=100 value=0 time=1
+control_change channel=9 control=6 value=12 time=1
+control_change channel=9 control=38 value=0 time=1
+control_change channel=9 control=10 value=64 time=0
+control_change channel=9 control=7 value=100 time=0
+pitchwheel channel=9 pitch=0 time=0
+program_change channel=9 program=0 time=0
+MetaMessage type: end_of_track, time: 0, actual_time: 6534
