@@ -77,7 +77,7 @@ class CustomMessage:
         if self.type == 'note_on':
             return f'Message(notes) type: {self.type}, time: {self.time}, actual_time: {self.actual_time}, note: {self.note}, velocity: {self.velocity}'
         else:
-            return f'Program change type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
+            return f'type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
 
 class Note_rep:
     def __init__(self):
@@ -87,29 +87,30 @@ class Note_rep:
         self.velocity=0
         self.start_time=0
         self.duration=0
+        self.time = 0
     
-    def __init__(self, channel=0, note='', velocity=0, start_time=0, duration=0):
+    def __init__(self, channel=0, note='', velocity=0, start_time=0, duration=0,time=0):
         self.channel=channel
         self.note = note
         self.velocity=velocity
         self.start_time=start_time
         self.duration=duration
+        self.time = time
     
     def __init__(self, obj, duration=0): # use this
         self.type = 'note'
-        print("here")
+        
         self.obj = obj
-        print('ketan', obj.type)
+       
         if obj.type == 'note_on':
-            print("note")
-            print(obj.actual_time)
             self.channel = obj.channel
             self.note = obj.note
             self.velocity = obj.velocity
             self.start_time = obj.actual_time
             self.duration = duration
+            self.time = obj.time
         else:
-            print("not_note")
+            self.time = obj.time
             self.type = 'not_note'
 
     # def __init__(self, obj, duration=0): # we use the last two constructors
@@ -124,13 +125,10 @@ class Note_rep:
         if self.type == 'note':
             return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'      
         else:
-            print('not_note')
             return f'type: {self.type}, obj: {self.obj}'
 
-LIM=10
 #output intermediate
 def conv_from_midi(track):
-    global LIM
     intermediate = []
     curr_time = 0
     desirable = []
@@ -142,9 +140,6 @@ def conv_from_midi(track):
             custom_meta.actual_time = curr_time
             intermediate.append(custom_meta)
         elif msg.type in ['note_on', 'note_off']:
-            if LIM >= 6:
-                print('bak to they')
-                LIM-=1
             custom_message = CustomMessage(msg.type)
             
             # Copy attributes from msg to custom_message
@@ -155,12 +150,16 @@ def conv_from_midi(track):
 
             intermediate.append(custom_message)
         else:
+            print(msg.type)
             intermediate.append(msg)
-    print_object_attributes(intermediate)
+    print("-------")
+    print(len(intermediate))
+    print(len(track))
+    # intermediate done
     for i in range(len(intermediate)):
         custom_msg=intermediate[i]
         
-        if custom_msg.type=='note_on':
+        if custom_msg.type=='note_on' and custom_msg.velocity != 0:
             # print(intermediate[i].type)
             for j in range(i+1,len(intermediate)):
                 higher_lvl_message = intermediate[j]
@@ -169,12 +168,12 @@ def conv_from_midi(track):
                 if condition1 or condition2 :
                     # assume that all note_on with vel=0 are converted to note_off events
                     duration = intermediate[j].actual_time - custom_msg.actual_time
-                    print(type(custom_msg))
-                    print(custom_msg.type)
                     note_rep = Note_rep(custom_msg, duration=duration)
                     desirable.append(note_rep)
                     break
-        else:
+        elif custom_msg.type == 'note_off':
+            pass
+        else :
             note_rep = Note_rep(custom_msg, duration=0)
             desirable.append(note_rep)
             # print('NOTA')
@@ -196,7 +195,8 @@ def save_track_to_midi(track2, output_file_path):
     midi_track = mido.MidiTrack()
     midi.tracks.append(midi_track0)
     midi.tracks.append(midi_track)
-    
+    print("-------")
+    print(len(track2))
     # Add messages to the track
     for msg in track2:
         if isinstance(msg, mido.MetaMessage):
@@ -214,8 +214,8 @@ def conv_to_midi(converted):
     intermediate2 = []
     for note_rep in converted:
         if note_rep.type == 'note':
-            note_on = CustomMessage('note_on', channel=note_rep.channel, note=note_rep.note, velocity=note_rep.velocity, time=note_rep.start_time)
-            note_off = CustomMessage('note_off', channel=note_rep.channel, note=note_rep.note, velocity=0, time=note_rep.start_time+note_rep.duration)
+            note_on = CustomMessage('note_on', channel=note_rep.channel, note=note_rep.note, velocity=note_rep.velocity,time=note_rep.time)
+            note_off = CustomMessage('note_off', channel=note_rep.channel, note=note_rep.note, velocity=0,time=note_rep.time)
             intermediate2.append(note_on)
             intermediate2.append(note_off)
         else:
@@ -231,16 +231,27 @@ def conv_to_midi(converted):
         else:
             track2.append(msg)
     # put this track2 in a midi file    
-    save_track_to_midi(track2, 'output.mid')
     return track2
 
-converted=conv_from_midi(midi_data.tracks[1])
+converted=conv_from_midi(midi_data.tracks[2])
 track2 = conv_to_midi(converted)
-print(len(converted))
 
 track = midi_data.tracks[1]
-save_track_to_midi(track, 'input.mid')
+with open ('track', 'w') as file:
+    for element in track:
+        file.write(str(element) + '\n')
 
+with open ('track2', 'w') as file:
+    for element in track2:
+        file.write(str(element) + '\n')
+save_track_to_midi(track, 'output.mid')
+save_track_to_midi(track, 'input.mid')
+for i in range(0, len(track2)):
+    if (track2[i] != track[i]):
+        print(i)
+        print(track2[i])
+        print(track[i])
+        break
 
 # print(midi_data.tracks[0]['set_tempo'])
 f.close()
