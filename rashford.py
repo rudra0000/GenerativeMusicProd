@@ -43,8 +43,8 @@ class CustomMetaMessage:
         else:
             super().__setattr__(name, value)
 
-    def __str__(self):
-        return f'MetaMessage type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
+    # def __str__(self):
+    #     return f'MetaMessage type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
 
 
 
@@ -65,11 +65,11 @@ class CustomMessage:
             setattr(self.message, name, value)
         else:
             super().__setattr__(name, value)
-    def __str__(self):
-        if self.type == 'note_on':
-            return f'Message(notes) type: {self.type}, time: {self.time}, actual_time: {self.actual_time}, note: {self.note}, velocity: {self.velocity}'
-        else:
-            return f'Program change type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
+    # def __str__(self):
+    #     if self.type == 'note_on':
+    #         return f'Message(notes) type: {self.type}, time: {self.time}, actual_time: {self.actual_time}, note: {self.note}, velocity: {self.velocity}'
+    #     else:
+    #         return f'Program change type: {self.type}, time: {self.time}, actual_time: {self.actual_time}'
 
 class Note_rep:
     def __init__(self):
@@ -108,14 +108,15 @@ class Note_rep:
         self.start_time = obj.actual_time
         self.duration = duration
 
-    def __str__(self):
-        return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'
+    # def __str__(self):
+    #     return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'
 
 
 #output intermediate
 def conv_from_midi(track):
     if True:
-        print('I am function')
+        print("I am function")
+    print("hoobastank is great")
     intermediate = []
     curr_time = 0
     desirable = []
@@ -209,15 +210,14 @@ def conv_from_midi(track):
             for i in desirable:
                 print(i)
 
-    
+    print('hoobastank')
     return desirable
 
 def conv_to_midi(converted):
     pass
 
 
-converted=conv_from_midi(midi_data.tracks[1])
+converted=conv_from_midi(midi_data.tracks[3])
 print(len(converted))
 
 f.close()
-print('srinvas vivek')
