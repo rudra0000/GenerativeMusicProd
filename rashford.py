@@ -28,7 +28,7 @@ def print_object_attributes(objects):
         # print(" | ".join(f"{key}={value}" for key, value in attributes.items()))
         
         f.write(" | ".join(f"{key}={value}" for key, value in attributes.items()))
-        f.write("\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n")
+        f.write("\n")
 
 
 class CustomMetaMessage:
@@ -57,7 +57,8 @@ class CustomMetaMessage:
 class CustomMessage:
     def __init__(self, type, skip_checks=False, extra_info=None, **args):
         # Initialize the base Message object
-        self.message = mido.Message(type, **args)
+        self.message = mido.messages.messages.Message(type, **args)
+        # self.message = mido.Message(type, **args)
         # Store the actual time separately
         self.actual_time = 0
 
@@ -93,27 +94,37 @@ class Note_rep:
         self.start_time=start_time
         self.duration=duration
     
-    def __init__(self, obj: CustomMessage, duration=0): # use this
+    def __init__(self, obj, duration=0): # use this
         self.type = 'note'
+        print("here")
+        self.obj = obj
+        print('ketan', obj.type)
         if obj.type == 'note_on':
+            print("note")
+            print(obj.actual_time)
             self.channel = obj.channel
             self.note = obj.note
             self.velocity = obj.velocity
             self.start_time = obj.actual_time
             self.duration = duration
         else:
+            print("not_note")
             self.type = 'not_note'
 
-    def __init__(self, obj: CustomMetaMessage, duration=0): # we use the last two constructors
-        self.type = 'not_note'
-        self.channel = obj.channel
-        self.note = obj.note
-        self.velocity = obj.velocity
-        self.start_time = obj.actual_time
-        self.duration = duration
+    # def __init__(self, obj, duration=0): # we use the last two constructors
+    #     self.type = 'not_note'
+    #     self.channel = obj.channel
+    #     self.note = obj.note
+    #     self.velocity = obj.velocity
+    #     self.start_time = obj.actual_time
+    #     self.duration = duration
 
     def __str__(self):
-        return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'
+        if self.type == 'note':
+            return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'      
+        else:
+            print('not_note')
+            return f'type: {self.type}, obj: {self.obj}'
 
 LIM=10
 #output intermediate
@@ -150,7 +161,6 @@ def conv_from_midi(track):
         
         if custom_msg.type=='note_on':
             # print(intermediate[i].type)
-            print("-------")
             for j in range(i+1,len(intermediate)):
                 higher_lvl_message = intermediate[j]
                 condition1 = (isinstance(intermediate[j], CustomMessage)) and (higher_lvl_message.type == 'note_off') and (higher_lvl_message.note == custom_msg.note)
@@ -158,15 +168,19 @@ def conv_from_midi(track):
                 if condition1 or condition2 :
                     # assume that all note_on with vel=0 are converted to note_off events
                     duration = intermediate[j].actual_time - custom_msg.actual_time
+                    print(type(custom_msg))
+                    print(custom_msg.type)
                     note_rep = Note_rep(custom_msg, duration=duration)
                     desirable.append(note_rep)
                     break
-                else:
-                    # print('NOTA')
-                    pass
-                    # print(intermediate[j].velocity)
-                    # print(intermediate[j].type)
-    
+        else:
+            note_rep = Note_rep(custom_msg, duration=0)
+            desirable.append(note_rep)
+            # print('NOTA')
+            pass
+            # print(intermediate[j].velocity)
+            # print(intermediate[j].type)
+
     for line in intermediate:
         fwrite(line.__str__(), 'intermediate.txt')
     for line in desirable:

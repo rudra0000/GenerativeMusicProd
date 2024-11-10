@@ -175,19 +175,20 @@ def conv_from_midi(track):
             print("-------")
             for j in range(i+1,len(intermediate)):
                 higher_lvl_message = intermediate[j]
-                print("---- Debug Info ----")
-                print("higher_lvl_message:", higher_lvl_message)
-                print("higher_lvl_message.type:", getattr(higher_lvl_message, 'type', None))
-                print("higher_lvl_message.note:", getattr(higher_lvl_message, 'note', None))
-                print("higher_lvl_message.velocity:", getattr(higher_lvl_message, 'velocity', None))
-                print("custom_msg.note:", getattr(custom_msg, 'note', None))
-                print("---------------------")
+                # print("---- Debug Info ----")
+                # print("higher_lvl_message:", higher_lvl_message)
+                # print("higher_lvl_message.type:", getattr(higher_lvl_message, 'type', None))
+                # print("higher_lvl_message.note:", getattr(higher_lvl_message, 'note', None))
+                # print("higher_lvl_message.velocity:", getattr(higher_lvl_message, 'velocity', None))
+                # print("custom_msg.note:", getattr(custom_msg, 'note', None))
+                # print("---------------------")
                 condition1 = (isinstance(intermediate[j], CustomMessage)) and (higher_lvl_message.type == 'note_off') and (higher_lvl_message.note == custom_msg.note)
                 condition2 = (higher_lvl_message.type == 'note_on') and (higher_lvl_message.note == custom_msg.note) and (higher_lvl_message.velocity == 0)
                 if condition1 or condition2 :
                     # assume that all note_on with vel=0 are converted to note_off events
                     duration = intermediate[j].actual_time - custom_msg.actual_time
-                    note_rep = Note_rep(custom_message, duration=duration)
+                    print(type(custom_msg))
+                    note_rep = Note_rep(custom_msg, duration=duration)
                     desirable.append(note_rep)
                     print('brokean')
                     break

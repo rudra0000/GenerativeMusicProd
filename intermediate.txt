@@ -1,510 +1,247 @@
 meta_message=MetaMessage('track_name', name='Drums', time=0) | actual_time=0
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=program_change | time=0 | program=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=7 | value=100 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=10 | value=64 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=pitchwheel | time=0 | channel=9 | pitch=0
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=101 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=100 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=6 | value=12 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=38 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=10 | value=64 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=7 | value=100 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=pitchwheel | time=0 | channel=9 | pitch=0
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=101 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=100 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=6 | value=12 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=38 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=10 | value=64 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=7 | value=100 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=pitchwheel | time=0 | channel=9 | pitch=0
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=program_change | time=0 | program=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=101 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=100 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=6 | value=12 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=38 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=10 | value=64 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=7 | value=100 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=pitchwheel | time=0 | channel=9 | pitch=0
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=program_change | time=0 | program=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=39 | actual_time=48
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=96
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=96
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=144
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=0 | actual_time=144
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=192
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=240
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=288
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=0 | actual_time=288
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=48 | actual_time=336
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=336
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=384
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=432
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=480
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=480
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=528
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=0 | actual_time=528
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=576
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=624
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=672
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=672
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=720
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=0 | actual_time=720
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=768
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=816
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=864
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=0 | actual_time=864
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=48 | actual_time=912
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=912
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=960
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=1008
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=1056
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=0 | actual_time=1056
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=48 | actual_time=1104
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=1104
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=1152
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=1200
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=1248
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=1248
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=1296
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=0 | actual_time=1296
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=1344
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=1392
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=1440
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=0 | actual_time=1440
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=48 | actual_time=1488
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=1488
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=1536
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=1584
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=1632
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=1632
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=1680
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=0 | actual_time=1680
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=1728
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=1776
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=1824
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=0 | actual_time=1824
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=48 | actual_time=1872
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=1872
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=1920
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=1968
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=2016
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=0 | actual_time=2016
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=48 | actual_time=2064
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=2064
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=2112
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=2160
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=2208
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=2208
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=2256
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=0 | actual_time=2256
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=2304
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=2352
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=2400
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=2400
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=2448
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=0 | actual_time=2448
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=2496
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=2544
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=2592
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=2592
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=2640
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=0 | actual_time=2640
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=2688
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=2736
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=48 | actual_time=2784
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=48 | actual_time=2832
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=98 time=144 | actual_time=2976
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=42 velocity=0 time=48 | actual_time=3024
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=3072
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=3120
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=3168
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=3168
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=3216
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=3216
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=3264
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=3312
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=48 | actual_time=3360
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=3360
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=3408
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=0 | actual_time=3408
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=3456
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=3504
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=48 | actual_time=3552
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=3552
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=3600
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=0 | actual_time=3600
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=3648
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=3696
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=48 | actual_time=3744
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=3744
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=3792
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=0 | actual_time=3792
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=3840
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=3888
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=3936
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=3936
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=3984
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=3984
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4032
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=4080
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4128
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=4128
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=4176
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=4176
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4224
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=4272
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4320
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=4320
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=4368
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=4368
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4416
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=4464
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=48 | actual_time=4512
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=4512
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=4560
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=0 | actual_time=4560
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4608
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=4656
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4704
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=4704
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=4752
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=4752
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4800
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=4848
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4896
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=4896
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=4944
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=4944
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=4992
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=5040
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5088
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=5088
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=5136
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=5136
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5184
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=5232
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5280
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=5280
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=5328
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=5328
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5376
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=5424
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5472
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=5472
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=5520
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=5520
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5568
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=5616
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5664
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=5664
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=5712
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=5712
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5760
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=5808
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=48 | actual_time=5856
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=0 | actual_time=5856
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=5904
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=0 | actual_time=5904
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=5952
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=48 | actual_time=6000
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=6048
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=98 time=0 | actual_time=6048
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=39 velocity=0 time=48 | actual_time=6096
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=6096
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=98 time=48 | actual_time=6144
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=49 velocity=98 time=0 | actual_time=6144
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=49 velocity=0 time=72 | actual_time=6216
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 message=note_on channel=0 note=36 velocity=0 time=0 | actual_time=6216
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=309 | control=101 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=100 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=6 | value=12 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=38 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=10 | value=64 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=7 | value=100 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=pitchwheel | time=0 | channel=9 | pitch=0
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=program_change | time=0 | program=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=101 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=100 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=6 | value=12 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=38 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=10 | value=64 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=7 | value=100 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=pitchwheel | time=0 | channel=9 | pitch=0
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=program_change | time=0 | program=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=101 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=100 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=6 | value=12 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=1 | control=38 | value=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=10 | value=64 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=control_change | time=0 | control=7 | value=100 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=pitchwheel | time=0 | channel=9 | pitch=0
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 type=program_change | time=0 | program=0 | channel=9
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 meta_message=MetaMessage('end_of_track', time=0) | actual_time=6534
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-ocity: 0
-Message(notes) type: note_on, time: 48, actual_time: 2400, note: 42, velocity: 98
-Message(notes) type: note_on, time: 0, actual_time: 2400, note: 36, velocity: 98
-Message(notes) type: note_on, time: 48, actual_time: 2448, note: 36, velocity: 0
-Message(notes) type: note_on, time: 0, actual_time: 2448, note: 42, velocity: 0
-Message(notes) type: note_on, time: 48, actual_time: 2496, note: 36, velocity: 98
-Message(notes) type: note_on, time: 48, actual_time: 2544, note: 36, velocity: 0
-Message(notes) type: note_on, time: 48, actual_time: 2592, note: 42, velocity: 98
-Message(notes) type: note_on, time: 0, actual_time: 2592, note: 36, velocity: 98
-Message(notes) type: note_on, time: 48, actual_time: 2640, note: 36, velocity: 0
-Message(notes) type: note_on, time: 0, actual_time: 2640, note: 42, velocity: 0
-Message(notes) type: note_on, time: 48, actual_time: 2688, note: 36, velocity: 98
-Message(notes) type: note_on, time: 48, actual_time: 2736, note: 36, velocity: 0
-Message(notes) type: note_on, time: 48, actual_time: 2784, note: 42, velocity: 98
-Message(notes) type: note_on, time: 48, actual_time: 2832, note: 42, velocity: 0
-Message(notes) type: note_on, time: 144, actual_time: 2976, note: 42, velocity: 98
-Message(notes) type: note_on, time: 48, actual_time: 3024, note: 42, velocity: 0
-Message(notes) type: note_on, time: 48, actual_time: 3072, note: 36, velocity: 98
-Message(notes) type: note_on, time: 48, actual_time: 3120, note: 36, velocity: 0
-Message(notes) type: note_on, time: 48, actual_time: 3168, note: 36, velocity: 98
-Message(notes) type: note_on, time: 0, actual_time: 3168, note: 39, velocity: 98
+, time: 0, actual_time: 3168, note: 39, velocity: 98
 Message(notes) type: note_on, time: 48, actual_time: 3216, note: 39, velocity: 0
 Message(notes) type: note_on, time: 0, actual_time: 3216, note: 36, velocity: 0
 Message(notes) type: note_on, time: 48, actual_time: 3264, note: 36, velocity: 98
