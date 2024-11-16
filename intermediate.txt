@@ -1,424 +1,83 @@
-pitchwheel channel=2 pitch=0 time=0
-control_change channel=2 control=7 value=103 time=0
-control_change channel=2 control=10 value=63 time=0
-control_change channel=2 control=93 value=0 time=0
-control_change channel=2 control=91 value=0 time=0
-control_change channel=2 control=95 value=0 time=0
-control_change channel=2 control=92 value=0 time=0
-control_change channel=2 control=11 value=127 time=0
-program_change channel=2 program=25 time=0
-control_change channel=3 control=7 value=103 time=0
-control_change channel=3 control=10 value=63 time=0
-control_change channel=3 control=93 value=0 time=0
-control_change channel=3 control=91 value=0 time=0
-control_change channel=3 control=95 value=0 time=0
-control_change channel=3 control=92 value=0 time=0
-control_change channel=3 control=11 value=127 time=0
-program_change channel=3 program=25 time=0
-Message(notes) type: note_on, time: 0, actual_time: 0, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 0, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 480
-type: note_off, time: 0, actual_time: 480
-Message(notes) type: note_on, time: 0, actual_time: 480, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 480, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 720
-type: note_off, time: 0, actual_time: 720
-Message(notes) type: note_on, time: 0, actual_time: 720, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 720, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 960
-type: note_off, time: 0, actual_time: 960
-Message(notes) type: note_on, time: 0, actual_time: 960, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 960, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 1200
-type: note_off, time: 0, actual_time: 1200
-Message(notes) type: note_on, time: 0, actual_time: 1200, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 1200, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 1440
-type: note_off, time: 0, actual_time: 1440
-Message(notes) type: note_on, time: 0, actual_time: 1440, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 1440, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 1680
-type: note_off, time: 0, actual_time: 1680
-Message(notes) type: note_on, time: 0, actual_time: 1680, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 1680, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 1920
-type: note_off, time: 0, actual_time: 1920
-Message(notes) type: note_on, time: 240, actual_time: 2160, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 2160, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 2400
-type: note_off, time: 0, actual_time: 2400
-Message(notes) type: note_on, time: 0, actual_time: 2400, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 2400, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 2640
-type: note_off, time: 0, actual_time: 2640
-Message(notes) type: note_on, time: 0, actual_time: 2640, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 2640, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 2880
-type: note_off, time: 0, actual_time: 2880
-Message(notes) type: note_on, time: 0, actual_time: 2880, note: 66, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 2880, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 3360
-type: note_off, time: 0, actual_time: 3360
-Message(notes) type: note_on, time: 0, actual_time: 3360, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 3360, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 3840
-type: note_off, time: 0, actual_time: 3840
-Message(notes) type: note_on, time: 0, actual_time: 3840, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 3840, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 4320
-type: note_off, time: 0, actual_time: 4320
-Message(notes) type: note_on, time: 0, actual_time: 4320, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 4320, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 4560
-type: note_off, time: 0, actual_time: 4560
-Message(notes) type: note_on, time: 0, actual_time: 4560, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 4560, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 4800
-type: note_off, time: 0, actual_time: 4800
-Message(notes) type: note_on, time: 0, actual_time: 4800, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 4800, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 5040
-type: note_off, time: 0, actual_time: 5040
-Message(notes) type: note_on, time: 0, actual_time: 5040, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 5040, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 5280
-type: note_off, time: 0, actual_time: 5280
-Message(notes) type: note_on, time: 0, actual_time: 5280, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 5280, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 5520
-type: note_off, time: 0, actual_time: 5520
-Message(notes) type: note_on, time: 0, actual_time: 5520, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 5520, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 6000
-type: note_off, time: 0, actual_time: 6000
-Message(notes) type: note_on, time: 0, actual_time: 6000, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 6000, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 6240
-type: note_off, time: 0, actual_time: 6240
-Message(notes) type: note_on, time: 0, actual_time: 6240, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 6240, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 6480
-type: note_off, time: 0, actual_time: 6480
-Message(notes) type: note_on, time: 0, actual_time: 6480, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 6480, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 6720
-type: note_off, time: 0, actual_time: 6720
-Message(notes) type: note_on, time: 0, actual_time: 6720, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 6720, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 6960
-type: note_off, time: 0, actual_time: 6960
-Message(notes) type: note_on, time: 0, actual_time: 6960, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 6960, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 7200
-type: note_off, time: 0, actual_time: 7200
-Message(notes) type: note_on, time: 0, actual_time: 7200, note: 62, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 7200, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 7680
-type: note_off, time: 0, actual_time: 7680
-Message(notes) type: note_on, time: 0, actual_time: 7680, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 7680, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 8160
-type: note_off, time: 0, actual_time: 8160
-Message(notes) type: note_on, time: 0, actual_time: 8160, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 8160, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 8400
-type: note_off, time: 0, actual_time: 8400
-Message(notes) type: note_on, time: 0, actual_time: 8400, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 8400, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 8640
-type: note_off, time: 0, actual_time: 8640
-Message(notes) type: note_on, time: 0, actual_time: 8640, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 8640, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 8880
-type: note_off, time: 0, actual_time: 8880
-Message(notes) type: note_on, time: 0, actual_time: 8880, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 8880, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 9120
-type: note_off, time: 0, actual_time: 9120
-Message(notes) type: note_on, time: 0, actual_time: 9120, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 9120, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 9360
-type: note_off, time: 0, actual_time: 9360
-Message(notes) type: note_on, time: 0, actual_time: 9360, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 9360, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 9600
-type: note_off, time: 0, actual_time: 9600
-Message(notes) type: note_on, time: 240, actual_time: 9840, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 9840, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 10080
-type: note_off, time: 0, actual_time: 10080
-Message(notes) type: note_on, time: 0, actual_time: 10080, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 10080, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 10320
-type: note_off, time: 0, actual_time: 10320
-Message(notes) type: note_on, time: 0, actual_time: 10320, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 10320, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 10560
-type: note_off, time: 0, actual_time: 10560
-Message(notes) type: note_on, time: 0, actual_time: 10560, note: 66, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 10560, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 11040
-type: note_off, time: 0, actual_time: 11040
-Message(notes) type: note_on, time: 0, actual_time: 11040, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 11040, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 11520
-type: note_off, time: 0, actual_time: 11520
-Message(notes) type: note_on, time: 0, actual_time: 11520, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 11520, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 12000
-type: note_off, time: 0, actual_time: 12000
-Message(notes) type: note_on, time: 0, actual_time: 12000, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 12000, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 12240
-type: note_off, time: 0, actual_time: 12240
-Message(notes) type: note_on, time: 0, actual_time: 12240, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 12240, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 12480
-type: note_off, time: 0, actual_time: 12480
-Message(notes) type: note_on, time: 0, actual_time: 12480, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 12480, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 12720
-type: note_off, time: 0, actual_time: 12720
-Message(notes) type: note_on, time: 0, actual_time: 12720, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 12720, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 12960
-type: note_off, time: 0, actual_time: 12960
-Message(notes) type: note_on, time: 0, actual_time: 12960, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 12960, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 13200
-type: note_off, time: 0, actual_time: 13200
-Message(notes) type: note_on, time: 0, actual_time: 13200, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 13200, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 13680
-type: note_off, time: 0, actual_time: 13680
-Message(notes) type: note_on, time: 0, actual_time: 13680, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 13680, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 13920
-type: note_off, time: 0, actual_time: 13920
-Message(notes) type: note_on, time: 0, actual_time: 13920, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 13920, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 14160
-type: note_off, time: 0, actual_time: 14160
-Message(notes) type: note_on, time: 0, actual_time: 14160, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 14160, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 14400
-type: note_off, time: 0, actual_time: 14400
-Message(notes) type: note_on, time: 0, actual_time: 14400, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 14400, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 14640
-type: note_off, time: 0, actual_time: 14640
-Message(notes) type: note_on, time: 0, actual_time: 14640, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 14640, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 14880
-type: note_off, time: 0, actual_time: 14880
-Message(notes) type: note_on, time: 0, actual_time: 14880, note: 62, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 14880, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 15360
-type: note_off, time: 0, actual_time: 15360
-Message(notes) type: note_on, time: 0, actual_time: 15360, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 15360, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 15840
-type: note_off, time: 0, actual_time: 15840
-Message(notes) type: note_on, time: 0, actual_time: 15840, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 15840, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 16080
-type: note_off, time: 0, actual_time: 16080
-Message(notes) type: note_on, time: 0, actual_time: 16080, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 16080, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 16320
-type: note_off, time: 0, actual_time: 16320
-Message(notes) type: note_on, time: 0, actual_time: 16320, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 16320, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 16560
-type: note_off, time: 0, actual_time: 16560
-Message(notes) type: note_on, time: 0, actual_time: 16560, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 16560, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 16800
-type: note_off, time: 0, actual_time: 16800
-Message(notes) type: note_on, time: 0, actual_time: 16800, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 16800, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 17040
-type: note_off, time: 0, actual_time: 17040
-Message(notes) type: note_on, time: 0, actual_time: 17040, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 17040, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 17280
-type: note_off, time: 0, actual_time: 17280
-Message(notes) type: note_on, time: 240, actual_time: 17520, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 17520, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 17760
-type: note_off, time: 0, actual_time: 17760
-Message(notes) type: note_on, time: 0, actual_time: 17760, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 17760, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 18000
-type: note_off, time: 0, actual_time: 18000
-Message(notes) type: note_on, time: 0, actual_time: 18000, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 18000, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 18240
-type: note_off, time: 0, actual_time: 18240
-Message(notes) type: note_on, time: 0, actual_time: 18240, note: 66, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 18240, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 18720
-type: note_off, time: 0, actual_time: 18720
-Message(notes) type: note_on, time: 0, actual_time: 18720, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 18720, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 19200
-type: note_off, time: 0, actual_time: 19200
-Message(notes) type: note_on, time: 0, actual_time: 19200, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 19200, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 19680
-type: note_off, time: 0, actual_time: 19680
-Message(notes) type: note_on, time: 0, actual_time: 19680, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 19680, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 19920
-type: note_off, time: 0, actual_time: 19920
-Message(notes) type: note_on, time: 0, actual_time: 19920, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 19920, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 20160
-type: note_off, time: 0, actual_time: 20160
-Message(notes) type: note_on, time: 0, actual_time: 20160, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 20160, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 20400
-type: note_off, time: 0, actual_time: 20400
-Message(notes) type: note_on, time: 0, actual_time: 20400, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 20400, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 20640
-type: note_off, time: 0, actual_time: 20640
-Message(notes) type: note_on, time: 0, actual_time: 20640, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 20640, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 20880
-type: note_off, time: 0, actual_time: 20880
-Message(notes) type: note_on, time: 0, actual_time: 20880, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 20880, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 21360
-type: note_off, time: 0, actual_time: 21360
-Message(notes) type: note_on, time: 0, actual_time: 21360, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 21360, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 21600
-type: note_off, time: 0, actual_time: 21600
-Message(notes) type: note_on, time: 0, actual_time: 21600, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 21600, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 21840
-type: note_off, time: 0, actual_time: 21840
-Message(notes) type: note_on, time: 0, actual_time: 21840, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 21840, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 22080
-type: note_off, time: 0, actual_time: 22080
-Message(notes) type: note_on, time: 0, actual_time: 22080, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 22080, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 22320
-type: note_off, time: 0, actual_time: 22320
-Message(notes) type: note_on, time: 0, actual_time: 22320, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 22320, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 22560
-type: note_off, time: 0, actual_time: 22560
-Message(notes) type: note_on, time: 0, actual_time: 22560, note: 62, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 22560, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 23040
-type: note_off, time: 0, actual_time: 23040
-Message(notes) type: note_on, time: 0, actual_time: 23040, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 23040, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 23520
-type: note_off, time: 0, actual_time: 23520
-Message(notes) type: note_on, time: 0, actual_time: 23520, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 23520, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 23760
-type: note_off, time: 0, actual_time: 23760
-Message(notes) type: note_on, time: 0, actual_time: 23760, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 23760, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 24000
-type: note_off, time: 0, actual_time: 24000
-Message(notes) type: note_on, time: 0, actual_time: 24000, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 24000, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 24240
-type: note_off, time: 0, actual_time: 24240
-Message(notes) type: note_on, time: 0, actual_time: 24240, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 24240, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 24480
-type: note_off, time: 0, actual_time: 24480
-Message(notes) type: note_on, time: 0, actual_time: 24480, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 24480, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 24720
-type: note_off, time: 0, actual_time: 24720
-Message(notes) type: note_on, time: 0, actual_time: 24720, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 24720, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 24960
-type: note_off, time: 0, actual_time: 24960
-Message(notes) type: note_on, time: 240, actual_time: 25200, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 25200, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 25440
-type: note_off, time: 0, actual_time: 25440
-Message(notes) type: note_on, time: 0, actual_time: 25440, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 25440, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 25680
-type: note_off, time: 0, actual_time: 25680
-Message(notes) type: note_on, time: 0, actual_time: 25680, note: 67, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 25680, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 25920
-type: note_off, time: 0, actual_time: 25920
-Message(notes) type: note_on, time: 0, actual_time: 25920, note: 66, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 25920, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 26400
-type: note_off, time: 0, actual_time: 26400
-Message(notes) type: note_on, time: 0, actual_time: 26400, note: 64, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 26400, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 26880
-type: note_off, time: 0, actual_time: 26880
-Message(notes) type: note_on, time: 0, actual_time: 26880, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 26880, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 27360
-type: note_off, time: 0, actual_time: 27360
-Message(notes) type: note_on, time: 0, actual_time: 27360, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 27360, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 27600
-type: note_off, time: 0, actual_time: 27600
-Message(notes) type: note_on, time: 0, actual_time: 27600, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 27600, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 27840
-type: note_off, time: 0, actual_time: 27840
-Message(notes) type: note_on, time: 0, actual_time: 27840, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 27840, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 28080
-type: note_off, time: 0, actual_time: 28080
-Message(notes) type: note_on, time: 0, actual_time: 28080, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 28080, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 28320
-type: note_off, time: 0, actual_time: 28320
-Message(notes) type: note_on, time: 0, actual_time: 28320, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 28320, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 28560
-type: note_off, time: 0, actual_time: 28560
-Message(notes) type: note_on, time: 0, actual_time: 28560, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 28560, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 29040
-type: note_off, time: 0, actual_time: 29040
-Message(notes) type: note_on, time: 0, actual_time: 29040, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 29040, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 29280
-type: note_off, time: 0, actual_time: 29280
-Message(notes) type: note_on, time: 0, actual_time: 29280, note: 59, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 29280, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 29520
-type: note_off, time: 0, actual_time: 29520
-Message(notes) type: note_on, time: 0, actual_time: 29520, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 29520, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 29760
-type: note_off, time: 0, actual_time: 29760
-Message(notes) type: note_on, time: 0, actual_time: 29760, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 29760, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 30000
-type: note_off, time: 0, actual_time: 30000
-Message(notes) type: note_on, time: 0, actual_time: 30000, note: 60, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 30000, note: 52, velocity: 95
-type: note_off, time: 240, actual_time: 30240
-type: note_off, time: 0, actual_time: 30240
-Message(notes) type: note_on, time: 0, actual_time: 30240, note: 62, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 30240, note: 52, velocity: 95
-type: note_off, time: 480, actual_time: 30720
-type: note_off, time: 0, actual_time: 30720
-Message(notes) type: note_on, time: 168960, actual_time: 199680, note: 66, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 199680, note: 61, velocity: 95
-Message(notes) type: note_on, time: 0, actual_time: 199680, note: 54, velocity: 95
-type: note_off, time: 7680, actual_time: 207360
-type: note_off, time: 0, actual_time: 207360
-type: note_off, time: 0, actual_time: 207360
-MetaMessage type: end_of_track, time: 0, actual_time: 207360
+MetaMessage type: track_name, time: 0, actual_time: 0
+type: program_change, time: 0, actual_time: 0
+type=note_on channel=9 note=31 velocity=50 time=30720 actual_time=30720
+type: note_off, time: 96, actual_time: 30816
+type=note_on channel=9 note=31 velocity=50 time=96 actual_time=30912
+type: note_off, time: 96, actual_time: 31008
+type=note_on channel=9 note=31 velocity=50 time=96 actual_time=31104
+type: note_off, time: 96, actual_time: 31200
+type=note_on channel=9 note=31 velocity=50 time=96 actual_time=31296
+type: note_off, time: 96, actual_time: 31392
+type=note_on channel=9 note=31 velocity=50 time=96 actual_time=31488
+type: note_off, time: 96, actual_time: 31584
+type=note_on channel=9 note=31 velocity=50 time=96 actual_time=31680
+type: note_off, time: 96, actual_time: 31776
+type=note_on channel=9 note=31 velocity=50 time=96 actual_time=31872
+type: note_off, time: 96, actual_time: 31968
+type=note_on channel=9 note=31 velocity=50 time=96 actual_time=32064
+type: note_off, time: 96, actual_time: 32160
+type=note_on channel=9 note=28 velocity=50 time=96 actual_time=32256
+type=note_on channel=9 note=35 velocity=50 time=0 actual_time=32256
+type=note_on channel=9 note=36 velocity=50 time=0 actual_time=32256
+type=note_on channel=9 note=37 velocity=50 time=0 actual_time=32256
+type=note_on channel=9 note=38 velocity=50 time=0 actual_time=32256
+type=note_on channel=9 note=39 velocity=50 time=0 actual_time=32256
+type: note_off, time: 96, actual_time: 32352
+type: note_off, time: 96, actual_time: 32448
+type: note_off, time: 0, actual_time: 32448
+type: note_off, time: 0, actual_time: 32448
+type: note_off, time: 0, actual_time: 32448
+type: note_off, time: 0, actual_time: 32448
+type=note_on channel=9 note=28 velocity=50 time=0 actual_time=32448
+type=note_on channel=9 note=35 velocity=50 time=0 actual_time=32448
+type=note_on channel=9 note=39 velocity=50 time=0 actual_time=32448
+type: note_off, time: 96, actual_time: 32544
+type: note_off, time: 0, actual_time: 32544
+type: note_off, time: 0, actual_time: 32544
+type=note_on channel=9 note=28 velocity=50 time=96 actual_time=32640
+type=note_on channel=9 note=39 velocity=50 time=0 actual_time=32640
+type: note_off, time: 96, actual_time: 32736
+type: note_off, time: 0, actual_time: 32736
+type=note_on channel=9 note=28 velocity=50 time=96 actual_time=32832
+type=note_on channel=9 note=35 velocity=50 time=0 actual_time=32832
+type=note_on channel=9 note=36 velocity=50 time=0 actual_time=32832
+type=note_on channel=9 note=39 velocity=50 time=0 actual_time=32832
+type: note_off, time: 96, actual_time: 32928
+type: note_off, time: 0, actual_time: 32928
+type: note_off, time: 0, actual_time: 32928
+type: note_off, time: 0, actual_time: 32928
+type=note_on channel=9 note=28 velocity=50 time=96 actual_time=33024
+type=note_on channel=9 note=39 velocity=50 time=0 actual_time=33024
+type: note_off, time: 96, actual_time: 33120
+type: note_off, time: 0, actual_time: 33120
+type=note_on channel=9 note=28 velocity=50 time=96 actual_time=33216
+type=note_on channel=9 note=35 velocity=50 time=0 actual_time=33216
+type=note_on channel=9 note=39 velocity=50 time=0 actual_time=33216
+type: note_off, time: 96, actual_time: 33312
+type: note_off, time: 0, actual_time: 33312
+type: note_off, time: 0, actual_time: 33312
+type=note_on channel=9 note=28 velocity=50 time=96 actual_time=33408
+type=note_on channel=9 note=39 velocity=50 time=0 actual_time=33408
+type: note_off, time: 96, actual_time: 33504
+type: note_off, time: 0, actual_time: 33504
+type=note_on channel=9 note=28 velocity=50 time=96 actual_time=33600
+type=note_on channel=9 note=35 velocity=50 time=0 actual_time=33600
+type=note_on channel=9 note=36 velocity=50 time=0 actual_time=33600
+type=note_on channel=9 note=37 velocity=50 time=0 actual_time=33600
+type=note_on channel=9 note=39 velocity=50 time=0 actual_time=33600
+type: note_off, time: 96, actual_time: 33696
+type: note_off, time: 0, actual_time: 33696
+type: note_off, time: 0, actual_time: 33696
+type: note_off, time: 0, actual_time: 33696
+type: note_off, time: 0, actual_time: 33696
+type=note_on channel=9 note=39 velocity=50 time=96 actual_time=33792
+type=note_on channel=9 note=38 velocity=50 time=0 actual_time=33792
+type=note_on channel=9 note=37 velocity=50 time=0 actual_time=33792
+type=note_on channel=9 note=36 velocity=50 time=0 actual_time=33792
+type=note_on channel=9 note=35 velocity=50 time=0 actual_time=33792
+type: note_off, time: 288, actual_time: 34080
+type: note_off, time: 0, actual_time: 34080
+type: note_off, time: 0, actual_time: 34080
+type: note_off, time: 0, actual_time: 34080
+type: note_off, time: 0, actual_time: 34080
+MetaMessage type: end_of_track, time: 0, actual_time: 34080
