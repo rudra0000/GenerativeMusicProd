@@ -58,7 +58,7 @@ rashford.save_track_to_midi(new_song, './test.mid',init_track=midi_track0)
 
 rating_dict = {} # maps the song's name to its a dictionary of its ratings
 
-best_files =['./midi_files/loser.mid', './midi_files/kryptonite.mid', './midi_files/duckandrun.mid', './midi_files/whenimgone.mid']
+best_files =['./midi_files/loser.mid']
 crazy_ratings_sum = 0
 direction_of_melody_sum = 0
 direction_stability_sum = 0
@@ -135,10 +135,10 @@ def rate_a_song(file):
     midi_track1 = midi_data.tracks[1]
     midi_track1 = rashford.conv_from_midi(midi_track1)
     rating = 0
-    rating += influence['crazy_rating'] * (raters.neighboring_pitch_range(midi_track1, 12) - crazy_rating_target)
-    rating += influence['direction_of_melody'] * (raters.direction_of_melody(midi_track1, 12) - direction_of_melody_target)
-    rating += influence['direction_stability'] * (raters.direction_stability(midi_track1) - direction_stability_target)
-    rating += influence['pitch_range'] * (raters.pitch_range(midi_track1) - pitch_range_target)
+    rating += influence['crazy_rating'] * abs(raters.neighboring_pitch_range(midi_track1, 12) - crazy_rating_target)
+    rating += influence['direction_of_melody'] * abs(raters.direction_of_melody(midi_track1, 12) - direction_of_melody_target)
+    rating += influence['direction_stability'] * abs(raters.direction_stability(midi_track1) - direction_stability_target)
+    rating += influence['pitch_range'] * abs(raters.pitch_range(midi_track1) - pitch_range_target)
     # rating += influence['scale_rating'] * (raters.calculate_scale_pattern_rating(midi_track1) - scale_rating_target)
     total_influence = influence['crazy_rating'] + influence['direction_of_melody'] + influence['direction_stability'] + influence['pitch_range']
     rating = rating/total_influence
