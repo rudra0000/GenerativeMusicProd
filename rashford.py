@@ -1,7 +1,8 @@
 import mido
 import os
-FILENAME='./FOB_swgd.mid'
-# FILENAME='./duckandrun.mid'
+# FILENAME='./FOB_swgd.mid'
+FILENAME='./duckandrun.mid'
+# FILENAME='alone.mid'
 midi_data=mido.MidiFile(filename=f'./midi_files/{FILENAME}')
 
 # class CustomMetaMessage(mido.MetaMessage):
@@ -328,7 +329,7 @@ def conv_to_midi(converted):
     return track2
 
 
-req_index = 3
+req_index = 1
 converted=conv_from_midi(midi_data.tracks[req_index])
 track2 = conv_to_midi(converted)
 
