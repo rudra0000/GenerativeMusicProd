@@ -249,12 +249,21 @@ def save_track_to_midi(track2, output_file_path, init_track=None):
     midi = mido.MidiFile()
     midi_track = mido.MidiTrack()
     if init_track is None:
+        for i in range(len(midi_track0)):
+            print(midi_track0[i])
         midi.tracks.append(midi_track0)
     elif init_track == '':
         pass
     else:
         midi.tracks.append(init_track)
-    midi.tracks.append(midi_track)
+    if type(track2[0]) is list:
+        for track in track2:
+            midi_track = mido.MidiTrack()
+            midi.tracks.append(midi_track)
+            for msg in track:
+                midi_track.append(msg)
+    else:
+        midi.tracks.append(midi_track)
     print("-------")
     print(len(track2))
     # Add messages to the track
