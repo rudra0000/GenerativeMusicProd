@@ -13,7 +13,6 @@ def pitch_mutator(track,range1,prob_mutation=0.3,prob_distribution=None):
         if random.random() < prob_mutation:
             track[i].note = random.choice(options)
     return track
-    pass
 def start_time_mutator(track,range1,prob_mutation=0.3,prob_distribution=None):
     hcf = 0
     for i in range(len(track)):
@@ -31,4 +30,16 @@ def start_time_mutator(track,range1,prob_mutation=0.3,prob_distribution=None):
         if random.random() < prob_mutation:
             track[i].start_time = random.choice(options)
     return track
-    pass
+
+def simplify_mutator(track,range1,prob_mutation=0.5,prob_distribution=None):
+    prev_note = -1
+    for i in range(len(track)):
+        if (i == 0):
+            continue
+        if (track[i].type != 'note'):
+            continue
+        if random.random() < prob_mutation:
+            if prev_note != -1:
+                track[i].note = prev_note
+            prev_note = track[i].note
+    return track

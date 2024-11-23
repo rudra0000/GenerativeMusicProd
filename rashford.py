@@ -1,9 +1,10 @@
 import mido
 import os
 # FILENAME='./FOB_swgd.mid'
-FILENAME='./duckandrun.mid'
+# FILENAME='./duckandrun.mid'
+FILENAME='./midi_files/kryptonite.mid'
 # FILENAME='alone.mid'
-midi_data=mido.MidiFile(filename=f'./midi_files/{FILENAME}')
+midi_data=mido.MidiFile(filename=f'{FILENAME}')
 
 # class CustomMetaMessage(mido.MetaMessage):
 #     def __init__(self, type, skip_checks=False, **kwargs):
@@ -249,8 +250,6 @@ def save_track_to_midi(track2, output_file_path, init_track=None):
     midi = mido.MidiFile()
     midi_track = mido.MidiTrack()
     if init_track is None:
-        for i in range(len(midi_track0)):
-            print(midi_track0[i])
         midi.tracks.append(midi_track0)
     elif init_track == '':
         pass
@@ -264,8 +263,8 @@ def save_track_to_midi(track2, output_file_path, init_track=None):
                 midi_track.append(msg)
     else:
         midi.tracks.append(midi_track)
-    print("-------")
-    print(len(track2))
+    # print("-------")
+    # print(len(track2))
     # Add messages to the track
     for msg in track2:
         if isinstance(msg, mido.MetaMessage):
@@ -273,11 +272,65 @@ def save_track_to_midi(track2, output_file_path, init_track=None):
         elif isinstance(msg, mido.messages.messages.Message):
             midi_track.append(msg)  # Add regular messages directly
         else:
-            print(f"Skipping unknown message type: {msg}")
+            print(f"Skipping unknown message type: {type(msg)}")
 
     # Save the MIDI file
     midi.save(output_file_path)
     print(f"MIDI file saved to {output_file_path}")
+
+
+# def save_track_to_midi(track2, output_file_path, init_track=None, tempo_bpm=10):
+#     # Create a new MIDI file and a track
+#     global midi_track0
+#     midi = mido.MidiFile()
+#     midi_track = mido.MidiTrack()
+    
+#     for msg in midi_track0:
+#         if msg.is_meta:
+#             print('---', msg)
+#     # Calculate tempo in microseconds per quarter note
+#     microseconds_per_quarter_note = int(60 * 1e6 / tempo_bpm)
+#     tempo_message = mido.MetaMessage('set_tempo', tempo=microseconds_per_quarter_note)
+    
+#     # Add the initial track and tempo
+#     if init_track is None:
+#         midi.tracks.append(midi_track0)
+#     elif init_track == '':
+#         pass
+#     else:
+#         midi.tracks.append(init_track)
+    
+#     midi_track.append(tempo_message)  # Set tempo at the beginning of the track
+    
+#     if type(track2[0]) is list:
+#         for track in track2:
+#             midi_track = mido.MidiTrack()
+#             midi.tracks.append(midi_track)
+#             for msg in track:
+#                 midi_track.append(msg)
+#     else:
+#         midi.tracks.append(midi_track)
+    
+#     # Add messages to the track
+#     for msg in track2:
+#         if isinstance(msg, mido.MetaMessage):
+#             midi_track.append(msg)  # Add meta messages directly
+#         elif isinstance(msg, mido.messages.messages.Message):
+#             midi_track.append(msg)  # Add regular messages directly
+#         else:
+#             print(f"Skipping unknown message type: {type(msg)}")
+    
+#     # Save the MIDI file
+#     midi.save(output_file_path)
+#     print(f"MIDI file saved to {output_file_path}")
+
+
+
+
+
+
+
+
 
 def conv_to_midi(converted):
     intermediate2 = []
@@ -364,9 +417,6 @@ for i in range(0, len(track2)):
         if (track2[i] != track[i]):
             if __name__ == "main":
                 print('point of difference')
-                print(i)
-                print(track2[i])
-                print(track[i])
             break
     except:
         print('can\'t compare')
