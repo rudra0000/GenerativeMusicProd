@@ -12,10 +12,10 @@ midi_data=mido.MidiFile(filename=f'./midi_files/{FILENAME}')
 #         self.actual_time = 0
 midi_track0 = midi_data.tracks[0]
 
-y = os.listdir()
+y = os.listdir('./debug_files')
 for x in y:
     if '.txt' in x:
-        f = open(x, 'w')
+        f = open('./debug_files/' + x, 'w')
         f.close()
 
 def fwrite(str1, filename):
@@ -237,18 +237,23 @@ def conv_from_midi(track):
             # print(intermediate[j].type)
 
     for line in intermediate:
-        fwrite(line.__str__(), 'intermediate.txt')
+        fwrite(line.__str__(), './debug_files/intermediate.txt')
     for line in desirable:
-        fwrite(line.__str__(), 'desirable.txt')
+        fwrite(line.__str__(), './debug_files/desirable.txt')
 
     return desirable
 
-def save_track_to_midi(track2, output_file_path):
+def save_track_to_midi(track2, output_file_path, init_track=None):
     # Create a new MIDI file and a track
     global midi_track0
     midi = mido.MidiFile()
     midi_track = mido.MidiTrack()
-    midi.tracks.append(midi_track0)
+    if init_track is None:
+        midi.tracks.append(midi_track0)
+    elif init_track == '':
+        pass
+    else:
+        midi.tracks.append(init_track)
     midi.tracks.append(midi_track)
     print("-------")
     print(len(track2))
@@ -284,7 +289,7 @@ def conv_to_midi(converted):
             intermediate2.append(note_rep.obj)
 
     for line in intermediate2:
-        fwrite(line.__str__(), 'intermediate2.txt')
+        fwrite(line.__str__(), './debug_files/intermediate2.txt')
     
     # track2 = [] 
     # # go back to midi representation
@@ -334,27 +339,31 @@ converted=conv_from_midi(midi_data.tracks[req_index])
 track2 = conv_to_midi(converted)
 
 track = midi_data.tracks[req_index]
-with open ('track', 'w') as file:
+with open ('./debug_files/track', 'w') as file:
     for element in track:
         file.write(str(element) + '\n')
 
-with open ('track2', 'w') as file:
+with open ('./debug_files/track2', 'w') as file:
     for element in track2:
         file.write(str(element) + '\n')
 
 
-save_track_to_midi(track2, 'output.mid')
-save_track_to_midi(track, 'input.mid')
+save_track_to_midi(track2, './debug_files/output.mid')
+save_track_to_midi(track, './debug_files/input.mid')
 for i in range(0, len(track2)):
     try:
         if (track2[i] != track[i]):
-            print('point of difference')
-            print(i)
-            print(track2[i])
-            print(track[i])
+            if __name__ == "main":
+                print('point of difference')
+                print(i)
+                print(track2[i])
+                print(track[i])
             break
     except:
         print('can\'t compare')
         print(type(track[i]), type(track2[i]))
 # print(midi_data.tracks[0]['set_tempo'])
 f.close()
+
+
+print('----------------------------------------------------rashford-----------------------------------------------------------------------------------')
