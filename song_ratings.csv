@@ -1,0 +1,4 @@
+Song Name,Crazy Rating,Direction of Melody,Direction Stability,Pitch Range,Repetition Rating,Equal Consecutive Notes Rating,Unique Rhythm Values,Final Rating
+./midi_files/loser.mid,0.15,0.2,0.35,0.6363636363636364,1.95,0.0,0.003538928210313448,0.3312414919088326
+./midi_files/home_riff.mid,0.0,0.65,0.75,0.8333333333333334,12.3,0.0,0.13636363636363635,1.8954545454545457
+./midi_files/dead_memories.mid,0.0,0.3333333333333333,0.5833333333333334,0.8888888888888888,2.7083333333333335,0.25,0.42857142857142855,0.5415635951350237

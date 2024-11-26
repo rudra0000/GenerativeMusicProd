@@ -1,3 +1,4 @@
+import os
 def neighboring_pitch_range(track,range1):
     # No of Crazy Notes
     # detect notes with pitch value atleast one octave away from the previous note
@@ -232,3 +233,89 @@ def calculate_scale_pattern_rating(track_notes):
 
     return max(0, min(R_r, 1))  # Ensure the result is clamped between 0 and 1
 
+
+def equal_consecutive_notes(track):
+    """
+    Rates how many times two consecutive notes share the same pitch value.
+    
+    Args:
+    track (list): A list of note objects, each having a 'pitch' attribute.
+    
+    Returns:
+    float: The rating calculated as the number of consecutive notes with the same pitch
+           divided by the total number of notes.
+    """
+    if not track:
+        return 0.0
+    
+    consecutive_same_pitch = 0
+    total_notes = 0
+    previous_note = None
+    
+    for item in track:
+        if hasattr(item, 'note'):
+            total_notes += 1
+            if previous_note is not None and item.note == previous_note.note:
+                consecutive_same_pitch += 1
+            previous_note = item
+    
+    if total_notes == 0:
+        return 0.0
+    
+    return consecutive_same_pitch / total_notes
+
+def unique_rhythm_values(track):
+    """
+    Rates the variety of rhythm values in a track.
+    
+    Args:
+    track (list): A list of note objects, each having a 'duration' attribute.
+    
+    Returns:
+    float: The rating calculated as the number of unique rhythm values divided by the total number of notes.
+    """
+    if not track:
+        return 0.0
+    
+    unique_rhythms = set(note.duration for note in track)
+    total_notes = len(track)
+    
+    return len(unique_rhythms) / total_notes
+
+
+def repetition_rating(track):
+    """
+    Identifies repetitions in the track and calculates the repetition rating.
+    
+    Args:
+    track (list): A list of note objects, each having 'pitch' and 'duration' attributes.
+    
+    Returns:
+    float: The rating calculated as the number of pitch or rhythm values within patterns
+           divided by the total number of pitch or rhythm values.
+    """
+    if not track:
+        return 0.0
+    
+    # Convert track to a string of pitches for pattern detection
+    pitch_sequence = ''.join(str(note.note) for note in track if note.type == 'note')
+    
+    # Find all repeating patterns using a suffix array approach
+    suffixes = sorted((pitch_sequence[i:], i) for i in range(len(pitch_sequence)))
+    lcp = [0] * len(suffixes)
+    
+    for i in range(1, len(suffixes)):
+        lcp[i] = len(os.path.commonprefix([suffixes[i - 1][0], suffixes[i][0]]))
+    
+    # Identify patterns that are at least 1% of the total track length
+    min_pattern_length = max(1, len(track) // 100)
+    patterns = [suffixes[i][0][:lcp[i]] for i in range(1, len(lcp)) if lcp[i] >= min_pattern_length]
+    
+    # Sort patterns by how much of the track they cover
+    patterns = sorted(set(patterns), key=lambda p: -pitch_sequence.count(p) * len(p))
+    
+    # Calculate the rating
+    covered_values = sum(pitch_sequence.count(p) * len(p) for p in patterns)
+    total_values = len(pitch_sequence)
+    
+    return covered_values / total_values
