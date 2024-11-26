@@ -61,7 +61,7 @@ class Note_rep:
             self.channel = obj.channel
             self.note = obj.note
             self.velocity = obj.velocity
-            self.start_time = obj.actual_time
+            self.actual_time = obj.actual_time
             self.duration = duration
         else:
             self.type = 'not_note'
@@ -69,7 +69,7 @@ class Note_rep:
 
     def __str__(self):
         if self.type == 'note':
-            return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'      
+            return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, actual_time: {self.actual_time}, duration: {self.duration}'      
         else:
             return f'type: {self.type}, obj: {self.obj}'
 
@@ -147,8 +147,8 @@ def conv_to_midi(converted, tempo):
     intermediate2 = []
     for note_rep in converted:
         if note_rep.type == 'note':
-            note_on = CustomMessage('note_on', channel=note_rep.channel, note=note_rep.note, velocity=note_rep.velocity, time=note_rep.start_time)
-            note_off = CustomMessage('note_off', channel=note_rep.channel, note=note_rep.note, velocity=0, time=note_rep.start_time + note_rep.duration)
+            note_on = CustomMessage('note_on', channel=note_rep.channel, note=note_rep.note, velocity=note_rep.velocity, time=note_rep.actual_time)
+            note_off = CustomMessage('note_off', channel=note_rep.channel, note=note_rep.note, velocity=0, time=note_rep.actual_time + note_rep.duration)
             intermediate2.append(note_on)
             intermediate2.append(note_off)
         else:

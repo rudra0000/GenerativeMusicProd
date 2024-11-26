@@ -27,7 +27,7 @@ for i in midi_data.tracks:
     if (midi_track1 == midi_track0):
         continue
     desired_track =  rashford.conv_from_midi(midi_track1)
-    mutated_track = mutator.start_time_mutator(desired_track, 5, 0.8)
+    mutated_track = mutator.actual_time_mutator(desired_track, 5, 0.8)
     mutated_track = mutator.pitch_mutator(mutated_track, 5, 0.3)
     mutated_track = mutator.simplify_mutator(mutated_track, 5, 0.7)
     # print(f'CrazyRating: {raters.neighboring_pitch_range(desired_track, 12)}')
@@ -145,9 +145,7 @@ def rate_a_song(file):
     return rating
 
 print('a loser is rated', rate_a_song('./midi_files/loser.mid')) #-0.03959
-print('kryptonite is rated', rate_a_song('./midi_files/kryptonite.mid')) 
-print('duckandrun is rated', rate_a_song('./midi_files/duckandrun.mid'))
-print('whenimgone is rated', rate_a_song('./midi_files/whenimgone.mid')) 
+print('Home_riff is rated', rate_a_song('./midi_files/drive_riff.mid')) #-0.03959
 # kryptonite is rated 0.047305177077739013
 # duckandrun is rated 0.03840373113228471
 # whenimgone is rated 0.028058219781743193

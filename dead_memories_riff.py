@@ -38,6 +38,6 @@ def generate_random_notes():
 generate_random_notes()
 
 # Save the MIDI file
-midi_file.save('home_riff.mid')
+midi_file.save('dead_memories.mid')
 
 print("MIDI file 'random_notes.mid' has been created.")

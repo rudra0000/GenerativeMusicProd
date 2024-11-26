@@ -97,15 +97,15 @@ class Note_rep:
         self.channel=0
         self.note = ''
         self.velocity=0
-        self.start_time=0
+        self.actual_time=0
         self.duration=0
         self.time = 0
     
-    def __init__(self, channel=0, note='', velocity=0, start_time=0, duration=0,time=0):
+    def __init__(self, channel=0, note='', velocity=0, actual_time=0, duration=0,time=0):
         self.channel=channel
         self.note = note
         self.velocity=velocity
-        self.start_time=start_time
+        self.actual_time=actual_time
         self.duration=duration
         self.time = time
     
@@ -118,11 +118,13 @@ class Note_rep:
             self.channel = obj.channel
             self.note = obj.note
             self.velocity = obj.velocity
-            self.start_time = obj.actual_time
+            self.actual_time = obj.actual_time
             self.duration = duration
             self.time = obj.time
         else:
             self.time = obj.time
+            self.actual_time = obj.actual_time
+            self.duration = 0
             self.type = 'not_note'
 
     # def __init__(self, obj, duration=0): # we use the last two constructors
@@ -130,12 +132,12 @@ class Note_rep:
     #     self.channel = obj.channel
     #     self.note = obj.note
     #     self.velocity = obj.velocity
-    #     self.start_time = obj.actual_time
+    #     self.actual_time = obj.actual_time
     #     self.duration = duration
 
     def __str__(self):
         if self.type == 'note':
-            return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, start_time: {self.start_time}, duration: {self.duration}'      
+            return f'type:{self.type} channel: {self.channel}, note: {self.note}, velocity: {self.velocity}, actual_time: {self.actual_time}, duration: {self.duration}'      
         else:
             return f'type: {self.type}, obj: {self.obj}'
 
@@ -343,8 +345,8 @@ def conv_to_midi(converted):
             note_on = CustomMessage('note_on', channel=note_rep.channel, note=note_rep.note, velocity=note_rep.velocity,time=note_rep.time)
             note_off = CustomMessage('note_off', channel=note_rep.channel, note=note_rep.note, velocity=0,time=note_rep.time)
             # note_off = CustomMessage('note_on', channel=note_rep.channel, note=note_rep.note, velocity=0,time=note_rep.time)
-            note_on.actual_time = note_rep.start_time
-            note_off.actual_time = note_rep.start_time + note_rep.duration
+            note_on.actual_time = note_rep.actual_time
+            note_off.actual_time = note_rep.actual_time + note_rep.duration
             intermediate2.append(note_on)
             intermediate2.append(note_off)
         else:

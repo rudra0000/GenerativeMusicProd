@@ -5,6 +5,8 @@ import time
 # Create a new MIDI file with one track
 midi_file = mido.MidiFile()
 track = mido.MidiTrack()
+track0 = mido.MidiTrack()
+midi_file.tracks.append(track0)
 midi_file.tracks.append(track)
 
 # Add a MIDI header

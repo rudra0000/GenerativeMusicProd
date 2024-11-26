@@ -27,7 +27,7 @@ for i in midi_data.tracks:
     if (midi_track1 == midi_track0):
         continue
     desired_track =  rashford.conv_from_midi(midi_track1)
-    mutated_track = mutator.start_time_mutator(desired_track, 5, 0.1)
+    mutated_track = mutator.actual_time_mutator(desired_track, 5, 0.1)
     mutated_track = mutator.pitch_mutator(mutated_track, 5, 0.1)
     mutated_track = mutator.simplify_mutator(mutated_track, 5, 0.3)
     # print(f'CrazyRating: {raters.neighboring_pitch_range(desired_track, 12)}')
