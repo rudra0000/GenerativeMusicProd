@@ -745,20 +745,38 @@ type:note channel: 0, note: 69, velocity: 100, actual_time: 1600, duration: 500
 type:note channel: 0, note: 69, velocity: 100, actual_time: 2100, duration: 1200
 type:note channel: 0, note: 67, velocity: 100, actual_time: 3300, duration: 1200
 type:note channel: 0, note: 64, velocity: 100, actual_time: 4500, duration: 200
-type:note channel: 0, note: 65, velocity: 100, actual_time: 4700, duration: 300
-type:note channel: 0, note: 64, velocity: 100, actual_time: 5000, duration: 200
-type: not_note, obj: MetaMessage type: end_of_track, time: 0, actual_time: 5200
-type: not_note, obj: type: program_change, time: 0, actual_time: 0
-type:note channel: 0, note: 64, velocity: 100, actual_time: 0, duration: 200
-type:note channel: 0, note: 64, velocity: 100, actual_time: 200, duration: 200
-type:note channel: 0, note: 64, velocity: 100, actual_time: 400, duration: 200
-type:note channel: 0, note: 72, velocity: 100, actual_time: 600, duration: 300
-type:note channel: 0, note: 71, velocity: 100, actual_time: 900, duration: 300
-type:note channel: 0, note: 67, velocity: 100, actual_time: 1200, duration: 400
-type:note channel: 0, note: 69, velocity: 100, actual_time: 1600, duration: 500
-type:note channel: 0, note: 69, velocity: 100, actual_time: 2100, duration: 1200
-type:note channel: 0, note: 67, velocity: 100, actual_time: 3300, duration: 1200
-type:note channel: 0, note: 64, velocity: 100, actual_time: 4500, duration: 200
 type:note channel: 0, note: 65, velocity: 100, actual_time: 4700, duration: 200
 type:note channel: 0, note: 64, velocity: 100, actual_time: 4900, duration: 400
 type: not_note, obj: MetaMessage type: end_of_track, time: 0, actual_time: 5300
+type: not_note, obj: type: program_change, time: 0, actual_time: 0
+type:note channel: 0, note: 64, velocity: 100, actual_time: 0, duration: 400
+type:note channel: 0, note: 64, velocity: 100, actual_time: 400, duration: 400
+type:note channel: 0, note: 71, velocity: 100, actual_time: 800, duration: 200
+type:note channel: 0, note: 72, velocity: 100, actual_time: 1000, duration: 200
+type:note channel: 0, note: 71, velocity: 100, actual_time: 1200, duration: 200
+type:note channel: 0, note: 69, velocity: 100, actual_time: 1400, duration: 200
+type:note channel: 0, note: 67, velocity: 100, actual_time: 1600, duration: 800
+type:note channel: 0, note: 69, velocity: 100, actual_time: 2400, duration: 800
+type:note channel: 0, note: 64, velocity: 100, actual_time: 3200, duration: 400
+type:note channel: 0, note: 64, velocity: 100, actual_time: 3600, duration: 400
+type:note channel: 0, note: 71, velocity: 100, actual_time: 4000, duration: 200
+type:note channel: 0, note: 72, velocity: 100, actual_time: 4200, duration: 200
+type:note channel: 0, note: 71, velocity: 100, actual_time: 4400, duration: 200
+type:note channel: 0, note: 69, velocity: 100, actual_time: 4600, duration: 200
+type:note channel: 0, note: 67, velocity: 100, actual_time: 4800, duration: 800
+type:note channel: 0, note: 62, velocity: 100, actual_time: 5600, duration: 400
+type:note channel: 0, note: 62, velocity: 100, actual_time: 6000, duration: 400
+type:note channel: 0, note: 64, velocity: 100, actual_time: 6400, duration: 400
+type:note channel: 0, note: 64, velocity: 100, actual_time: 6800, duration: 400
+type:note channel: 0, note: 71, velocity: 100, actual_time: 7200, duration: 200
+type:note channel: 0, note: 72, velocity: 100, actual_time: 7400, duration: 200
+type:note channel: 0, note: 71, velocity: 100, actual_time: 7600, duration: 200
+type:note channel: 0, note: 69, velocity: 100, actual_time: 7800, duration: 200
+type:note channel: 0, note: 67, velocity: 100, actual_time: 8000, duration: 800
+type:note channel: 0, note: 69, velocity: 100, actual_time: 8800, duration: 800
+type:note channel: 0, note: 60, velocity: 100, actual_time: 9600, duration: 1600
+type:note channel: 0, note: 62, velocity: 100, actual_time: 11200, duration: 800
+type:note channel: 0, note: 66, velocity: 100, actual_time: 12000, duration: 200
+type:note channel: 0, note: 67, velocity: 100, actual_time: 12200, duration: 200
+type:note channel: 0, note: 66, velocity: 100, actual_time: 12400, duration: 200
+type: not_note, obj: MetaMessage type: end_of_track, time: 0, actual_time: 12600

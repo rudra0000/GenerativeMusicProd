@@ -69,8 +69,8 @@ def crossover(track1,track2): # return both the tracks after crossover
     return new_track1,new_track2
 
 
-FILENAME1='./midi_files/home_riff.mid'
-FILENAME2='./midi_files/dead_memories.mid'
+FILENAME1='./midi_files/dead_memories.mid'
+FILENAME2='./midi_files/pain_riff.mid'
 midi_data1=mido.MidiFile(filename=f'{FILENAME1}')
 midi_track10 = midi_data1.tracks[0]
 
@@ -82,7 +82,7 @@ midi_track20 = midi_data1.tracks[0]
 # print(rashford.conv_from_midi(midi_data2.tracks[1]))
 new1 = rashford.conv_from_midi(midi_data1.tracks[1])
 new2  = rashford.conv_from_midi(midi_data2.tracks[1])
-for j in range(3):
+for j in range(5):
     new1, new2 = crossover(new1, new2)
     for i in range(len(new1)):
         new1[i].actual_time=int(new1[i].actual_time //track2_time)
