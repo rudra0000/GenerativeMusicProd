@@ -1100,3 +1100,1112 @@ type=note_on channel=0 note=59 velocity=80 time=24 actual_time=86400
 type: note_off, time: 24, actual_time: 88128
 type=note_on channel=0 note=59 velocity=0 time=1728 actual_time=88128
 MetaMessage type: end_of_track, time: 0, actual_time: 88128
+MetaMessage type: track_name, time: 0, actual_time: 0
+type: program_change, time: 0, actual_time: 0
+type=control_change channel=13 control=7 value=100 time=0 actual_time=0
+type=control_change channel=13 control=10 value=64 time=0 actual_time=0
+type: pitchwheel, time: 0, actual_time: 0
+type=control_change channel=13 control=101 value=0 time=0 actual_time=0
+type=control_change channel=13 control=100 value=0 time=1 actual_time=1
+type=control_change channel=13 control=6 value=12 time=1 actual_time=2
+type=control_change channel=13 control=38 value=0 time=1 actual_time=3
+type=control_change channel=13 control=10 value=64 time=0 actual_time=3
+type=control_change channel=13 control=7 value=100 time=0 actual_time=3
+type: pitchwheel, time: 0, actual_time: 3
+type=control_change channel=13 control=101 value=0 time=0 actual_time=3
+type=control_change channel=13 control=100 value=0 time=1 actual_time=4
+type=control_change channel=13 control=6 value=12 time=1 actual_time=5
+type=control_change channel=13 control=38 value=0 time=1 actual_time=6
+type=control_change channel=13 control=10 value=64 time=0 actual_time=6
+type=control_change channel=13 control=7 value=100 time=0 actual_time=6
+type: pitchwheel, time: 0, actual_time: 6
+type: program_change, time: 0, actual_time: 6
+type=control_change channel=13 control=101 value=0 time=0 actual_time=6
+type=control_change channel=13 control=100 value=0 time=1 actual_time=7
+type=control_change channel=13 control=6 value=12 time=1 actual_time=8
+type=control_change channel=13 control=38 value=0 time=1 actual_time=9
+type=control_change channel=13 control=10 value=64 time=0 actual_time=9
+type=control_change channel=13 control=7 value=100 time=0 actual_time=9
+type: pitchwheel, time: 0, actual_time: 9
+type: program_change, time: 0, actual_time: 9
+type=note_on channel=13 note=43 velocity=100 time=0 actual_time=9
+type: note_off, time: 0, actual_time: 48
+type=note_on channel=13 note=43 velocity=0 time=39 actual_time=48
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=72
+type: note_off, time: 24, actual_time: 120
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=120
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=144
+type: note_off, time: 24, actual_time: 192
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=192
+type=note_on channel=13 note=43 velocity=100 time=32 actual_time=224
+type: note_off, time: 32, actual_time: 232
+type=note_on channel=13 note=43 velocity=0 time=8 actual_time=232
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=240
+type: note_off, time: 8, actual_time: 264
+type=note_on channel=13 note=43 velocity=0 time=24 actual_time=264
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=272
+type: note_off, time: 8, actual_time: 280
+type=note_on channel=13 note=43 velocity=0 time=8 actual_time=280
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=288
+type: note_off, time: 8, actual_time: 312
+type=note_on channel=13 note=43 velocity=0 time=24 actual_time=312
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=336
+type: note_off, time: 24, actual_time: 384
+MetaMessage type: text, time: 360, actual_time: 8400
+MetaMessage type: text, time: 720, actual_time: 9120
+MetaMessage type: text, time: 120, actual_time: 9240
+MetaMessage type: text, time: 120, actual_time: 9360
+MetaMessage type: text, time: 240, actual_time: 9600
+MetaMessage type: text, time: 240, actual_time: 9840
+MetaMessage type: text, time: 240, actual_time: 10080
+MetaMessage type: text, time: 240, actual_time: 10320
+MetaMessage type: text, time: 120, actual_time: 10440
+MetaMessage type: text, time: 600, actual_time: 11040
+MetaMessage type: text, time: 240, actual_time: 11280
+MetaMessage type: text, time: 240, actual_time: 11520
+MetaMessage type: text, time: 240, actual_time: 11760
+MetaMessage type: text, time: 240, actual_time: 12000
+MetaMessage type: text, time: 240, actual_time: 12240
+MetaMessage type: text, time: 120, actual_time: 12360
+MetaMessage type: text, time: 600, actual_time: 12960
+MetaMessage type: text, time: 240, actual_time: 13200
+MetaMessage type: text, time: 240, actual_time: 13440
+MetaMessage type: text, time: 240, actual_time: 13680
+MetaMessage type: text, time: 120, actual_time: 13800
+MetaMessage type: text, time: 600, actual_time: 14400
+MetaMessage type: text, time: 240, actual_time: 14640
+MetaMessage type: text, time: 120, actual_time: 14760
+MetaMessage type: text, time: 360, actual_time: 15120
+MetaMessage type: text, time: 240, actual_time: 15360
+MetaMessage type: text, time: 240, actual_time: 15600
+MetaMessage type: text, time: 120, actual_time: 15720
+MetaMessage type: text, time: 360, actual_time: 16080
+MetaMessage type: text, time: 720, actual_time: 16800
+MetaMessage type: text, time: 120, actual_time: 16920
+MetaMessage type: text, time: 120, actual_time: 17040
+MetaMessage type: text, time: 240, actual_time: 17280
+MetaMessage type: text, time: 600, actual_time: 17880
+MetaMessage type: text, time: 120, actual_time: 18000
+MetaMessage type: text, time: 120, actual_time: 18120
+MetaMessage type: text, time: 120, actual_time: 18240
+MetaMessage type: text, time: 360, actual_time: 18600
+MetaMessage type: text, time: 120, actual_time: 18720
+MetaMessage type: text, time: 120, actual_time: 18840
+MetaMessage type: text, time: 120, actual_time: 18960
+MetaMessage type: text, time: 240, actual_time: 19200
+MetaMessage type: text, time: 360, actual_time: 19560
+MetaMessage type: text, time: 120, actual_time: 19680
+MetaMessage type: text, time: 120, actual_time: 19800
+MetaMessage type: text, time: 120, actual_time: 19920
+MetaMessage type: text, time: 240, actual_time: 20160
+MetaMessage type: text, time: 360, actual_time: 20520
+MetaMessage type: text, time: 120, actual_time: 20640
+MetaMessage type: text, time: 120, actual_time: 20760
+MetaMessage type: text, time: 120, actual_time: 20880
+MetaMessage type: text, time: 240, actual_time: 21120
+MetaMessage type: text, time: 360, actual_time: 21480
+MetaMessage type: text, time: 120, actual_time: 21600
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=888
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=490
+type: note_off, time: 24, actual_time: 541
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=960
+type=note_on channel=13 note=46 velocity=100 time=32 actual_time=575
+type: note_off, time: 32, actual_time: 583
+type=note_on channel=13 note=46 velocity=0 time=8 actual_time=1000
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=592
+type: note_off, time: 8, actual_time: 617
+type=note_on channel=13 note=46 velocity=0 time=24 actual_time=1032
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=627
+type: note_off, time: 8, actual_time: 635
+MetaMessage type: text, time: 780, actual_time: 25740
+MetaMessage type: text, time: 120, actual_time: 25860
+MetaMessage type: text, time: 120, actual_time: 25980
+MetaMessage type: text, time: 120, actual_time: 26100
+MetaMessage type: text, time: 180, actual_time: 26280
+MetaMessage type: text, time: 120, actual_time: 26400
+MetaMessage type: text, time: 120, actual_time: 26520
+MetaMessage type: text, time: 120, actual_time: 26640
+MetaMessage type: text, time: 240, actual_time: 26880
+MetaMessage type: text, time: 240, actual_time: 27120
+MetaMessage type: text, time: 240, actual_time: 27360
+MetaMessage type: text, time: 240, actual_time: 27600
+MetaMessage type: text, time: 240, actual_time: 27840
+MetaMessage type: text, time: 360, actual_time: 28200
+MetaMessage type: text, time: 120, actual_time: 28320
+MetaMessage type: text, time: 120, actual_time: 28440
+MetaMessage type: text, time: 120, actual_time: 28560
+MetaMessage type: text, time: 240, actual_time: 28800
+MetaMessage type: text, time: 480, actual_time: 29280
+MetaMessage type: text, time: 120, actual_time: 29400
+MetaMessage type: text, time: 120, actual_time: 29520
+MetaMessage type: text, time: 120, actual_time: 29640
+MetaMessage type: text, time: 120, actual_time: 29760
+MetaMessage type: text, time: 120, actual_time: 29880
+MetaMessage type: text, time: 120, actual_time: 30000
+MetaMessage type: text, time: 120, actual_time: 30120
+MetaMessage type: text, time: 120, actual_time: 30240
+MetaMessage type: text, time: 120, actual_time: 30360
+MetaMessage type: text, time: 120, actual_time: 30480
+MetaMessage type: text, time: 480, actual_time: 30960
+MetaMessage type: text, time: 480, actual_time: 31440
+MetaMessage type: text, time: 480, actual_time: 31920
+MetaMessage type: text, time: 240, actual_time: 32160
+MetaMessage type: text, time: 120, actual_time: 32280
+MetaMessage type: text, time: 120, actual_time: 32400
+MetaMessage type: text, time: 240, actual_time: 32640
+MetaMessage type: text, time: 240, actual_time: 32880
+MetaMessage type: text, time: 240, actual_time: 33120
+MetaMessage type: text, time: 120, actual_time: 33240
+MetaMessage type: text, time: 120, actual_time: 33360
+MetaMessage type: text, time: 240, actual_time: 33600
+MetaMessage type: text, time: 480, actual_time: 34080
+MetaMessage type: text, time: 120, actual_time: 34200
+MetaMessage type: text, time: 120, actual_time: 34320
+MetaMessage type: text, time: 240, actual_time: 34560
+MetaMessage type: text, time: 240, actual_time: 34800
+MetaMessage type: text, time: 240, actual_time: 35040
+MetaMessage type: text, time: 120, actual_time: 35160
+MetaMessage type: text, time: 120, actual_time: 35280
+MetaMessage type: text, time: 240, actual_time: 35520
+MetaMessage type: text, time: 480, actual_time: 36000
+MetaMessage type: text, time: 120, actual_time: 36120
+MetaMessage type: text, time: 120, actual_time: 36240
+MetaMessage type: text, time: 240, actual_time: 36480
+MetaMessage type: text, time: 360, actual_time: 36840
+MetaMessage type: text, time: 120, actual_time: 36960
+MetaMessage type: text, time: 360, actual_time: 37320
+MetaMessage type: text, time: 120, actual_time: 37440
+MetaMessage type: text, time: 480, actual_time: 37920
+MetaMessage type: text, time: 120, actual_time: 38040
+MetaMessage type: text, time: 120, actual_time: 38160
+MetaMessage type: text, time: 240, actual_time: 38400
+MetaMessage type: text, time: 360, actual_time: 38760
+MetaMessage type: text, time: 120, actual_time: 38880
+MetaMessage type: text, time: 360, actual_time: 39240
+MetaMessage type: text, time: 120, actual_time: 39360
+MetaMessage type: text, time: 480, actual_time: 39840
+MetaMessage type: text, time: 120, actual_time: 39960
+MetaMessage type: text, time: 120, actual_time: 40080
+MetaMessage type: text, time: 240, actual_time: 40320
+MetaMessage type: text, time: 240, actual_time: 40560
+MetaMessage type: text, time: 240, actual_time: 40800
+MetaMessage type: text, time: 120, actual_time: 40920
+MetaMessage type: text, time: 120, actual_time: 41040
+MetaMessage type: text, time: 240, actual_time: 41280
+MetaMessage type: text, time: 480, actual_time: 41760
+MetaMessage type: text, time: 120, actual_time: 41880
+MetaMessage type: text, time: 120, actual_time: 42000
+MetaMessage type: text, time: 240, actual_time: 42240
+MetaMessage type: text, time: 240, actual_time: 42480
+MetaMessage type: text, time: 240, actual_time: 42720
+MetaMessage type: text, time: 120, actual_time: 42840
+MetaMessage type: text, time: 120, actual_time: 42960
+MetaMessage type: text, time: 240, actual_time: 43200
+MetaMessage type: text, time: 480, actual_time: 43680
+MetaMessage type: text, time: 120, actual_time: 43800
+MetaMessage type: text, time: 120, actual_time: 43920
+MetaMessage type: text, time: 240, actual_time: 44160
+MetaMessage type: text, time: 360, actual_time: 44520
+MetaMessage type: text, time: 120, actual_time: 44640
+MetaMessage type: text, time: 360, actual_time: 45000
+MetaMessage type: text, time: 120, actual_time: 45120
+MetaMessage type: text, time: 480, actual_time: 45600
+MetaMessage type: text, time: 240, actual_time: 45840
+MetaMessage type: text, time: 360, actual_time: 46200
+MetaMessage type: text, time: 600, actual_time: 46800
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=1728
+type=note_on channel=13 note=43 velocity=100 time=32 actual_time=1638
+type: note_off, time: 32, actual_time: 1647
+type=note_on channel=13 note=43 velocity=0 time=8 actual_time=1768
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=1658
+type: note_off, time: 8, actual_time: 1686
+type=note_on channel=13 note=43 velocity=0 time=24 actual_time=1800
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=1696
+type: note_off, time: 8, actual_time: 1705
+type=note_on channel=13 note=43 velocity=0 time=8 actual_time=1816
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=1715
+type: note_off, time: 8, actual_time: 1743
+type=note_on channel=13 note=43 velocity=0 time=24 actual_time=1848
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=413
+type: note_off, time: 24, actual_time: 457
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=1344
+type=note_on channel=13 note=41 velocity=100 time=32 actual_time=486
+type: note_off, time: 32, actual_time: 493
+type=note_on channel=13 note=41 velocity=0 time=8 actual_time=1384
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=501
+type: note_off, time: 8, actual_time: 523
+type=note_on channel=13 note=41 velocity=0 time=24 actual_time=1416
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=530
+type: note_off, time: 8, actual_time: 537
+type=note_on channel=13 note=41 velocity=0 time=8 actual_time=1432
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=545
+type: note_off, time: 8, actual_time: 567
+type=note_on channel=13 note=41 velocity=0 time=24 actual_time=1464
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=589
+type: note_off, time: 24, actual_time: 633
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=1536
+type=note_on channel=13 note=43 velocity=100 time=0 actual_time=634
+type: note_off, time: 0, actual_time: 678
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=1584
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=700
+type: note_off, time: 24, actual_time: 744
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=1656
+type=note_on channel=13 note=39 velocity=0 time=24 actual_time=2184
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=1212
+type: note_off, time: 8, actual_time: 1220
+type=note_on channel=13 note=39 velocity=0 time=8 actual_time=2200
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=1230
+type: note_off, time: 8, actual_time: 1256
+type=note_on channel=13 note=39 velocity=0 time=24 actual_time=2232
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=1283
+type: note_off, time: 24, actual_time: 1336
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=2304
+type=note_on channel=13 note=46 velocity=100 time=0 actual_time=1337
+type: note_off, time: 0, actual_time: 1390
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=2352
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=1416
+type: note_off, time: 24, actual_time: 1469
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=2424
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=1496
+type: note_off, time: 24, actual_time: 1549
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=2496
+type=note_on channel=13 note=46 velocity=100 time=32 actual_time=1585
+type: note_off, time: 32, actual_time: 1593
+type=note_on channel=13 note=46 velocity=0 time=8 actual_time=2536
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=1603
+type: note_off, time: 8, actual_time: 1629
+type=note_on channel=13 note=46 velocity=0 time=24 actual_time=2568
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=1638
+type: note_off, time: 8, actual_time: 1646
+type=note_on channel=13 note=46 velocity=0 time=8 actual_time=2584
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=1656
+type: note_off, time: 8, actual_time: 1682
+type=note_on channel=13 note=46 velocity=0 time=24 actual_time=2616
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=1709
+type: note_off, time: 24, actual_time: 1762
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=2688
+type=note_on channel=13 note=41 velocity=100 time=0 actual_time=1762
+type: note_off, time: 0, actual_time: 1815
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=2736
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=1842
+type: note_off, time: 24, actual_time: 1895
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=2808
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=1922
+type: note_off, time: 24, actual_time: 1975
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=2880
+type=note_on channel=13 note=41 velocity=100 time=32 actual_time=2011
+type: note_off, time: 32, actual_time: 2019
+type=note_on channel=13 note=41 velocity=0 time=8 actual_time=2920
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=2029
+type: note_off, time: 8, actual_time: 2055
+type=note_on channel=13 note=41 velocity=0 time=24 actual_time=2952
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=2064
+type: note_off, time: 8, actual_time: 2072
+type=note_on channel=13 note=41 velocity=0 time=8 actual_time=2968
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=2082
+type: note_off, time: 8, actual_time: 2108
+type=note_on channel=13 note=41 velocity=0 time=24 actual_time=3000
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=2135
+type: note_off, time: 24, actual_time: 2188
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=3072
+type=note_on channel=13 note=43 velocity=100 time=0 actual_time=2188
+type: note_off, time: 0, actual_time: 2241
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=3120
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=2268
+type: note_off, time: 24, actual_time: 2321
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=3192
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=2348
+type: note_off, time: 24, actual_time: 2401
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=3264
+type=note_on channel=13 note=43 velocity=100 time=32 actual_time=2437
+type: note_off, time: 32, actual_time: 2445
+type=note_on channel=13 note=43 velocity=0 time=8 actual_time=3304
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=2455
+type: note_off, time: 8, actual_time: 2481
+type=note_on channel=13 note=43 velocity=0 time=24 actual_time=3336
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=2490
+type: note_off, time: 8, actual_time: 2498
+type=note_on channel=13 note=43 velocity=0 time=8 actual_time=3352
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=2508
+type: note_off, time: 8, actual_time: 2534
+type=note_on channel=13 note=43 velocity=0 time=24 actual_time=3384
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=2561
+type: note_off, time: 24, actual_time: 2614
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=3456
+type=note_on channel=13 note=39 velocity=100 time=0 actual_time=2614
+type: note_off, time: 0, actual_time: 2667
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=3504
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=2694
+type: note_off, time: 24, actual_time: 2747
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=3576
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=2774
+type: note_off, time: 24, actual_time: 2827
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=3648
+type=note_on channel=13 note=39 velocity=100 time=32 actual_time=2863
+type: note_off, time: 32, actual_time: 2871
+type=note_on channel=13 note=39 velocity=0 time=8 actual_time=3688
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=2881
+type: note_off, time: 8, actual_time: 2907
+type=note_on channel=13 note=39 velocity=0 time=24 actual_time=3720
+MetaMessage type: text, time: 240, actual_time: 94800
+MetaMessage type: text, time: 120, actual_time: 94920
+MetaMessage type: text, time: 600, actual_time: 95520
+MetaMessage type: text, time: 240, actual_time: 95760
+MetaMessage type: text, time: 240, actual_time: 96000
+MetaMessage type: text, time: 240, actual_time: 96240
+MetaMessage type: text, time: 240, actual_time: 96480
+MetaMessage type: text, time: 240, actual_time: 96720
+MetaMessage type: text, time: 120, actual_time: 96840
+MetaMessage type: text, time: 600, actual_time: 97440
+MetaMessage type: text, time: 240, actual_time: 97680
+MetaMessage type: text, time: 240, actual_time: 97920
+MetaMessage type: text, time: 240, actual_time: 98160
+MetaMessage type: text, time: 120, actual_time: 98280
+MetaMessage type: text, time: 600, actual_time: 98880
+MetaMessage type: text, time: 240, actual_time: 99120
+MetaMessage type: text, time: 120, actual_time: 99240
+MetaMessage type: text, time: 360, actual_time: 99600
+MetaMessage type: text, time: 240, actual_time: 99840
+MetaMessage type: text, time: 240, actual_time: 100080
+MetaMessage type: text, time: 120, actual_time: 100200
+MetaMessage type: text, time: 360, actual_time: 100560
+MetaMessage type: text, time: 720, actual_time: 101280
+MetaMessage type: text, time: 120, actual_time: 101400
+MetaMessage type: text, time: 120, actual_time: 101520
+MetaMessage type: text, time: 240, actual_time: 101760
+MetaMessage type: text, time: 240, actual_time: 102000
+MetaMessage type: text, time: 240, actual_time: 102240
+MetaMessage type: text, time: 240, actual_time: 102480
+MetaMessage type: text, time: 120, actual_time: 102600
+MetaMessage type: text, time: 600, actual_time: 103200
+MetaMessage type: text, time: 240, actual_time: 103440
+MetaMessage type: text, time: 240, actual_time: 103680
+MetaMessage type: text, time: 240, actual_time: 103920
+MetaMessage type: text, time: 240, actual_time: 104160
+MetaMessage type: text, time: 240, actual_time: 104400
+MetaMessage type: text, time: 120, actual_time: 104520
+MetaMessage type: text, time: 600, actual_time: 105120
+MetaMessage type: text, time: 240, actual_time: 105360
+MetaMessage type: text, time: 240, actual_time: 105600
+MetaMessage type: text, time: 240, actual_time: 105840
+MetaMessage type: text, time: 120, actual_time: 105960
+MetaMessage type: text, time: 600, actual_time: 106560
+MetaMessage type: text, time: 240, actual_time: 106800
+MetaMessage type: text, time: 120, actual_time: 106920
+MetaMessage type: text, time: 360, actual_time: 107280
+MetaMessage type: text, time: 240, actual_time: 107520
+MetaMessage type: text, time: 240, actual_time: 107760
+MetaMessage type: text, time: 120, actual_time: 107880
+MetaMessage type: text, time: 360, actual_time: 108240
+MetaMessage type: text, time: 720, actual_time: 108960
+MetaMessage type: text, time: 120, actual_time: 109080
+MetaMessage type: text, time: 120, actual_time: 109200
+MetaMessage type: text, time: 240, actual_time: 109440
+MetaMessage type: text, time: 240, actual_time: 109680
+MetaMessage type: text, time: 240, actual_time: 109920
+MetaMessage type: text, time: 240, actual_time: 110160
+MetaMessage type: text, time: 120, actual_time: 110280
+MetaMessage type: text, time: 600, actual_time: 110880
+MetaMessage type: text, time: 240, actual_time: 111120
+MetaMessage type: text, time: 240, actual_time: 111360
+MetaMessage type: text, time: 240, actual_time: 111600
+MetaMessage type: text, time: 240, actual_time: 111840
+MetaMessage type: text, time: 240, actual_time: 112080
+MetaMessage type: text, time: 120, actual_time: 112200
+MetaMessage type: text, time: 600, actual_time: 112800
+MetaMessage type: text, time: 240, actual_time: 113040
+MetaMessage type: text, time: 240, actual_time: 113280
+MetaMessage type: text, time: 240, actual_time: 113520
+MetaMessage type: text, time: 120, actual_time: 113640
+MetaMessage type: text, time: 600, actual_time: 114240
+MetaMessage type: text, time: 240, actual_time: 114480
+MetaMessage type: text, time: 120, actual_time: 114600
+MetaMessage type: text, time: 360, actual_time: 114960
+MetaMessage type: text, time: 240, actual_time: 115200
+MetaMessage type: text, time: 240, actual_time: 115440
+MetaMessage type: text, time: 120, actual_time: 115560
+MetaMessage type: text, time: 360, actual_time: 115920
+MetaMessage type: text, time: 720, actual_time: 116640
+MetaMessage type: text, time: 120, actual_time: 116760
+MetaMessage type: text, time: 120, actual_time: 116880
+MetaMessage type: text, time: 480, actual_time: 117360
+MetaMessage type: text, time: 240, actual_time: 117600
+MetaMessage type: text, time: 240, actual_time: 117840
+MetaMessage type: text, time: 240, actual_time: 118080
+MetaMessage type: text, time: 480, actual_time: 118560
+MetaMessage type: text, time: 160, actual_time: 118720
+MetaMessage type: text, time: 160, actual_time: 118880
+MetaMessage type: text, time: 400, actual_time: 119280
+MetaMessage type: text, time: 240, actual_time: 119520
+MetaMessage type: text, time: 240, actual_time: 119760
+MetaMessage type: text, time: 240, actual_time: 120000
+MetaMessage type: text, time: 480, actual_time: 120480
+MetaMessage type: text, time: 160, actual_time: 120640
+MetaMessage type: text, time: 160, actual_time: 120800
+MetaMessage type: text, time: 400, actual_time: 121200
+MetaMessage type: text, time: 240, actual_time: 121440
+MetaMessage type: text, time: 240, actual_time: 121680
+MetaMessage type: text, time: 240, actual_time: 121920
+MetaMessage type: text, time: 480, actual_time: 122400
+MetaMessage type: text, time: 160, actual_time: 122560
+MetaMessage type: text, time: 160, actual_time: 122720
+MetaMessage type: text, time: 880, actual_time: 123600
+MetaMessage type: text, time: 480, actual_time: 124080
+MetaMessage type: text, time: 480, actual_time: 124560
+MetaMessage type: text, time: 480, actual_time: 125040
+MetaMessage type: text, time: 240, actual_time: 125280
+MetaMessage type: text, time: 240, actual_time: 125520
+MetaMessage type: text, time: 240, actual_time: 125760
+MetaMessage type: text, time: 480, actual_time: 126240
+MetaMessage type: text, time: 160, actual_time: 126400
+MetaMessage type: text, time: 160, actual_time: 126560
+MetaMessage type: text, time: 400, actual_time: 126960
+MetaMessage type: text, time: 240, actual_time: 127200
+MetaMessage type: text, time: 240, actual_time: 127440
+MetaMessage type: text, time: 240, actual_time: 127680
+MetaMessage type: text, time: 480, actual_time: 128160
+MetaMessage type: text, time: 160, actual_time: 128320
+MetaMessage type: text, time: 160, actual_time: 128480
+MetaMessage type: text, time: 400, actual_time: 128880
+MetaMessage type: text, time: 240, actual_time: 129120
+MetaMessage type: text, time: 240, actual_time: 129360
+MetaMessage type: text, time: 240, actual_time: 129600
+MetaMessage type: text, time: 480, actual_time: 130080
+MetaMessage type: text, time: 160, actual_time: 130240
+MetaMessage type: text, time: 160, actual_time: 130400
+MetaMessage type: text, time: 880, actual_time: 131280
+MetaMessage type: text, time: 480, actual_time: 131760
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=4800
+type=note_on channel=13 note=43 velocity=100 time=32 actual_time=4326
+type: note_off, time: 32, actual_time: 4334
+type=note_on channel=13 note=43 velocity=0 time=8 actual_time=4840
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=4342
+type: note_off, time: 8, actual_time: 4366
+type=note_on channel=13 note=43 velocity=0 time=24 actual_time=4872
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=4374
+type: note_off, time: 8, actual_time: 4382
+type=note_on channel=13 note=43 velocity=0 time=8 actual_time=4888
+type=note_on channel=13 note=43 velocity=100 time=8 actual_time=4390
+type: note_off, time: 8, actual_time: 4414
+type=note_on channel=13 note=43 velocity=0 time=24 actual_time=4920
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=4438
+type: note_off, time: 24, actual_time: 4486
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=4992
+type=note_on channel=13 note=39 velocity=100 time=0 actual_time=4486
+type: note_off, time: 0, actual_time: 4534
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=5040
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=4558
+type: note_off, time: 24, actual_time: 4606
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=5112
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=4630
+type: note_off, time: 24, actual_time: 4678
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=5184
+type=note_on channel=13 note=39 velocity=100 time=32 actual_time=4710
+type: note_off, time: 32, actual_time: 4718
+type=note_on channel=13 note=39 velocity=0 time=8 actual_time=5224
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=4726
+type: note_off, time: 8, actual_time: 4750
+type=note_on channel=13 note=39 velocity=0 time=24 actual_time=5256
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=4758
+type: note_off, time: 8, actual_time: 4766
+type=note_on channel=13 note=39 velocity=0 time=8 actual_time=5272
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=4774
+type: note_off, time: 8, actual_time: 4798
+type=note_on channel=13 note=39 velocity=0 time=24 actual_time=5304
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=4822
+type: note_off, time: 24, actual_time: 4870
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=5376
+type=note_on channel=13 note=46 velocity=100 time=0 actual_time=4870
+type: note_off, time: 0, actual_time: 4918
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=5424
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=4942
+type: note_off, time: 24, actual_time: 4990
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=5496
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=5014
+type: note_off, time: 24, actual_time: 5062
+MetaMessage type: text, time: 720, actual_time: 143520
+MetaMessage type: text, time: 240, actual_time: 143760
+MetaMessage type: text, time: 240, actual_time: 144000
+MetaMessage type: text, time: 240, actual_time: 144240
+MetaMessage type: text, time: 120, actual_time: 144360
+MetaMessage type: text, time: 600, actual_time: 144960
+MetaMessage type: text, time: 240, actual_time: 145200
+MetaMessage type: text, time: 120, actual_time: 145320
+MetaMessage type: text, time: 360, actual_time: 145680
+MetaMessage type: text, time: 240, actual_time: 145920
+MetaMessage type: text, time: 240, actual_time: 146160
+MetaMessage type: text, time: 120, actual_time: 146280
+MetaMessage type: text, time: 1800, actual_time: 148080
+MetaMessage type: text, time: 1200, actual_time: 149280
+MetaMessage type: text, time: 120, actual_time: 149400
+MetaMessage type: text, time: 120, actual_time: 149520
+MetaMessage type: text, time: 240, actual_time: 149760
+MetaMessage type: text, time: 120, actual_time: 149880
+MetaMessage type: text, time: 120, actual_time: 150000
+MetaMessage type: text, time: 240, actual_time: 150240
+MetaMessage type: text, time: 240, actual_time: 150480
+MetaMessage type: text, time: 120, actual_time: 150600
+MetaMessage type: text, time: 600, actual_time: 151200
+MetaMessage type: text, time: 240, actual_time: 151440
+MetaMessage type: text, time: 240, actual_time: 151680
+MetaMessage type: text, time: 240, actual_time: 151920
+MetaMessage type: text, time: 240, actual_time: 152160
+MetaMessage type: text, time: 240, actual_time: 152400
+MetaMessage type: text, time: 120, actual_time: 152520
+MetaMessage type: text, time: 600, actual_time: 153120
+MetaMessage type: text, time: 240, actual_time: 153360
+MetaMessage type: text, time: 240, actual_time: 153600
+MetaMessage type: text, time: 240, actual_time: 153840
+MetaMessage type: text, time: 120, actual_time: 153960
+MetaMessage type: text, time: 600, actual_time: 154560
+MetaMessage type: text, time: 240, actual_time: 154800
+MetaMessage type: text, time: 120, actual_time: 154920
+MetaMessage type: text, time: 360, actual_time: 155280
+MetaMessage type: text, time: 240, actual_time: 155520
+MetaMessage type: text, time: 240, actual_time: 155760
+MetaMessage type: text, time: 120, actual_time: 155880
+MetaMessage type: text, time: 360, actual_time: 156240
+MetaMessage type: text, time: 720, actual_time: 156960
+MetaMessage type: text, time: 120, actual_time: 157080
+MetaMessage type: text, time: 120, actual_time: 157200
+MetaMessage type: text, time: 240, actual_time: 157440
+MetaMessage type: text, time: 240, actual_time: 157680
+MetaMessage type: text, time: 240, actual_time: 157920
+MetaMessage type: text, time: 240, actual_time: 158160
+MetaMessage type: text, time: 120, actual_time: 158280
+MetaMessage type: text, time: 600, actual_time: 158880
+MetaMessage type: text, time: 240, actual_time: 159120
+MetaMessage type: text, time: 240, actual_time: 159360
+MetaMessage type: text, time: 240, actual_time: 159600
+MetaMessage type: text, time: 240, actual_time: 159840
+MetaMessage type: text, time: 240, actual_time: 160080
+MetaMessage type: text, time: 120, actual_time: 160200
+MetaMessage type: text, time: 600, actual_time: 160800
+MetaMessage type: text, time: 240, actual_time: 161040
+MetaMessage type: text, time: 240, actual_time: 161280
+MetaMessage type: text, time: 240, actual_time: 161520
+MetaMessage type: text, time: 120, actual_time: 161640
+MetaMessage type: text, time: 600, actual_time: 162240
+MetaMessage type: text, time: 240, actual_time: 162480
+MetaMessage type: text, time: 120, actual_time: 162600
+MetaMessage type: text, time: 360, actual_time: 162960
+MetaMessage type: text, time: 240, actual_time: 163200
+MetaMessage type: text, time: 240, actual_time: 163440
+MetaMessage type: text, time: 120, actual_time: 163560
+MetaMessage type: text, time: 360, actual_time: 163920
+MetaMessage type: text, time: 720, actual_time: 164640
+MetaMessage type: text, time: 120, actual_time: 164760
+MetaMessage type: text, time: 120, actual_time: 164880
+MetaMessage type: text, time: 480, actual_time: 165360
+MetaMessage type: text, time: 240, actual_time: 165600
+MetaMessage type: text, time: 240, actual_time: 165840
+MetaMessage type: text, time: 240, actual_time: 166080
+MetaMessage type: text, time: 480, actual_time: 166560
+MetaMessage type: text, time: 160, actual_time: 166720
+MetaMessage type: text, time: 160, actual_time: 166880
+MetaMessage type: text, time: 400, actual_time: 167280
+MetaMessage type: text, time: 240, actual_time: 167520
+MetaMessage type: text, time: 240, actual_time: 167760
+MetaMessage type: text, time: 240, actual_time: 168000
+MetaMessage type: text, time: 480, actual_time: 168480
+MetaMessage type: text, time: 160, actual_time: 168640
+MetaMessage type: text, time: 160, actual_time: 168800
+MetaMessage type: text, time: 400, actual_time: 169200
+MetaMessage type: text, time: 240, actual_time: 169440
+MetaMessage type: text, time: 240, actual_time: 169680
+MetaMessage type: text, time: 240, actual_time: 169920
+MetaMessage type: text, time: 480, actual_time: 170400
+MetaMessage type: text, time: 160, actual_time: 170560
+MetaMessage type: text, time: 160, actual_time: 170720
+MetaMessage type: text, time: 880, actual_time: 171600
+MetaMessage type: text, time: 480, actual_time: 172080
+MetaMessage type: text, time: 480, actual_time: 172560
+MetaMessage type: text, time: 480, actual_time: 173040
+MetaMessage type: text, time: 240, actual_time: 173280
+MetaMessage type: text, time: 240, actual_time: 173520
+MetaMessage type: text, time: 240, actual_time: 173760
+MetaMessage type: text, time: 480, actual_time: 174240
+MetaMessage type: text, time: 160, actual_time: 174400
+MetaMessage type: text, time: 160, actual_time: 174560
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=6144
+type=control_change channel=13 control=101 value=0 time=381 actual_time=6525
+type=control_change channel=13 control=100 value=0 time=1 actual_time=6526
+type=control_change channel=13 control=6 value=12 time=1 actual_time=6527
+type=control_change channel=13 control=38 value=0 time=1 actual_time=6528
+type=control_change channel=13 control=10 value=64 time=0 actual_time=6528
+type=control_change channel=13 control=7 value=100 time=0 actual_time=6528
+type: pitchwheel, time: 0, actual_time: 6528
+type: program_change, time: 0, actual_time: 6528
+type=control_change channel=13 control=101 value=0 time=0 actual_time=6528
+type=control_change channel=13 control=100 value=0 time=1 actual_time=6529
+type=control_change channel=13 control=6 value=12 time=1 actual_time=6530
+type=control_change channel=13 control=38 value=0 time=1 actual_time=6531
+type=control_change channel=13 control=10 value=64 time=0 actual_time=6531
+type=control_change channel=13 control=7 value=100 time=0 actual_time=6531
+type: pitchwheel, time: 0, actual_time: 6531
+type: program_change, time: 0, actual_time: 6531
+type=control_change channel=13 control=101 value=0 time=0 actual_time=6531
+type=control_change channel=13 control=100 value=0 time=1 actual_time=6532
+type=control_change channel=13 control=6 value=12 time=1 actual_time=6533
+type=control_change channel=13 control=38 value=0 time=1 actual_time=6534
+type=control_change channel=13 control=10 value=64 time=0 actual_time=6534
+type=control_change channel=13 control=7 value=100 time=0 actual_time=6534
+type: pitchwheel, time: 0, actual_time: 6534
+type: program_change, time: 0, actual_time: 6534
+MetaMessage type: end_of_track, time: 0, actual_time: 6534
+MetaMessage type: track_name, time: 0, actual_time: 0
+MetaMessage type: text, time: 1440, actual_time: 1440
+MetaMessage type: text, time: 120, actual_time: 1560
+MetaMessage type: text, time: 120, actual_time: 1680
+MetaMessage type: text, time: 240, actual_time: 1920
+MetaMessage type: text, time: 120, actual_time: 2040
+MetaMessage type: text, time: 120, actual_time: 2160
+MetaMessage type: text, time: 240, actual_time: 2400
+MetaMessage type: text, time: 240, actual_time: 2640
+MetaMessage type: text, time: 120, actual_time: 2760
+MetaMessage type: text, time: 600, actual_time: 3360
+MetaMessage type: text, time: 240, actual_time: 3600
+MetaMessage type: text, time: 240, actual_time: 3840
+MetaMessage type: text, time: 240, actual_time: 4080
+MetaMessage type: text, time: 240, actual_time: 4320
+MetaMessage type: text, time: 240, actual_time: 4560
+MetaMessage type: text, time: 120, actual_time: 4680
+MetaMessage type: text, time: 600, actual_time: 5280
+MetaMessage type: text, time: 240, actual_time: 5520
+MetaMessage type: text, time: 240, actual_time: 5760
+MetaMessage type: text, time: 240, actual_time: 6000
+MetaMessage type: text, time: 120, actual_time: 6120
+MetaMessage type: text, time: 600, actual_time: 6720
+MetaMessage type: text, time: 240, actual_time: 6960
+MetaMessage type: text, time: 120, actual_time: 7080
+MetaMessage type: text, time: 360, actual_time: 7440
+MetaMessage type: text, time: 240, actual_time: 7680
+MetaMessage type: text, time: 240, actual_time: 7920
+MetaMessage type: text, time: 120, actual_time: 8040
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=384
+type=note_on channel=13 note=39 velocity=100 time=0 actual_time=16012
+type: note_off, time: 0, actual_time: 17116
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=432
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=17668
+type: note_off, time: 24, actual_time: 18772
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=504
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=19325
+type: note_off, time: 24, actual_time: 20429
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=576
+type=note_on channel=13 note=39 velocity=100 time=32 actual_time=21165
+type: note_off, time: 32, actual_time: 21349
+type=note_on channel=13 note=39 velocity=0 time=8 actual_time=616
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=21533
+type: note_off, time: 8, actual_time: 22085
+type=note_on channel=13 note=39 velocity=0 time=24 actual_time=648
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=22270
+type: note_off, time: 8, actual_time: 22454
+type=note_on channel=13 note=39 velocity=0 time=8 actual_time=664
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=22638
+type: note_off, time: 8, actual_time: 23190
+type=note_on channel=13 note=39 velocity=0 time=24 actual_time=696
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=23742
+type: note_off, time: 24, actual_time: 24846
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=768
+type=note_on channel=13 note=46 velocity=100 time=0 actual_time=24846
+type: note_off, time: 0, actual_time: 25950
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=816
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=26503
+type: note_off, time: 24, actual_time: 27607
+MetaMessage type: text, time: 120, actual_time: 21720
+MetaMessage type: text, time: 120, actual_time: 21840
+MetaMessage type: text, time: 120, actual_time: 21960
+MetaMessage type: text, time: 120, actual_time: 22080
+MetaMessage type: text, time: 120, actual_time: 22200
+MetaMessage type: text, time: 120, actual_time: 22320
+MetaMessage type: text, time: 120, actual_time: 22440
+MetaMessage type: text, time: 120, actual_time: 22560
+MetaMessage type: text, time: 120, actual_time: 22680
+MetaMessage type: text, time: 120, actual_time: 22800
+MetaMessage type: text, time: 480, actual_time: 23280
+MetaMessage type: text, time: 480, actual_time: 23760
+MetaMessage type: text, time: 720, actual_time: 24480
+MetaMessage type: text, time: 480, actual_time: 24960
+type=note_on channel=13 note=46 velocity=0 time=8 actual_time=1048
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=38650
+type: note_off, time: 8, actual_time: 39202
+type=note_on channel=13 note=46 velocity=0 time=24 actual_time=1080
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=39754
+type: note_off, time: 24, actual_time: 40858
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=1152
+type=note_on channel=13 note=41 velocity=100 time=0 actual_time=40859
+type: note_off, time: 0, actual_time: 41963
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=1200
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=42515
+type: note_off, time: 24, actual_time: 43619
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=1272
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=90711
+type: note_off, time: 24, actual_time: 92134
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=1920
+type=note_on channel=13 note=39 velocity=100 time=0 actual_time=92160
+type: note_off, time: 0, actual_time: 93583
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=1968
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=94332
+type: note_off, time: 24, actual_time: 95755
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=2040
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=96479
+type: note_off, time: 24, actual_time: 97902
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=2112
+type=note_on channel=13 note=39 velocity=100 time=32 actual_time=98901
+type: note_off, time: 32, actual_time: 99125
+type=note_on channel=13 note=39 velocity=0 time=8 actual_time=2152
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=99376
+type: note_off, time: 8, actual_time: 100075
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=88239
+type: note_off, time: 24, actual_time: 89437
+MetaMessage type: text, time: 480, actual_time: 47280
+MetaMessage type: text, time: 240, actual_time: 47520
+MetaMessage type: text, time: 120, actual_time: 47640
+MetaMessage type: text, time: 120, actual_time: 47760
+MetaMessage type: text, time: 240, actual_time: 48000
+MetaMessage type: text, time: 120, actual_time: 48120
+MetaMessage type: text, time: 120, actual_time: 48240
+MetaMessage type: text, time: 240, actual_time: 48480
+MetaMessage type: text, time: 240, actual_time: 48720
+MetaMessage type: text, time: 120, actual_time: 48840
+MetaMessage type: text, time: 600, actual_time: 49440
+MetaMessage type: text, time: 240, actual_time: 49680
+MetaMessage type: text, time: 240, actual_time: 49920
+MetaMessage type: text, time: 240, actual_time: 50160
+MetaMessage type: text, time: 240, actual_time: 50400
+MetaMessage type: text, time: 240, actual_time: 50640
+MetaMessage type: text, time: 120, actual_time: 50760
+MetaMessage type: text, time: 600, actual_time: 51360
+MetaMessage type: text, time: 240, actual_time: 51600
+MetaMessage type: text, time: 240, actual_time: 51840
+MetaMessage type: text, time: 240, actual_time: 52080
+MetaMessage type: text, time: 120, actual_time: 52200
+MetaMessage type: text, time: 600, actual_time: 52800
+MetaMessage type: text, time: 240, actual_time: 53040
+MetaMessage type: text, time: 120, actual_time: 53160
+MetaMessage type: text, time: 360, actual_time: 53520
+MetaMessage type: text, time: 240, actual_time: 53760
+MetaMessage type: text, time: 240, actual_time: 54000
+MetaMessage type: text, time: 120, actual_time: 54120
+MetaMessage type: text, time: 360, actual_time: 54480
+MetaMessage type: text, time: 720, actual_time: 55200
+MetaMessage type: text, time: 120, actual_time: 55320
+MetaMessage type: text, time: 120, actual_time: 55440
+MetaMessage type: text, time: 240, actual_time: 55680
+MetaMessage type: text, time: 240, actual_time: 55920
+MetaMessage type: text, time: 240, actual_time: 56160
+MetaMessage type: text, time: 240, actual_time: 56400
+MetaMessage type: text, time: 120, actual_time: 56520
+MetaMessage type: text, time: 600, actual_time: 57120
+MetaMessage type: text, time: 240, actual_time: 57360
+MetaMessage type: text, time: 240, actual_time: 57600
+MetaMessage type: text, time: 240, actual_time: 57840
+MetaMessage type: text, time: 240, actual_time: 58080
+MetaMessage type: text, time: 240, actual_time: 58320
+MetaMessage type: text, time: 120, actual_time: 58440
+MetaMessage type: text, time: 600, actual_time: 59040
+MetaMessage type: text, time: 240, actual_time: 59280
+MetaMessage type: text, time: 240, actual_time: 59520
+MetaMessage type: text, time: 240, actual_time: 59760
+MetaMessage type: text, time: 120, actual_time: 59880
+MetaMessage type: text, time: 600, actual_time: 60480
+MetaMessage type: text, time: 240, actual_time: 60720
+MetaMessage type: text, time: 120, actual_time: 60840
+MetaMessage type: text, time: 360, actual_time: 61200
+MetaMessage type: text, time: 240, actual_time: 61440
+MetaMessage type: text, time: 240, actual_time: 61680
+MetaMessage type: text, time: 120, actual_time: 61800
+MetaMessage type: text, time: 360, actual_time: 62160
+MetaMessage type: text, time: 720, actual_time: 62880
+MetaMessage type: text, time: 120, actual_time: 63000
+MetaMessage type: text, time: 120, actual_time: 63120
+MetaMessage type: text, time: 240, actual_time: 63360
+MetaMessage type: text, time: 600, actual_time: 63960
+MetaMessage type: text, time: 120, actual_time: 64080
+MetaMessage type: text, time: 120, actual_time: 64200
+MetaMessage type: text, time: 120, actual_time: 64320
+MetaMessage type: text, time: 360, actual_time: 64680
+MetaMessage type: text, time: 120, actual_time: 64800
+MetaMessage type: text, time: 120, actual_time: 64920
+MetaMessage type: text, time: 120, actual_time: 65040
+MetaMessage type: text, time: 240, actual_time: 65280
+MetaMessage type: text, time: 360, actual_time: 65640
+MetaMessage type: text, time: 120, actual_time: 65760
+MetaMessage type: text, time: 120, actual_time: 65880
+MetaMessage type: text, time: 120, actual_time: 66000
+MetaMessage type: text, time: 240, actual_time: 66240
+MetaMessage type: text, time: 360, actual_time: 66600
+MetaMessage type: text, time: 120, actual_time: 66720
+MetaMessage type: text, time: 120, actual_time: 66840
+MetaMessage type: text, time: 120, actual_time: 66960
+MetaMessage type: text, time: 240, actual_time: 67200
+MetaMessage type: text, time: 360, actual_time: 67560
+MetaMessage type: text, time: 120, actual_time: 67680
+MetaMessage type: text, time: 120, actual_time: 67800
+MetaMessage type: text, time: 120, actual_time: 67920
+MetaMessage type: text, time: 120, actual_time: 68040
+MetaMessage type: text, time: 120, actual_time: 68160
+MetaMessage type: text, time: 120, actual_time: 68280
+MetaMessage type: text, time: 120, actual_time: 68400
+MetaMessage type: text, time: 120, actual_time: 68520
+MetaMessage type: text, time: 120, actual_time: 68640
+MetaMessage type: text, time: 120, actual_time: 68760
+MetaMessage type: text, time: 120, actual_time: 68880
+MetaMessage type: text, time: 480, actual_time: 69360
+MetaMessage type: text, time: 480, actual_time: 69840
+MetaMessage type: text, time: 720, actual_time: 70560
+MetaMessage type: text, time: 480, actual_time: 71040
+MetaMessage type: text, time: 780, actual_time: 71820
+MetaMessage type: text, time: 120, actual_time: 71940
+MetaMessage type: text, time: 120, actual_time: 72060
+MetaMessage type: text, time: 120, actual_time: 72180
+MetaMessage type: text, time: 180, actual_time: 72360
+MetaMessage type: text, time: 120, actual_time: 72480
+MetaMessage type: text, time: 120, actual_time: 72600
+MetaMessage type: text, time: 120, actual_time: 72720
+MetaMessage type: text, time: 240, actual_time: 72960
+MetaMessage type: text, time: 240, actual_time: 73200
+MetaMessage type: text, time: 240, actual_time: 73440
+MetaMessage type: text, time: 240, actual_time: 73680
+MetaMessage type: text, time: 240, actual_time: 73920
+MetaMessage type: text, time: 360, actual_time: 74280
+MetaMessage type: text, time: 120, actual_time: 74400
+MetaMessage type: text, time: 120, actual_time: 74520
+MetaMessage type: text, time: 120, actual_time: 74640
+MetaMessage type: text, time: 240, actual_time: 74880
+MetaMessage type: text, time: 480, actual_time: 75360
+MetaMessage type: text, time: 120, actual_time: 75480
+MetaMessage type: text, time: 120, actual_time: 75600
+MetaMessage type: text, time: 120, actual_time: 75720
+MetaMessage type: text, time: 120, actual_time: 75840
+MetaMessage type: text, time: 120, actual_time: 75960
+MetaMessage type: text, time: 120, actual_time: 76080
+MetaMessage type: text, time: 120, actual_time: 76200
+MetaMessage type: text, time: 120, actual_time: 76320
+MetaMessage type: text, time: 120, actual_time: 76440
+MetaMessage type: text, time: 120, actual_time: 76560
+MetaMessage type: text, time: 480, actual_time: 77040
+MetaMessage type: text, time: 480, actual_time: 77520
+MetaMessage type: text, time: 480, actual_time: 78000
+MetaMessage type: text, time: 240, actual_time: 78240
+MetaMessage type: text, time: 120, actual_time: 78360
+MetaMessage type: text, time: 120, actual_time: 78480
+MetaMessage type: text, time: 240, actual_time: 78720
+MetaMessage type: text, time: 240, actual_time: 78960
+MetaMessage type: text, time: 240, actual_time: 79200
+MetaMessage type: text, time: 120, actual_time: 79320
+MetaMessage type: text, time: 120, actual_time: 79440
+MetaMessage type: text, time: 240, actual_time: 79680
+MetaMessage type: text, time: 480, actual_time: 80160
+MetaMessage type: text, time: 120, actual_time: 80280
+MetaMessage type: text, time: 120, actual_time: 80400
+MetaMessage type: text, time: 240, actual_time: 80640
+MetaMessage type: text, time: 240, actual_time: 80880
+MetaMessage type: text, time: 240, actual_time: 81120
+MetaMessage type: text, time: 120, actual_time: 81240
+MetaMessage type: text, time: 120, actual_time: 81360
+MetaMessage type: text, time: 240, actual_time: 81600
+MetaMessage type: text, time: 480, actual_time: 82080
+MetaMessage type: text, time: 120, actual_time: 82200
+MetaMessage type: text, time: 120, actual_time: 82320
+MetaMessage type: text, time: 240, actual_time: 82560
+MetaMessage type: text, time: 360, actual_time: 82920
+MetaMessage type: text, time: 120, actual_time: 83040
+MetaMessage type: text, time: 360, actual_time: 83400
+MetaMessage type: text, time: 120, actual_time: 83520
+MetaMessage type: text, time: 480, actual_time: 84000
+MetaMessage type: text, time: 120, actual_time: 84120
+MetaMessage type: text, time: 120, actual_time: 84240
+MetaMessage type: text, time: 240, actual_time: 84480
+MetaMessage type: text, time: 360, actual_time: 84840
+MetaMessage type: text, time: 120, actual_time: 84960
+MetaMessage type: text, time: 360, actual_time: 85320
+MetaMessage type: text, time: 120, actual_time: 85440
+MetaMessage type: text, time: 480, actual_time: 85920
+MetaMessage type: text, time: 120, actual_time: 86040
+MetaMessage type: text, time: 120, actual_time: 86160
+MetaMessage type: text, time: 240, actual_time: 86400
+MetaMessage type: text, time: 240, actual_time: 86640
+MetaMessage type: text, time: 240, actual_time: 86880
+MetaMessage type: text, time: 120, actual_time: 87000
+MetaMessage type: text, time: 120, actual_time: 87120
+MetaMessage type: text, time: 240, actual_time: 87360
+MetaMessage type: text, time: 480, actual_time: 87840
+MetaMessage type: text, time: 120, actual_time: 87960
+MetaMessage type: text, time: 120, actual_time: 88080
+MetaMessage type: text, time: 240, actual_time: 88320
+MetaMessage type: text, time: 240, actual_time: 88560
+MetaMessage type: text, time: 240, actual_time: 88800
+MetaMessage type: text, time: 120, actual_time: 88920
+MetaMessage type: text, time: 120, actual_time: 89040
+MetaMessage type: text, time: 240, actual_time: 89280
+MetaMessage type: text, time: 480, actual_time: 89760
+MetaMessage type: text, time: 120, actual_time: 89880
+MetaMessage type: text, time: 120, actual_time: 90000
+MetaMessage type: text, time: 240, actual_time: 90240
+MetaMessage type: text, time: 360, actual_time: 90600
+MetaMessage type: text, time: 120, actual_time: 90720
+MetaMessage type: text, time: 360, actual_time: 91080
+MetaMessage type: text, time: 120, actual_time: 91200
+MetaMessage type: text, time: 480, actual_time: 91680
+MetaMessage type: text, time: 240, actual_time: 91920
+MetaMessage type: text, time: 360, actual_time: 92280
+MetaMessage type: text, time: 600, actual_time: 92880
+MetaMessage type: text, time: 720, actual_time: 93600
+MetaMessage type: text, time: 120, actual_time: 93720
+MetaMessage type: text, time: 120, actual_time: 93840
+MetaMessage type: text, time: 240, actual_time: 94080
+MetaMessage type: text, time: 120, actual_time: 94200
+MetaMessage type: text, time: 120, actual_time: 94320
+MetaMessage type: text, time: 240, actual_time: 94560
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=153124
+type: note_off, time: 8, actual_time: 153345
+type=note_on channel=13 note=39 velocity=0 time=8 actual_time=3736
+type=note_on channel=13 note=39 velocity=100 time=8 actual_time=153567
+type: note_off, time: 8, actual_time: 154231
+type=note_on channel=13 note=39 velocity=0 time=24 actual_time=3768
+type=note_on channel=13 note=39 velocity=100 time=24 actual_time=154896
+type: note_off, time: 24, actual_time: 156225
+type=note_on channel=13 note=39 velocity=0 time=48 actual_time=3840
+type=note_on channel=13 note=46 velocity=100 time=0 actual_time=156226
+type: note_off, time: 0, actual_time: 157555
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=3888
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=158220
+type: note_off, time: 24, actual_time: 159549
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=3960
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=160214
+type: note_off, time: 24, actual_time: 161543
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=4032
+type=note_on channel=13 note=46 velocity=100 time=32 actual_time=162430
+type: note_off, time: 32, actual_time: 162651
+type=note_on channel=13 note=46 velocity=0 time=8 actual_time=4072
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=162873
+type: note_off, time: 8, actual_time: 163537
+type=note_on channel=13 note=46 velocity=0 time=24 actual_time=4104
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=163759
+type: note_off, time: 8, actual_time: 163980
+type=note_on channel=13 note=46 velocity=0 time=8 actual_time=4120
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=164202
+type: note_off, time: 8, actual_time: 164866
+type=note_on channel=13 note=46 velocity=0 time=24 actual_time=4152
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=165531
+type: note_off, time: 24, actual_time: 166860
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=4224
+type=note_on channel=13 note=41 velocity=100 time=0 actual_time=166861
+type: note_off, time: 0, actual_time: 168190
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=4272
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=168855
+type: note_off, time: 24, actual_time: 170184
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=4344
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=170849
+type: note_off, time: 24, actual_time: 172178
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=4416
+type=note_on channel=13 note=41 velocity=100 time=32 actual_time=173064
+type: note_off, time: 32, actual_time: 173285
+type=note_on channel=13 note=41 velocity=0 time=8 actual_time=4456
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=173508
+type: note_off, time: 8, actual_time: 174172
+type=note_on channel=13 note=41 velocity=0 time=24 actual_time=4488
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=174394
+type: note_off, time: 8, actual_time: 174615
+type=note_on channel=13 note=41 velocity=0 time=8 actual_time=4504
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=174837
+type: note_off, time: 8, actual_time: 175501
+type=note_on channel=13 note=41 velocity=0 time=24 actual_time=4536
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=176166
+type: note_off, time: 24, actual_time: 177495
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=4608
+type=note_on channel=13 note=43 velocity=100 time=0 actual_time=177496
+type: note_off, time: 0, actual_time: 178825
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=4656
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=179490
+type: note_off, time: 24, actual_time: 180819
+type=note_on channel=13 note=43 velocity=0 time=48 actual_time=4728
+type=note_on channel=13 note=43 velocity=100 time=24 actual_time=181484
+type: note_off, time: 24, actual_time: 182813
+MetaMessage type: text, time: 480, actual_time: 132240
+MetaMessage type: text, time: 1920, actual_time: 134160
+MetaMessage type: text, time: 240, actual_time: 134400
+MetaMessage type: text, time: 120, actual_time: 134520
+MetaMessage type: text, time: 1560, actual_time: 136080
+MetaMessage type: text, time: 240, actual_time: 136320
+MetaMessage type: text, time: 120, actual_time: 136440
+MetaMessage type: text, time: 240, actual_time: 136680
+MetaMessage type: text, time: 360, actual_time: 137040
+MetaMessage type: text, time: 960, actual_time: 138000
+MetaMessage type: text, time: 120, actual_time: 138120
+MetaMessage type: text, time: 240, actual_time: 138360
+MetaMessage type: text, time: 240, actual_time: 138600
+MetaMessage type: text, time: 360, actual_time: 138960
+MetaMessage type: text, time: 720, actual_time: 139680
+MetaMessage type: text, time: 240, actual_time: 139920
+MetaMessage type: text, time: 240, actual_time: 140160
+MetaMessage type: text, time: 240, actual_time: 140400
+MetaMessage type: text, time: 120, actual_time: 140520
+MetaMessage type: text, time: 600, actual_time: 141120
+MetaMessage type: text, time: 240, actual_time: 141360
+MetaMessage type: text, time: 120, actual_time: 141480
+MetaMessage type: text, time: 360, actual_time: 141840
+MetaMessage type: text, time: 240, actual_time: 142080
+MetaMessage type: text, time: 240, actual_time: 142320
+MetaMessage type: text, time: 120, actual_time: 142440
+MetaMessage type: text, time: 360, actual_time: 142800
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=5568
+type=note_on channel=13 note=46 velocity=100 time=32 actual_time=195070
+type: note_off, time: 32, actual_time: 195376
+type=note_on channel=13 note=46 velocity=0 time=8 actual_time=5608
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=195682
+type: note_off, time: 8, actual_time: 196601
+type=note_on channel=13 note=46 velocity=0 time=24 actual_time=5640
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=196908
+type: note_off, time: 8, actual_time: 197214
+type=note_on channel=13 note=46 velocity=0 time=8 actual_time=5656
+type=note_on channel=13 note=46 velocity=100 time=8 actual_time=197521
+type: note_off, time: 8, actual_time: 198440
+type=note_on channel=13 note=46 velocity=0 time=24 actual_time=5688
+type=note_on channel=13 note=46 velocity=100 time=24 actual_time=199359
+type: note_off, time: 24, actual_time: 201197
+type=note_on channel=13 note=46 velocity=0 time=48 actual_time=5760
+type=note_on channel=13 note=41 velocity=100 time=0 actual_time=201197
+type: note_off, time: 0, actual_time: 203035
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=5808
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=203954
+type: note_off, time: 24, actual_time: 205792
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=5880
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=206711
+type: note_off, time: 24, actual_time: 208549
+type=note_on channel=13 note=41 velocity=0 time=48 actual_time=5952
+type=note_on channel=13 note=41 velocity=100 time=32 actual_time=209775
+type: note_off, time: 32, actual_time: 210081
+type=note_on channel=13 note=41 velocity=0 time=8 actual_time=5992
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=210387
+type: note_off, time: 8, actual_time: 211306
+type=note_on channel=13 note=41 velocity=0 time=24 actual_time=6024
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=211613
+type: note_off, time: 8, actual_time: 211919
+type=note_on channel=13 note=41 velocity=0 time=8 actual_time=6040
+type=note_on channel=13 note=41 velocity=100 time=8 actual_time=212226
+type: note_off, time: 8, actual_time: 213145
+type=note_on channel=13 note=41 velocity=0 time=24 actual_time=6072
+type=note_on channel=13 note=41 velocity=100 time=24 actual_time=214064
+type: note_off, time: 24, actual_time: 215902
+MetaMessage type: text, time: 400, actual_time: 174960
+MetaMessage type: text, time: 240, actual_time: 175200
+MetaMessage type: text, time: 240, actual_time: 175440
+MetaMessage type: text, time: 240, actual_time: 175680
+MetaMessage type: text, time: 480, actual_time: 176160
+MetaMessage type: text, time: 160, actual_time: 176320
+MetaMessage type: text, time: 160, actual_time: 176480
+MetaMessage type: text, time: 400, actual_time: 176880
+MetaMessage type: text, time: 240, actual_time: 177120
+MetaMessage type: text, time: 240, actual_time: 177360
+MetaMessage type: text, time: 240, actual_time: 177600
+MetaMessage type: text, time: 480, actual_time: 178080
+MetaMessage type: text, time: 160, actual_time: 178240
+MetaMessage type: text, time: 160, actual_time: 178400
+MetaMessage type: text, time: 880, actual_time: 179280
+MetaMessage type: text, time: 480, actual_time: 179760
+MetaMessage type: text, time: 480, actual_time: 180240
+MetaMessage type: text, time: 240, actual_time: 180480
+MetaMessage type: text, time: 480, actual_time: 180960
+MetaMessage type: end_of_track, time: 0, actual_time: 180960

@@ -2,13 +2,9 @@ import rashford
 import mido
 import mutator
 import raters
-FILENAME='./midi_files/home_riff.mid'
+FILENAME='./midi_files/maroon_5-animals.mid'
 midi_data=mido.MidiFile(filename=f'{FILENAME}')
-
 midi_track0 = midi_data.tracks[0]
-
-
-
 # midi_track1 = midi_data.tracks[1]
 tempo = 0
 time_signature = {"numerator": 0, "denominator": 0, "clocks_per_click": 24, "notated_32nd_notes_per_beat": 8}
@@ -24,9 +20,9 @@ for i in midi_data.tracks:
     if (midi_track1 == midi_track0):
         continue
     desired_track =  rashford.conv_from_midi(midi_track1)
-    mutated_track = mutator.actual_time_mutator(desired_track, 5, 0.8)
+    mutated_track = mutator.actual_time_mutator(desired_track, 5, 0.2)
     mutated_track = mutator.pitch_mutator(mutated_track, 5, 0.3)
-    mutated_track = mutator.simplify_mutator(mutated_track, 5, 0.7)
+    mutated_track = mutator.simplify_mutator(mutated_track, 5, 0.3)
     # print(f'CrazyRating: {raters.neighboring_pitch_range(desired_track, 12)}')
     # print(f'DirectionOfMelody: {raters.direction_of_melody(desired_track, 12)}')
     # print(f'DirectionStability: {raters.direction_stability(desired_track)}')

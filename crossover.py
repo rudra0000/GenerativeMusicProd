@@ -67,10 +67,72 @@ def crossover(track1,track2): # return both the tracks after crossover
     new_track2+=track2[track2_end:]
 
     return new_track1,new_track2
+# def crossover(track1, track2):
+#     """
+#     Perform crossover without renormalizing the entire track's timing.
+#     Each track maintains its original timing structure.
+#     """
+#     # Define crossover points
+#     track1_total_time = track1[-1].actual_time + track1[-1].duration
+#     track2_total_time = track2[-1].actual_time + track2[-1].duration
+
+#     pt1 = random.randint(0, min(track1_total_time, track2_total_time))
+#     pt2 = random.randint(0, min(track1_total_time, track2_total_time))
+#     if pt1 > pt2:
+#         pt1, pt2 = pt2, pt1
+
+#     # Split tracks into segments
+#     track1_pre, track1_crossover, track1_post = [], [], []
+#     track2_pre, track2_crossover, track2_post = [], [], []
+
+#     for note in track1:
+#         if note.actual_time < pt1:
+#             track1_pre.append(note)
+#         elif pt1 <= note.actual_time <= pt2:
+#             track1_crossover.append(note)
+#         else:
+#             track1_post.append(note)
+
+#     for note in track2:
+#         if note.actual_time < pt1:
+#             track2_pre.append(note)
+#         elif pt1 <= note.actual_time <= pt2:
+#             track2_crossover.append(note)
+#         else:
+#             track2_post.append(note)
+
+#     # Combine segments to form new tracks
+#     new_track1 = track1_pre + track2_crossover + track1_post
+#     new_track2 = track2_pre + track1_crossover + track2_post
+
+#     # Adjust crossover sections' timing to align seamlessly
+#     align_crossover(new_track1, track1_pre, track2_crossover, pt1, pt2)
+#     align_crossover(new_track2, track2_pre, track1_crossover, pt1, pt2)
+
+#     return new_track1, new_track2
 
 
-FILENAME1='./midi_files/dead_memories.mid'
-FILENAME2='./midi_files/pain_riff.mid'
+# def align_crossover(new_track, pre_segment, crossover_segment, pt1, pt2):
+#     """
+#     Align the crossover section timing with the pre and post segments.
+#     """
+#     # Adjust start times of the crossover section
+#     if crossover_segment:
+#         start_offset = pre_segment[-1].actual_time + pre_segment[-1].duration if pre_segment else 0
+#         time_shift = start_offset - crossover_segment[0].actual_time
+
+#         for note in crossover_segment:
+#             note.actual_time += time_shift
+
+#     # Ensure all notes after pt2 align seamlessly
+#     for i in range(len(new_track)):
+#         if new_track[i].actual_time > pt2:
+#             new_track[i].actual_time += time_shift
+
+
+
+FILENAME1='./midi_files/alan_walker_-_alone.mid'
+FILENAME2='./midi_files/maroon_5-animals.mid'
 midi_data1=mido.MidiFile(filename=f'{FILENAME1}')
 midi_track10 = midi_data1.tracks[0]
 
@@ -80,16 +142,16 @@ midi_track20 = midi_data1.tracks[0]
 
 # rashford.pretty_print_arr(rashford.conv_from_midi(midi_data1.tracks[1]))
 # print(rashford.conv_from_midi(midi_data2.tracks[1]))
-new1 = rashford.conv_from_midi(midi_data1.tracks[1])
-new2  = rashford.conv_from_midi(midi_data2.tracks[1])
+new1 = rashford.conv_from_midi(midi_data1.tracks[2])
+new2  = rashford.conv_from_midi(midi_data2.tracks[2])
 for j in range(5):
     new1, new2 = crossover(new1, new2)
     for i in range(len(new1)):
-        new1[i].actual_time=int(new1[i].actual_time //track2_time)
-        new1[i].duration=int(new1[i].duration //track2_time)
+        new1[i].actual_time=int(new1[i].actual_time//track2_time)
+        new1[i].duration=int(new1[i].duration//track2_time)
     for i in range(len(new2)):
-        new2[i].actual_time=int(new2[i].actual_time //track1_time)
-        new2[i].duration=int(new2[i].duration //track1_time)
+        new2[i].actual_time=int(new2[i].actual_time//track1_time)
+        new2[i].duration=int(new2[i].duration//track1_time)
     print(f"after iteration{j}, ")
     rashford.pretty_print_arr(new1)
     rashford.pretty_print_arr(new2)
@@ -115,4 +177,5 @@ midi_file2.tracks.append(new2)
 
 midi_file1.save('./debug_files/crossover1.mid')
 midi_file2.save('./debug_files/crossover2.mid')
+
 

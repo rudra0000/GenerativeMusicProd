@@ -11,7 +11,7 @@ import raters
 
 rating_dict = {} # maps the song's name to its a dictionary of its ratings
 
-best_files =['./midi_files/pain_riff.mid','./midi_files/loser.mid']
+best_files =['./midi_files/loser.mid', './midi_files/duckandrun.mid', './midi_files/whenimgone.mid']
 crazy_ratings_sum = 0
 direction_of_melody_sum = 0
 direction_stability_sum = 0
@@ -61,8 +61,6 @@ for file in best_files:
     rating_dict[file]['direction_stability'] = raters.direction_stability(midi_track1)
     direction_stability_sum += rating_dict[file]['direction_stability']
     rating_dict[file]['pitch_range'] = raters.pitch_range(midi_track1)
-    rating_dict[file]['repetition_rating'] = raters.repetition_rating(midi_track1)
-    repetition_rating_sum += rating_dict[file]['repetition_rating']
     rating_dict[file]['equal_consecutive_notes_rating'] = raters.equal_consecutive_notes(midi_track1)
     equal_consecutive_notes_rating_sum += rating_dict[file]['equal_consecutive_notes_rating']
     rating_dict[file]['unique_rhythm_values'] = raters.unique_rhythm_values(midi_track1)
@@ -74,7 +72,6 @@ for file in best_files:
     print(f'direction_of_melody: {rating_dict[file]["direction_of_melody"]}')
     print(f'direction_stability: {rating_dict[file]["direction_stability"]}')
     print(f'pitch_range: {rating_dict[file]["pitch_range"]}')
-    print(f'repetition_rating: {rating_dict[file]["repetition_rating"]}')
     print(f'equal_consecutive_notes_rating: {rating_dict[file]["equal_consecutive_notes_rating"]}')
     print(f'unique_rhythm_values: {rating_dict[file]["unique_rhythm_values"]}')
 
@@ -92,8 +89,6 @@ for file in best_files:
     direction_stability_min = min(direction_stability_min, rating_dict[file]['direction_stability'])
     direction_of_melody_min = min(direction_of_melody_min, rating_dict[file]['direction_of_melody'])
     crazy_rating_min = min(crazy_rating_min, rating_dict[file]['crazy_rating'])
-    repetition_rating_max = max(repetition_rating_max, rating_dict[file]['repetition_rating'])
-    repetition_rating_min = min(repetition_rating_min, rating_dict[file]['repetition_rating'])
     equal_consecutive_notes_rating_max = max(equal_consecutive_notes_rating_max, rating_dict[file]['equal_consecutive_notes_rating'])
     equal_consecutive_notes_rating_min = min(equal_consecutive_notes_rating_min, rating_dict[file]['equal_consecutive_notes_rating'])
     unique_rhythm_values_max = max(unique_rhythm_values_max, rating_dict[file]['unique_rhythm_values'])
@@ -106,6 +101,9 @@ pitch_range_target = pitch_range_sum/len(best_files)
 direction_stability_target = direction_stability_sum/len(best_files)
 direction_of_melody_target = direction_of_melody_sum/len(best_files)
 crazy_rating_target = crazy_ratings_sum/len(best_files)
+repetition_rating_target = repetition_rating_sum/len(best_files)
+equal_consecutive_notes_rating_target = equal_consecutive_notes_rating_sum/len(best_files)
+unique_rhythm_values_target = unique_rhythm_values_sum/len(best_files)
 
 influence = {}
 # influence['scale_rating'] = 2*(0.5 - min(scale_rating_target - scale_rating_min,scale_rating_max - scale_rating_target))
@@ -113,16 +111,15 @@ influence['pitch_range'] = 2*(0.5 - min(pitch_range_target - pitch_range_min,pit
 influence['direction_stability'] = 2*(0.5 - min(direction_stability_target - direction_stability_min,direction_stability_max -direction_stability_target))
 influence['direction_of_melody'] = 2*(0.5 - min(direction_of_melody_target - direction_of_melody_min,direction_of_melody_max - direction_of_melody_target))
 influence['crazy_rating'] = 2*(0.5 - min(crazy_rating_target - crazy_rating_min,crazy_rating_max - crazy_rating_target))
-influence['repetition_rating'] = 2*(0.5 - min(repetition_rating_target - repetition_rating_min,repetition_rating_max - repetition_rating_target))
 influence['equal_consecutive_notes_rating'] = 2*(0.5 - min(equal_consecutive_notes_rating_target - equal_consecutive_notes_rating_min,equal_consecutive_notes_rating_max - equal_consecutive_notes_rating_target))
 influence['unique_rhythm_values'] = 2*(0.5 - min(unique_rhythm_values_target - unique_rhythm_values_min,unique_rhythm_values_max - unique_rhythm_values_target))
-influence['pitch_range'] = 1
-influence['direction_stability'] = 1
-influence['direction_of_melody'] = 1
-influence['crazy_rating'] = 1
-influence['repetition_rating'] = 1
-influence['equal_consecutive_notes_rating'] = 1
-influence['unique_rhythm_values'] = 1
+# influence['pitch_range'] = 1
+# influence['direction_stability'] = 1
+# influence['direction_of_melody'] = 1
+# influence['crazy_rating'] = 1
+# influence['repetition_rating'] = 1
+# influence['equal_consecutive_notes_rating'] = 1
+# influence['unique_rhythm_values'] = 1
 
 
 # def rate_a_song(file):
@@ -153,7 +150,6 @@ def rate_a_song(file):
     direction_of_melody = raters.direction_of_melody(midi_track1, 12)
     direction_stability = raters.direction_stability(midi_track1)
     pitch_range = raters.pitch_range(midi_track1)
-    repetition_rating = raters.repetition_rating(midi_track1)
     equal_consecutive_notes_rating = raters.equal_consecutive_notes(midi_track1)
     unique_rhythm_values = raters.unique_rhythm_values(midi_track1)
     
@@ -163,22 +159,20 @@ def rate_a_song(file):
     rating += influence['direction_of_melody'] * abs(direction_of_melody - direction_of_melody_target)
     rating += influence['direction_stability'] * abs(direction_stability - direction_stability_target)
     rating += influence['pitch_range'] * abs(pitch_range - pitch_range_target)
-    rating += influence['repetition_rating'] * abs(repetition_rating - repetition_rating_target)
     rating += influence['equal_consecutive_notes_rating'] * abs(equal_consecutive_notes_rating - equal_consecutive_notes_rating_target)
     rating += influence['unique_rhythm_values'] * abs(unique_rhythm_values - unique_rhythm_values_target)
     total_influence = (influence['crazy_rating'] + influence['direction_of_melody'] +
-                       influence['direction_stability'] + influence['pitch_range'] + influence['repetition_rating'] + 
+                       influence['direction_stability'] + influence['pitch_range'] + 
                         influence['equal_consecutive_notes_rating'] + influence['unique_rhythm_values']
                        )
+    
     final_rating = rating / total_influence
-
     # Create a dictionary of ratings
     song_ratings = {
         "Crazy Rating": crazy_rating,
         "Direction of Melody": direction_of_melody,
         "Direction Stability": direction_stability,
         "Pitch Range": pitch_range,
-        "Repetition Rating": repetition_rating,
         "Equal Consecutive Notes Rating": equal_consecutive_notes_rating,
         "Unique Rhythm Values": unique_rhythm_values,
         "Final Rating": final_rating
@@ -186,7 +180,7 @@ def rate_a_song(file):
     return song_ratings
 
 # List of files to rate
-songs_to_rate = ['./midi_files/loser.mid', './midi_files/home_riff.mid', './midi_files/dead_memories.mid']
+songs_to_rate = [ './midi_files/home_riff.mid', './midi_files/dead_memories.mid','./midi_files/alan_walker_-_alone.mid','./midi_files/whenimgone.mid','./midi_files/duckandrun.mid','./midi_files/loser.mid', './midi_files/kryptonite.mid']
 
 # Collect results
 results = {}

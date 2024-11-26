@@ -176,7 +176,7 @@ def find_repeated_patterns(sequence, min_length):
             pattern = sequence[suffix_array[i]:suffix_array[i] + lcp[i]]
             patterns[tuple(pattern)].append(suffix_array[i])
 
-    return patterns
+    return patterns/len(sequence)
 
 
 def repetition_rating(track):
@@ -202,7 +202,11 @@ def repetition_rating(track):
             for i in range(len(pattern)):
                 covered.add(pos + i)
 
-    return len(covered) / len(track)
+    covered_count = len(covered)
+    total_values = len(track)
+
+    # Ensure the rating is between 0 and 1
+    return min(covered_count / total_values, 1.0)
 
 def calculate_scale_pattern_rating(track_notes):
     """
