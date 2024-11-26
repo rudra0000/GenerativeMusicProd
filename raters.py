@@ -202,7 +202,6 @@ def repetition_rating(track):
                 covered.add(pos + i)
 
     return len(covered) / len(track)
-    pass
 
 def calculate_scale_pattern_rating(track_notes):
     """
@@ -233,24 +232,3 @@ def calculate_scale_pattern_rating(track_notes):
 
     return max(0, min(R_r, 1))  # Ensure the result is clamped between 0 and 1
 
-def combine_all_subraters(track):
-    """
-    Combines all sub-raters to calculate the overall rating of a track.
-
-    Parameters:
-    - track (list): List of notes in the track.
-
-    Returns:
-    - float: The overall rating of the track.
-    """
-    # Calculate individual sub-ratings
-    crazy_rating = neighboring_pitch_range(track, 12)
-    direction_of_melody_rating = direction_of_melody(track, 12)
-    direction_stability_rating = direction_stability(track)
-    pitch_range_rating = pitch_range(track)
-    scale_pattern_rating = calculate_scale_pattern_rating(track)
-
-    # Combine the sub-ratings using a arithmetic mean
-    
-
-    return overall_rating

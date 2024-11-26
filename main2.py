@@ -5,60 +5,13 @@ import raters
 
 # FILENAME='./midi_files/duckandrun.mid'
 # FILENAME='./midi_files/whenimgone.mid'
-FILENAME='./midi_files/kryptonite.mid'
-midi_data=mido.MidiFile(filename=f'{FILENAME}')
 
-midi_track0 = midi_data.tracks[0]
-
-
-
-# midi_track1 = midi_data.tracks[1]
-tempo = 0
-time_signature = {"numerator": 0, "denominator": 0, "clocks_per_click": 24, "notated_32nd_notes_per_beat": 8}
-for x in midi_track0:
-    if x.is_meta:
-        if x.type == 'time_signature':
-            time_signature
-    # pass
-
-new_song = []
-for i in midi_data.tracks:
-    midi_track1 = i
-    if (midi_track1 == midi_track0):
-        continue
-    desired_track =  rashford.conv_from_midi(midi_track1)
-    mutated_track = mutator.actual_time_mutator(desired_track, 5, 0.8)
-    mutated_track = mutator.pitch_mutator(mutated_track, 5, 0.3)
-    mutated_track = mutator.simplify_mutator(mutated_track, 5, 0.7)
-    # print(f'CrazyRating: {raters.neighboring_pitch_range(desired_track, 12)}')
-    # print(f'DirectionOfMelody: {raters.direction_of_melody(desired_track, 12)}')
-    # print(f'DirectionStability: {raters.direction_stability(desired_track)}')
-    # print(f'PitchRange : {raters.pitch_range(desired_track)}')
-    # print(f'scaleRating: {raters.calculate_scale_pattern_rating(desired_track)}')
-    for line in mutated_track:
-        rashford.fwrite(line.__str__(), './debug_files/mutated_track.txt')
-    midi_track1 = rashford.conv_to_midi(mutated_track)
-    new_song.append(midi_track1)
-  
-print("###################################################################")
-for i in midi_data.tracks:
-    midi_track1 = i
-    if (midi_track1 == midi_track0):
-        continue
-    desired_track =  rashford.conv_from_midi(midi_track1)
-    # print(f'CrazyRating: {raters.neighboring_pitch_range(desired_track, 12)}')
-    # print(f'DirectionOfMelody: {raters.direction_of_melody(desired_track, 12)}')
-    # print(f'DirectionStability: {raters.direction_stability(desired_track)}')
-    # print(f'PitchRange : {raters.pitch_range(desired_track)}')
-    # print(f'scaleRating: {raters.calculate_scale_pattern_rating(desired_track)}')
-
-rashford.save_track_to_midi(new_song, './test.mid',init_track=midi_track0)
 
 # any song's crazy rating is the song's first track's crazy rating
 
 rating_dict = {} # maps the song's name to its a dictionary of its ratings
 
-best_files =['./midi_files/loser.mid']
+best_files =['./midi_files/pain_riff.mid']
 crazy_ratings_sum = 0
 direction_of_melody_sum = 0
 direction_stability_sum = 0
@@ -91,12 +44,18 @@ for file in best_files:
     midi_track1 = rashford.conv_from_midi(midi_track1)
     rating_dict[file]['crazy_rating'] = raters.neighboring_pitch_range(midi_track1, 12)
     crazy_ratings_sum += rating_dict[file]['crazy_rating']
-    rating_dict[file]['direction_of_melody'] = raters.direction_of_melody(midi_track1, 12)
+    rating_dict[file]['direction_of_melody'] = raters.direction_of_melody(midi_track1, 12) 
     direction_of_melody_sum += rating_dict[file]['direction_of_melody']
     rating_dict[file]['direction_stability'] = raters.direction_stability(midi_track1)
     direction_stability_sum += rating_dict[file]['direction_stability']
     rating_dict[file]['pitch_range'] = raters.pitch_range(midi_track1)
     pitch_range_sum += rating_dict[file]['pitch_range']
+    print(f'crazy_rating: {rating_dict[file]["crazy_rating"]}')
+    print(f'direction_of_melody: {rating_dict[file]["direction_of_melody"]}')
+    print(f'direction_stability: {rating_dict[file]["direction_stability"]}')
+    print(f'pitch_range: {rating_dict[file]["pitch_range"]}')
+    print('###################################################################')
+    print('###################################################################')
     # rating_dict[file]['scale_rating'] = raters.calculate_scale_pattern_rating(midi_track1)
     # scale_rating_sum += rating_dict[file]['scale_rating']
     # scale_rating_max = max(scale_rating_max, rating_dict[file]['scale_rating'])
@@ -144,9 +103,10 @@ def rate_a_song(file):
     rating = rating/total_influence
     return rating
 
-print('a loser is rated', rate_a_song('./midi_files/loser.mid')) #-0.03959
-print('Home_riff is rated', rate_a_song('./midi_files/drive_riff.mid')) #-0.03959
+print('a loser is rated', rate_a_song('./midi_files/loser.mid'))
+print('Home_riff is rated', rate_a_song('./midi_files/home_riff.mid')) 
+print('pain_riff is rated', rate_a_song('./midi_files/dead_memories.mid')) 
 # kryptonite is rated 0.047305177077739013
 # duckandrun is rated 0.03840373113228471
 # whenimgone is rated 0.028058219781743193
-print('test.mid is rated', rate_a_song('./test.mid'))
+# print('test.mid is rated', rate_a_song('./test.mid'))
