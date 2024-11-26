@@ -4,8 +4,12 @@ import rashford
 
 
 precision=1000
+track1_time = 0
+track2_time = 0
 def crossover(track1,track2): # return both the tracks after crossover
     #normalize the tracks
+    global track1_time
+    global track2_time
     try:
         track1_time=track1[-2].actual_time+track1[-2].duration
         track2_time=track2[-2].actual_time+track2[-2].duration
@@ -45,17 +49,16 @@ def crossover(track1,track2): # return both the tracks after crossover
         if elem.actual_time>=pt1 and track1_start==-2:
             track1_start=i
         if elem.actual_time<=pt2:
-            print(i)
             track1_end=i
-        print(elem.actual_time,pt1,pt2)
     for i in range(len(track2)):
         elem=track2[i]
         if elem.actual_time>pt1 and track2_start==-2:
             track2_start=i
         if elem.actual_time<=pt2:
             track2_end=i
-    print(track1_start,track1_end,track2_start,track2_end)
-    assert track1_start <= track1_end
+    # assert track1_start <= track1_end
+    if track1_start > track1_end:
+        track1_end, track1_start = track1_start, track1_end
     new_track1+=track1[:track1_start]
     new_track1+=track2[track2_start:track2_end]
     new_track1+=track1[track1_end:]
@@ -67,7 +70,7 @@ def crossover(track1,track2): # return both the tracks after crossover
 
 
 FILENAME1='./midi_files/home_riff.mid'
-FILENAME2='./midi_files/drive_riff.mid'
+FILENAME2='./midi_files/dead_memories.mid'
 midi_data1=mido.MidiFile(filename=f'{FILENAME1}')
 midi_track10 = midi_data1.tracks[0]
 
@@ -77,15 +80,18 @@ midi_track20 = midi_data1.tracks[0]
 
 # rashford.pretty_print_arr(rashford.conv_from_midi(midi_data1.tracks[1]))
 # print(rashford.conv_from_midi(midi_data2.tracks[1]))
-
-new1, new2 = crossover(rashford.conv_from_midi(midi_data1.tracks[1]),rashford.conv_from_midi(midi_data2.tracks[1]))
+new1 = rashford.conv_from_midi(midi_data1.tracks[1])
+new2  = rashford.conv_from_midi(midi_data2.tracks[1])
+for i in range(100):
+    new1, new2 = crossover(new1, new2)
+    for i in range(len(new1)):
+        new1[i].actual_time=int(new1[i].actual_time/precision * track1_time)
+        new1[i].duration=int(new1[i].duration/precision * track1_time)
+    for i in range(len(new2)):
+        new2[i].actual_time=int(new2[i].actual_time/precision * track2_time)
+        new2[i].duration=int(new2[i].duration/precision * track2_time)
 # Undo the scaling
-for i in range(len(new1)):
-    new1[i].actual_time=int(new1[i].actual_time/precision * new1[-2].actual_time)
-    new1[i].duration=int(new1[i].duration/precision * new1[-2].actual_time)
-for i in range(len(new2)):
-    new2[i].actual_time=int(new2[i].actual_time/precision * new2[-2].actual_time)
-    new2[i].duration=int(new2[i].duration/precision * new2[-2].actual_time)
+
 
 
 new1 = rashford.conv_to_midi(new1)
