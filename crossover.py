@@ -14,29 +14,27 @@ def crossover(track1,track2): # return both the tracks after crossover
         track1_time=track1[-2].actual_time+track1[-2].duration
         track2_time=track2[-2].actual_time+track2[-2].duration
     except:
-        print(f"Attributes of track1[-2]: {dir(track1[-2])}")
         track1_time=track1[-2].actual_time+track1[-2].duration
         track2_time=track2[-2].actual_time+track2[-2].duration
     for i in range(len(track1)):
         try:
-            track1[i].actual_time=int(track1[i].actual_time/track1_time * precision)
-            track1[i].duration=int(track1[i].duration/track1_time * precision)
+            track1[i].actual_time=int(track1[i].actual_time*track2_time)
+            track1[i].duration=int(track1[i].duration*track2_time )
         except:
-            track1[i].actual_time=int(track1[i].actual_time/track1_time * precision)
-            track1[i].duration=int(track1[i].duration/track1_time * precision)
-        print(track1[i].actual_time,track1[i].duration)
+            track1[i].actual_time=int(track1[i].actual_time*track2_time )
+            track1[i].duration=int(track1[i].duration*track2_time )
     for i in range(len(track2)):
         try:
-            track2[i].actual_time=int(track2[i].actual_time/track2_time * precision)
-            track2[i].duration=int(track2[i].duration/track2_time * precision)
+            track2[i].actual_time=int(track2[i].actual_time*track1_time )
+            track2[i].duration=int(track2[i].duration*track1_time )
         except:
-            track2[i].actual_time=int(track2[i].actual_time/track2_time * precision)
-            track2[i].duration=int(track2[i].duration/track2_time * precision)
+            track2[i].actual_time=int(track2[i].actual_time*track1_time )
+            track2[i].duration=int(track2[i].duration*track1_time)
 
     #crossover
-    pt1,pt2=random.random(),random.random()
-    pt1 = int(pt1*precision)
-    pt2 = int(pt2*precision)
+    pt1,pt2=random.random()*track1_time*track2_time,random.random() * track1_time * track2_time
+    pt1 = int(pt1)
+    pt2 = int(pt2)
     if pt1>pt2:
         pt1,pt2=pt2,pt1
     new_track1=[]
@@ -56,9 +54,11 @@ def crossover(track1,track2): # return both the tracks after crossover
             track2_start=i
         if elem.actual_time<=pt2:
             track2_end=i
-    # assert track1_start <= track1_end
-    if track1_start > track1_end:
-        track1_end, track1_start = track1_start, track1_end
+    
+    assert track1_start <= track1_end
+    print(f"chosen indices are {track1_start} {track1_end}")
+    # if track1_start > track1_end:
+    #     track1_end, track1_start = track1_start, track1_end
     new_track1+=track1[:track1_start]
     new_track1+=track2[track2_start:track2_end]
     new_track1+=track1[track1_end:]
@@ -82,14 +82,17 @@ midi_track20 = midi_data1.tracks[0]
 # print(rashford.conv_from_midi(midi_data2.tracks[1]))
 new1 = rashford.conv_from_midi(midi_data1.tracks[1])
 new2  = rashford.conv_from_midi(midi_data2.tracks[1])
-for i in range(100):
+for j in range(3):
     new1, new2 = crossover(new1, new2)
     for i in range(len(new1)):
-        new1[i].actual_time=int(new1[i].actual_time/precision * track1_time)
-        new1[i].duration=int(new1[i].duration/precision * track1_time)
+        new1[i].actual_time=int(new1[i].actual_time //track2_time)
+        new1[i].duration=int(new1[i].duration //track2_time)
     for i in range(len(new2)):
-        new2[i].actual_time=int(new2[i].actual_time/precision * track2_time)
-        new2[i].duration=int(new2[i].duration/precision * track2_time)
+        new2[i].actual_time=int(new2[i].actual_time //track1_time)
+        new2[i].duration=int(new2[i].duration //track1_time)
+    print(f"after iteration{j}, ")
+    rashford.pretty_print_arr(new1)
+    rashford.pretty_print_arr(new2)
 # Undo the scaling
 
 
