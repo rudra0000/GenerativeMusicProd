@@ -278,7 +278,7 @@ def save_track_to_midi(track2, output_file_path, init_track=None):
 
     # Save the MIDI file
     midi.save(output_file_path)
-    print(f"MIDI file saved to {output_file_path}")
+    # print(f"MIDI file saved to {output_file_path}")
 
 
 # def save_track_to_midi(track2, output_file_path, init_track=None, tempo_bpm=10):

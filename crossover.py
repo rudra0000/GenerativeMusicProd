@@ -215,19 +215,19 @@ def crossover_tracks_random(track1, track2, swap_probability=0.5):
 
 
 
-FILENAME1='./midi_files/duckandrun.mid'
-FILENAME2='./midi_files/alone_fixed.mid'
-midi_data1=mido.MidiFile(filename=f'{FILENAME1}')
-midi_track10 = midi_data1.tracks[0]
+# FILENAME1='./midi_files/duckandrun.mid'
+# FILENAME2='./midi_files/alone_fixed.mid'
+# midi_data1=mido.MidiFile(filename=f'{FILENAME1}')
+# midi_track10 = midi_data1.tracks[0]
 
-midi_data2=mido.MidiFile(filename=f'{FILENAME2}')
-midi_track20 = midi_data1.tracks[0]
+# midi_data2=mido.MidiFile(filename=f'{FILENAME2}')
+# midi_track20 = midi_data1.tracks[0]
 
 
-# rashford.pretty_print_arr(rashford.conv_from_midi(midi_data1.tracks[1]))
-# print(rashford.conv_from_midi(midi_data2.tracks[1]))
-new1 = rashford.conv_from_midi(midi_data1.tracks[1])
-new2  = rashford.conv_from_midi(midi_data2.tracks[1])
+# # rashford.pretty_print_arr(rashford.conv_from_midi(midi_data1.tracks[1]))
+# # print(rashford.conv_from_midi(midi_data2.tracks[1]))
+# new1 = rashford.conv_from_midi(midi_data1.tracks[1])
+# new2  = rashford.conv_from_midi(midi_data2.tracks[1])
 # for j in range(5):
 #     new1, new2 = crossover(new1, new2)
 #     for i in range(len(new1)):
@@ -251,34 +251,34 @@ new2  = rashford.conv_from_midi(midi_data2.tracks[1])
 #         tempo2 = midi_data2.tracks[0][i].tempo
 #         break
 
-for j in range(5):
-    # Perform crossover with the custom function
-    new1, new2 = crossover_tracks_random(new1, new2)
+# for j in range(5):
+#     # Perform crossover with the custom function
+#     new1, new2 = crossover_tracks_random(new1, new2)
     
-    # Print the result after each iteration
-    print(f"After iteration {j}:")
-    rashford.pretty_print_arr(new1)
-    rashford.pretty_print_arr(new2)
+#     # Print the result after each iteration
+#     print(f"After iteration {j}:")
+#     rashford.pretty_print_arr(new1)
+#     rashford.pretty_print_arr(new2)
 
 # Undo the scaling
 
 
 
-new1 = rashford.conv_to_midi(new1)
-new2 = rashford.conv_to_midi(new2)
+# new1 = rashford.conv_to_midi(new1)
+# new2 = rashford.conv_to_midi(new2)
 
-midi_file1 = mido.MidiFile()
-empty_track0 = mido.MidiTrack()
-# empty_track0.append(mido.MetaMessage('set_tempo', tempo=3000000))
-midi_file1.tracks.append(midi_data1.tracks[0])
-midi_file1.tracks.append(new1)
+# midi_file1 = mido.MidiFile()
+# empty_track0 = mido.MidiTrack()
+# # empty_track0.append(mido.MetaMessage('set_tempo', tempo=3000000))
+# midi_file1.tracks.append(midi_data1.tracks[0])
+# midi_file1.tracks.append(new1)
 
-midi_file2 = mido.MidiFile()
-# empty_track0.append(mido.MetaMessage('set_tempo', tempo=3000000))
-midi_file2.tracks.append(midi_data2.tracks[0])
-midi_file2.tracks.append(new2)
+# midi_file2 = mido.MidiFile()
+# # empty_track0.append(mido.MetaMessage('set_tempo', tempo=3000000))
+# midi_file2.tracks.append(midi_data2.tracks[0])
+# midi_file2.tracks.append(new2)
 
-midi_file1.save('./debug_files/crossover1.mid')
-midi_file2.save('./debug_files/crossover2.mid')
+# midi_file1.save('./debug_files/crossover1.mid')
+# midi_file2.save('./debug_files/crossover2.mid')
 
 

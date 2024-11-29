@@ -180,18 +180,18 @@ def rate_a_song(file):
     return song_ratings
 
 # List of files to rate
-songs_to_rate = [ './midi_files/home_riff.mid', './midi_files/dead_memories.mid','./midi_files/alan_walker_-_alone.mid','./midi_files/whenimgone.mid','./midi_files/duckandrun.mid','./midi_files/loser.mid', './midi_files/kryptonite.mid']
+# songs_to_rate = [ './midi_files/home_riff.mid', './midi_files/dead_memories.mid','./midi_files/alan_walker_-_alone.mid','./midi_files/whenimgone.mid','./midi_files/duckandrun.mid','./midi_files/loser.mid', './midi_files/kryptonite.mid']
 
 # Collect results
-results = {}
-for song in songs_to_rate:
-    results[song] = rate_a_song(song)
+# results = {}
+# for song in songs_to_rate:
+#     results[song] = rate_a_song(song)
 
 # Display results in a table
-df = pd.DataFrame.from_dict(results, orient='index')
-df.index.name = 'Song Name'
-print(df.to_string())
-df.to_csv('song_ratings.csv')
+# df = pd.DataFrame.from_dict(results, orient='index')
+# df.index.name = 'Song Name'
+# print(df.to_string())
+# df.to_csv('song_ratings.csv')
 
 # print('a loser is rated', rate_a_song('./midi_files/loser.mid'))
 # print('Home_riff is rated', rate_a_song('./midi_files/home_riff.mid')) 
@@ -199,4 +199,4 @@ df.to_csv('song_ratings.csv')
 # kryptonite is rated 0.047305177077739013
 # duckandrun is rated 0.03840373113228471
 # whenimgone is rated 0.028058219781743193
-print('test.mid is rated', rate_a_song('./test.mid'))
+# print('test.mid is rated', rate_a_song('./test.mid'))
