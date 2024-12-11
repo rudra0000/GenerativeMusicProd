@@ -7,9 +7,9 @@ import mido
 import os
 
 def Mutate(track, prob_mutation=0.3):
-    mutated_track = mutator.actual_time_mutator(track, 5, 0.1)
-    mutated_track = mutator.pitch_mutator(mutated_track, 5, 0.1)
-    mutated_track = mutator.simplify_mutator(mutated_track, 5, 0.3)
+    mutated_track = mutator.actual_time_mutator(track, 5, 0.2)
+    mutated_track = mutator.pitch_mutator(mutated_track, 5, 0.2)
+    mutated_track = mutator.simplify_mutator(mutated_track, 5, 0.2)
     return mutated_track
 
 def Crossover(track1, track2):
@@ -81,9 +81,9 @@ def delete_output_files_directory(directory_path):
 def genetic_algorithm(
     input_song_path, 
     population_size=50, 
-    generations=2, 
+    generations=10, 
     prob_mutation=0.25, 
-    crossover_rate=0.35, 
+    crossover_rate=0.30, 
     retain_top=3,
     output_dir="./output_files/",
     midi_track0=None
@@ -190,8 +190,7 @@ def save_modified_midi(input_song_path, modified_track, output_song_path):
         else:
             if i == 0:
                 new_track = MidiTrack()
-                new_track.append(mido.MetaMessage('set_tempo', tempo=1000000))
-                new_midi.tracks.append(new_track)
+                new_midi.tracks.append(midi_data.tracks[0])
             else:
                 new_midi.tracks.append(track)
 
@@ -205,9 +204,9 @@ def save_modified_midi(input_song_path, modified_track, output_song_path):
 # midi_data = mido.MidiFile(input_song_path)
 # midi_track0 = midi_data.tracks[0]
 # track1 =  genetic_algorithm(input_song_path,midi_track0=midi_track0)
-# baby, 
-input_song_path = "./midi_files/pirates.mid"
-output_song_path = "./midi_files/evolved_song.mid"
+# baby
+input_song_path = "./midi_files/alone_fixed.mid"
+output_song_path = "./midi_files/alone_fixed_evolved.mid"
 
 # Step 1: Load the original MIDI file
 midi_data = mido.MidiFile(input_song_path)
