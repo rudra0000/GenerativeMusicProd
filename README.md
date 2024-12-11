@@ -3,44 +3,45 @@
 This project uses a genetic algorithm to evolve new MIDI tracks from an input MIDI file. The algorithm applies crossover and mutation operations to generate new tracks and selects the best tracks based on a rating function.
 
 ## Project Structure
-__pycache__/
-.vscode/
-    settings.json
-a.py
-crossover.py
-debug_files/
-    crossover1.mid
-    crossover2.mid
-    desirable.txt
-    home_riff.mid
-    input.mid
-    intermediate.txt
-    intermediate2.txt
-    mutated_track.txt
-    output.mid
-    track
-    track2
-format_conversion.py
-Genetic.py
-main.py
-main2.py
-make_riffs/
-    dead_memories_riff.py
-    home_riff.py
-    hutch_cup_riff.py
-    ...
-midi_files/
-    ...
-mutator.py
-old_crossover.py
-old.py
-raters.py
-reference_codes/
-    ...
-slow_down_alone.py
-song_ratings.csv
-test_mutators.py
-test.mid
+
+```
+ProjectRoot/
+|—— .vscode/
+|     —— settings.json
+|—— pycache/
+|—— debug_files/
+|—— midi_files/
+|—— make_riffs/
+|     —— dead_memories_riff.py
+|     —— home_riff.py
+|     —— hutch_cup_riff.py
+|—— reference_codes/
+|—— Genetic.py
+|—— format_conversion.py
+|—— main.py
+|—— main2.py
+|—— mutator.py
+|—— raters.py
+|—— slow_down_alone.py
+|—— test_mutators.py
+|—— a.py
+|—— crossover.py
+|—— old_crossover.py
+|—— old.py
+|—— song_ratings.csv
+|—— crossover1.mid
+|—— crossover2.mid
+|—— desirable.txt
+|—— home_riff.mid
+|—— input.mid
+|—— intermediate.txt
+|—— intermediate2.txt
+|—— mutated_track.txt
+|—— output.mid
+|—— test.mid
+|—— track
+|—— track2
+```
 
 ## How to Run
 
