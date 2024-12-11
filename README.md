@@ -52,7 +52,7 @@ ProjectRoot/
 
 2. **Run the Genetic Algorithm**: Execute the [`main.py`](main.py) file to start the genetic algorithm.
     ```sh
-    python main.py
+    python Genetic.py
     ```
 
 3. **Output**: The evolved MIDI tracks will be saved in the specified output directory (default is `./output_files/`). The best-evolved track will be saved as `best_track_gen<generation_number>.mid`.
