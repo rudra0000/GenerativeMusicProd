@@ -4,43 +4,50 @@ This project uses a genetic algorithm to evolve new MIDI tracks from an input MI
 
 ## Project Structure
 
+## Project Structure
+
+This document provides an overview of the project's directory structure and files.
+
 ```
 ProjectRoot/
+|—— __pycache__/
 |—— .vscode/
 |     —— settings.json
-|—— pycache/
 |—— debug_files/
-|—— midi_files/
+|     —— crossover1.mid
+|     —— crossover2.mid
+|     —— desirable.txt
+|     —— home_riff.mid
+|     —— input.mid
+|     —— intermediate.txt
+|     —— intermediate2.txt
+|     —— mutated_track.txt
+|     —— output.mid
+|     —— track
+|     —— track2
 |—— make_riffs/
 |     —— dead_memories_riff.py
 |     —— home_riff.py
 |     —— hutch_cup_riff.py
+|     —— ...
+|—— midi_files/
+|     —— ...
 |—— reference_codes/
-|—— Genetic.py
+|     —— ...
+|—— a.py
+|—— crossover.py
 |—— format_conversion.py
+|—— Genetic.py
 |—— main.py
 |—— main2.py
 |—— mutator.py
-|—— raters.py
-|—— slow_down_alone.py
-|—— test_mutators.py
-|—— a.py
-|—— crossover.py
 |—— old_crossover.py
 |—— old.py
+|—— raters.py
+|—— slow_down_alone.py
 |—— song_ratings.csv
-|—— crossover1.mid
-|—— crossover2.mid
-|—— desirable.txt
-|—— home_riff.mid
-|—— input.mid
-|—— intermediate.txt
-|—— intermediate2.txt
-|—— mutated_track.txt
-|—— output.mid
+|—— test_mutators.py
 |—— test.mid
-|—— track
-|—— track2
 ```
 
 ## How to Run
