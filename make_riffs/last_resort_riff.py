@@ -69,6 +69,6 @@ def generate_riff():
 generate_riff()
 
 # Save the MIDI file
-midi_file.save('drive_riff.mid')
+midi_file.save('d../midi_files/last_resort_riff.mid')
 
-print("MIDI file 'drive_riff.mid' has been created.")
+print("MIDI file '*.mid' has been created.")

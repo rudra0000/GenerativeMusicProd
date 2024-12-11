@@ -1,4 +1,4 @@
-import rashford
+import format_conversion
 import mido
 import mutator
 import raters
@@ -53,7 +53,7 @@ for file in best_files:
     midi_data=mido.MidiFile(filename=f'{file}')
     midi_track0 = midi_data.tracks[0]
     midi_track1 = midi_data.tracks[1]
-    midi_track1 = rashford.conv_from_midi(midi_track1)
+    midi_track1 = format_conversion.conv_from_midi(midi_track1)
     rating_dict[file]['crazy_rating'] = raters.neighboring_pitch_range(midi_track1, 12)
     crazy_ratings_sum += rating_dict[file]['crazy_rating']
     rating_dict[file]['direction_of_melody'] = raters.direction_of_melody(midi_track1, 12) 
@@ -143,7 +143,7 @@ def rate_a_song(file):
     midi_data = mido.MidiFile(filename=f'{file}')
     midi_track0 = midi_data.tracks[0]
     midi_track1 = midi_data.tracks[1]
-    midi_track1 = rashford.conv_from_midi(midi_track1)
+    midi_track1 = format_conversion.conv_from_midi(midi_track1)
     
     # Calculate individual ratings
     crazy_rating = raters.neighboring_pitch_range(midi_track1, 12)

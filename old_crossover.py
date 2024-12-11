@@ -1,6 +1,6 @@
 import random
 import mido
-import rashford
+import format_conversion
 
 precision = 1000
 track1_time = 0
@@ -107,8 +107,8 @@ midi_track10 = midi_data1.tracks[0]
 midi_data2 = mido.MidiFile(filename=FILENAME2)
 midi_track20 = midi_data1.tracks[0]
 
-new1 = rashford.conv_from_midi(midi_data1.tracks[2])
-new2 = rashford.conv_from_midi(midi_data2.tracks[2])
+new1 = format_conversion.conv_from_midi(midi_data1.tracks[2])
+new2 = format_conversion.conv_from_midi(midi_data2.tracks[2])
 for j in range(5):
     new1, new2 = crossover(new1, new2)
     for i in range(len(new1)):
@@ -118,11 +118,11 @@ for j in range(5):
         new2[i].actual_time = int(new2[i].actual_time // track1_time)
         new2[i].duration = int(new2[i].duration // track1_time)
     print(f"after iteration {j}, ")
-    rashford.pretty_print_arr(new1)
-    rashford.pretty_print_arr(new2)
+    format_conversion.pretty_print_arr(new1)
+    format_conversion.pretty_print_arr(new2)
 
-new1 = rashford.conv_to_midi(new1)
-new2 = rashford.conv_to_midi(new2)
+new1 = format_conversion.conv_to_midi(new1)
+new2 = format_conversion.conv_to_midi(new2)
 
 midi_file1 = mido.MidiFile()
 empty_track0 = mido.MidiTrack()

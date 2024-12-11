@@ -20,8 +20,10 @@ num_notes = 50  # Total number of notes to generate
 
 # Function to generate random notes
 
-notes = ['64', '64', '64', '72', '71', '67', '69', '69', '67', '64', '65', '64']
-durations = [200, 200, 200, 300, 300, 400, 500, 1200, 1200, 200, 300, 200]
+# notes = ['60', '63', '60', '65', '60', '67', '60', '68', '70', '72', '60', '63', '60', '65', '60', '67', '60', '68', '70', '72']
+# durations = [400, 400, 200, 400, 200, 400, 200, 400, 400, 200, 400, 400, 200, 400, 200, 400, 200, 400, 400, 200]
+notes = ['64', '64', '71', '72', '71', '69', '67', '69', '64', '64', '71', '72', '71', '69', '67', '62', '62', '64', '64', '71', '72', '71', '69', '67', '69','60', '62', '66', '67', '66']
+durations = [400, 400, 200, 200, 200, 200, 800, 800, 400, 400, 200, 200, 200, 200, 800, 400, 400, 400, 400, 200, 200, 200, 200, 800, 800, 1600, 800, 200, 200, 200]
 num_notes = len(notes)
 def generate_random_notes():
     for i in range(num_notes):
@@ -40,6 +42,6 @@ def generate_random_notes():
 generate_random_notes()
 
 # Save the MIDI file
-midi_file.save('./midi_files/dead_memories.mid')
+midi_file.save('../midi_files/pain_riff.mid')
 
-print("MIDI file 'random_notes.mid' has been created.")
+print("MIDI file '*.mid' has been created.")

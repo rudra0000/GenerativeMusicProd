@@ -1,5 +1,5 @@
 import random
-import rashford
+import format_conversion
 import mutator
 import crossover
 import main2
@@ -109,7 +109,7 @@ def genetic_algorithm(
     # Step 1: Read the input song
     input_song = mido.MidiFile(input_song_path)
     tracks = input_song.tracks
-    track = rashford.conv_from_midi(tracks[1])
+    track = format_conversion.conv_from_midi(tracks[1])
 
     if not isinstance(track[0], list):
         track = [track]
@@ -124,8 +124,8 @@ def genetic_algorithm(
         for i, track in enumerate(population):
             # Save the track as a temporary .mid file to be rated
             temp_file = f"{output_dir}temp_gen{gen}_track{i}.mid"
-            track = rashford.conv_to_midi(track)
-            rashford.save_track_to_midi(track, temp_file,init_track=midi_track0)
+            track = format_conversion.conv_to_midi(track)
+            format_conversion.save_track_to_midi(track, temp_file,init_track=midi_track0)
             score = rate_a_song(temp_file)
             scored_population.append((track, score))
 
@@ -134,7 +134,7 @@ def genetic_algorithm(
         print(f"Top score in generation {gen + 1}: {scored_population[0][1]}")
 
         # Step 5: Retain top performers
-        top_tracks = [rashford.conv_from_midi(track) for track, score in scored_population[:retain_top]]
+        top_tracks = [format_conversion.conv_from_midi(track) for track, score in scored_population[:retain_top]]
 
         # Step 6: Generate the next generation
         next_generation = top_tracks[:]
