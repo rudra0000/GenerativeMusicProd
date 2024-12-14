@@ -65,8 +65,8 @@ ProjectRoot/
 
 ## What to See
 
-- **Output Directory**: Check the `./output_files/` directory for the evolved MIDI tracks.
-- **Best Track**: The best-evolved track will be saved as `best_track_gen<generation_number>.mid` in the output directory.
+- **Midi Files Directory**: Check the `./midi_files/` directory for the evolved MIDI tracks.
+- **Best Track**: The best-evolved track will be saved as `evolved_song.mid` in the output directory.
 - **Logs**: The console will display logs for each generation, including the top score and the progress of the algorithm.
 
 ## Code Explanation
