@@ -100,3 +100,9 @@ input_song_path = 'path/to/input.mid'
 output_dir = './output_files/'
 best_track = genetic_algorithm(input_song_path, output_dir=output_dir)
 print(f"Best evolved track saved at: {best_track}")
+```
+### How to Run the MIDI Files
+MIDI files can be run on **Windows Media Player** just like any other song format.  
+Simply double-click the MIDI file, and it will play seamlessly.
+
+
