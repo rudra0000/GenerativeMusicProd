@@ -59,7 +59,7 @@ ProjectRoot/
 
 2. **Run the Genetic Algorithm**: Execute the [`main.py`](main.py) file to start the genetic algorithm.
     ```sh
-    python Genetic.py
+    python Genetic_Final.py
     ```
 
 3. **Output**: The evolved MIDI tracks will be saved in the specified output directory (default is `./output_files/`). The best-evolved track will be saved as `best_track_gen<generation_number>.mid`.
@@ -74,7 +74,7 @@ ProjectRoot/
 
 ### Genetic Algorithm
 
-The genetic algorithm is implemented in the [`genetic_algorithm`](Genetic.py) function in [`Genetic.py`](Genetic.py). It performs the following steps:
+The genetic algorithm is implemented in the [`genetic_algorithm`](Genetic_Final.py) function in [`Genetic.py`](Genetic_Final.py). It performs the following steps:
 
 1. **Initialization**: Reads the input MIDI file and generates the initial population of tracks.
 2. **Evaluation**: Rates each track in the population using the [`rate_a_song`](Genetic.py) function.
@@ -85,12 +85,12 @@ The genetic algorithm is implemented in the [`genetic_algorithm`](Genetic.py) fu
 
 ### Key Functions
 
-- **[`genetic_algorithm`](Genetic.py)**: Main function to run the genetic algorithm.
-- **[`Mutate`](Genetic.py)**: Applies mutation to a track.
-- **[`Crossover`](Genetic.py)**: Applies crossover to two tracks.
-- **[`rate_a_song`](Genetic.py)**: Rates a MIDI track.
-- **[`save_modified_midi`](Genetic.py)**: Saves a modified MIDI track.
-- **[`delete_output_files_directory`](Genetic.py)**: Deletes the specified directory and its contents.
+- **[`genetic_algorithm`](Genetic_Final.py)**: Main function to run the genetic algorithm.
+- **[`Mutate`](Genetic_Final.py)**: Applies mutation to a track.
+- **[`Crossover`](Genetic_Final.py)**: Applies crossover to two tracks.
+- **[`rate_a_song`](Genetic_Final.py)**: Rates a MIDI track.
+- **[`save_modified_midi`](Genetic_Final.py)**: Saves a modified MIDI track.
+- **[`delete_output_files_directory`](Genetic_Final.py)**: Deletes the specified directory and its contents.
 
 ### Example Usage
 
