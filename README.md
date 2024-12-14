@@ -63,7 +63,7 @@ ProjectRoot/
     python Genetic_Final.py
     ```
 
-3. **Output**: The evolved MIDI tracks will be saved in the specified output directory (default is `./output_files/`). The best-evolved track will be saved as `best_track_gen<generation_number>.mid`.
+3. **Output**: The evolved MIDI tracks will be saved in the specified output directory (default is `./midi_files/`). The best-evolved track will be saved as `evolved.mid`.
 
 ## What to See
 
