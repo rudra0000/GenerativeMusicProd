@@ -73,7 +73,7 @@ def delete_output_files_directory(directory_path):
 def genetic_algorithm(
     input_song_path, 
     population_size=50, 
-    generations=2, 
+    generations=10, 
     initial_mutation_rate=0.5, 
     crossover_rate=0.30, 
     retain_top=3,
