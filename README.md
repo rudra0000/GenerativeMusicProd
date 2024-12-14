@@ -4,8 +4,6 @@ This project uses a genetic algorithm to evolve new MIDI tracks from an input MI
 
 ## Project Structure
 
-## Project Structure
-
 This document provides an overview of the project's directory structure and files.
 
 ```
