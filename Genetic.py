@@ -2,7 +2,7 @@ import random
 import format_conversion
 import mutator
 import crossover
-import main2
+import Final_Rater
 import mido
 import os
 
@@ -22,7 +22,7 @@ def Crossover(track1, track2):
     return new1, new2
 
 def rate_a_song(file):
-    rating = main2.rate_a_song(file)
+    rating = Final_Rater.rate_a_song(file)
     rating = rating['Final Rating']
     return rating
 

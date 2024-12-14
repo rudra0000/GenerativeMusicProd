@@ -16,15 +16,10 @@ crazy_ratings_sum = 0
 direction_of_melody_sum = 0
 direction_stability_sum = 0
 pitch_range_sum = 0
-# scale_rating_sum = 0
-
-# scale_rating_target = 0
-# scale_rating_max = 0
 pitch_range_max = 0
 direction_stability_max = 0
 direction_of_melody_max = 0
 crazy_rating_max = 0
-# scale_rating_min = 0
 pitch_range_min = 0
 direction_stability_min = 0
 direction_of_melody_min = 0
@@ -113,31 +108,8 @@ influence['direction_of_melody'] = 2*(0.5 - min(direction_of_melody_target - dir
 influence['crazy_rating'] = 2*(0.5 - min(crazy_rating_target - crazy_rating_min,crazy_rating_max - crazy_rating_target))
 influence['equal_consecutive_notes_rating'] = 2*(0.5 - min(equal_consecutive_notes_rating_target - equal_consecutive_notes_rating_min,equal_consecutive_notes_rating_max - equal_consecutive_notes_rating_target))
 influence['unique_rhythm_values'] = 2*(0.5 - min(unique_rhythm_values_target - unique_rhythm_values_min,unique_rhythm_values_max - unique_rhythm_values_target))
-# influence['pitch_range'] = 1
-# influence['direction_stability'] = 1
-# influence['direction_of_melody'] = 1
-# influence['crazy_rating'] = 1
-# influence['repetition_rating'] = 1
-# influence['equal_consecutive_notes_rating'] = 1
-# influence['unique_rhythm_values'] = 1
 
-
-# def rate_a_song(file):
-#     midi_data=mido.MidiFile(filename=f'{file}')
-#     midi_track0 = midi_data.tracks[0]
-#     midi_track1 = midi_data.tracks[1]
-#     midi_track1 = rashford.conv_from_midi(midi_track1)
-#     rating = 0
-#     rating += influence['crazy_rating'] * abs(raters.neighboring_pitch_range(midi_track1, 12) - crazy_rating_target)
-#     rating += influence['direction_of_melody'] * abs(raters.direction_of_melody(midi_track1, 12) - direction_of_melody_target)
-#     rating += influence['direction_stability'] * abs(raters.direction_stability(midi_track1) - direction_stability_target)
-#     rating += influence['pitch_range'] * abs(raters.pitch_range(midi_track1) - pitch_range_target)
-#     # rating += influence['scale_rating'] * (raters.calculate_scale_pattern_rating(midi_track1) - scale_rating_target)
-#     total_influence = influence['crazy_rating'] + influence['direction_of_melody'] + influence['direction_stability'] + influence['pitch_range']
-#     rating = rating/total_influence
-#     return rating
-
-import pandas as pd  # Import pandas for better table formatting
+import pandas as pd 
 
 def rate_a_song(file):
     midi_data = mido.MidiFile(filename=f'{file}')
@@ -178,25 +150,3 @@ def rate_a_song(file):
         "Final Rating": final_rating
     }
     return song_ratings
-
-# List of files to rate
-# songs_to_rate = [ './midi_files/home_riff.mid', './midi_files/dead_memories.mid','./midi_files/alan_walker_-_alone.mid','./midi_files/whenimgone.mid','./midi_files/duckandrun.mid','./midi_files/loser.mid', './midi_files/kryptonite.mid']
-
-# Collect results
-# results = {}
-# for song in songs_to_rate:
-#     results[song] = rate_a_song(song)
-
-# Display results in a table
-# df = pd.DataFrame.from_dict(results, orient='index')
-# df.index.name = 'Song Name'
-# print(df.to_string())
-# df.to_csv('song_ratings.csv')
-
-# print('a loser is rated', rate_a_song('./midi_files/loser.mid'))
-# print('Home_riff is rated', rate_a_song('./midi_files/home_riff.mid')) 
-# print('pain_riff is rated', rate_a_song('./midi_files/dead_memories.mid')) 
-# kryptonite is rated 0.047305177077739013
-# duckandrun is rated 0.03840373113228471
-# whenimgone is rated 0.028058219781743193
-# print('test.mid is rated', rate_a_song('./test.mid'))
