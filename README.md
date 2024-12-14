@@ -76,7 +76,7 @@ ProjectRoot/
 The genetic algorithm is implemented in the [`genetic_algorithm`](Genetic_Final.py) function in [`Genetic_Final.py`](Genetic_Final.py). It performs the following steps:
 
 1. **Initialization**: Reads the input MIDI file and generates the initial population of tracks.
-2. **Evaluation**: Rates each track in the population using the [`rate_a_song`](Genetic.py) function.
+2. **Evaluation**: Rates each track in the population using the [`rate_a_song`](Final_Rater.py) function.
 3. **Selection**: Retains the top-rated tracks.
 4. **Crossover and Mutation**: Applies crossover and mutation operations to generate new tracks.
 5. **Iteration**: Repeats the evaluation, selection, crossover, and mutation steps for a specified number of generations.
