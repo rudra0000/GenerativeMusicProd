@@ -101,8 +101,41 @@ output_dir = './output_files/'
 best_track = genetic_algorithm(input_song_path, output_dir=output_dir)
 print(f"Best evolved track saved at: {best_track}")
 ```
-### How to Run the MIDI Files
+# How to Run MIDI Files
+
+MIDI files are versatile and can be played on multiple platforms using different software. Follow the instructions below based on your operating system.
+
+---
+
+## On Windows  
 MIDI files can be run on **Windows Media Player** just like any other song format.  
-Simply double-click the MIDI file, and it will play seamlessly.
+To play a MIDI file:  
+1. Locate the MIDI file on your computer.  
+2. Double-click the file, and it will open and play in Windows Media Player.  
+
+If Windows Media Player is not set as the default program, right-click the file, select **Open With**, and choose **Windows Media Player**.
+
+---
+
+## On Linux  
+You can play MIDI files using **TiMidity**, a powerful software synthesizer available on Linux.
+
+### Steps to Play MIDI Files with TiMidity:
+1. **Install TiMidity** using your package manager:  
+   For Debian/Ubuntu-based systems, run:  
+   ```bash
+   sudo apt-get install timidity
+   ```
+
+2. **Play the MIDI File**:  
+   Use the following command to play the file:  
+   ```bash
+   timidity filename.mid
+   ```
+   Replace `filename.mid` with the name of your MIDI file.
+
+3. **Output**:  
+   TiMidity will play the file directly in the terminal or the default sound output.
+
 
 
