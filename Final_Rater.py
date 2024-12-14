@@ -72,14 +72,10 @@ for file in best_files:
 
     print('###################################################################')
     print('###################################################################')
-    # rating_dict[file]['scale_rating'] = raters.calculate_scale_pattern_rating(midi_track1)
-    # scale_rating_sum += rating_dict[file]['scale_rating']
-    # scale_rating_max = max(scale_rating_max, rating_dict[file]['scale_rating'])
     pitch_range_max = max(pitch_range_max, rating_dict[file]['pitch_range'])
     direction_stability_max = max(direction_stability_max, rating_dict[file]['direction_stability'])
     direction_of_melody_max = max(direction_of_melody_max, rating_dict[file]['direction_of_melody'])
     crazy_rating_max = max(crazy_rating_max, rating_dict[file]['crazy_rating'])
-    # scale_rating_min = min(scale_rating_min, rating_dict[file]['scale_rating'])
     pitch_range_min = min(pitch_range_min, rating_dict[file]['pitch_range'])
     direction_stability_min = min(direction_stability_min, rating_dict[file]['direction_stability'])
     direction_of_melody_min = min(direction_of_melody_min, rating_dict[file]['direction_of_melody'])
@@ -91,7 +87,6 @@ for file in best_files:
 
 
 
-# scale_rating_target = scale_rating_sum/len(best_files)
 pitch_range_target = pitch_range_sum/len(best_files)
 direction_stability_target = direction_stability_sum/len(best_files)
 direction_of_melody_target = direction_of_melody_sum/len(best_files)
@@ -101,7 +96,6 @@ equal_consecutive_notes_rating_target = equal_consecutive_notes_rating_sum/len(b
 unique_rhythm_values_target = unique_rhythm_values_sum/len(best_files)
 
 influence = {}
-# influence['scale_rating'] = 2*(0.5 - min(scale_rating_target - scale_rating_min,scale_rating_max - scale_rating_target))
 influence['pitch_range'] = 2*(0.5 - min(pitch_range_target - pitch_range_min,pitch_range_max - pitch_range_target))
 influence['direction_stability'] = 2*(0.5 - min(direction_stability_target - direction_stability_min,direction_stability_max -direction_stability_target))
 influence['direction_of_melody'] = 2*(0.5 - min(direction_of_melody_target - direction_of_melody_min,direction_of_melody_max - direction_of_melody_target))

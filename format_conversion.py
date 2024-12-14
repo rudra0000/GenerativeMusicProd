@@ -6,11 +6,6 @@ FILENAME='./midi_files/kryptonite.mid'
 # FILENAME='alone.mid'
 midi_data=mido.MidiFile(filename=f'{FILENAME}')
 
-# class CustomMetaMessage(mido.MetaMessage):
-#     def __init__(self, type, skip_checks=False, **kwargs):
-#         super().__init__(type, skip_checks=False, **kwargs)
-
-#         self.actual_time = 0
 midi_track0 = midi_data.tracks[0]
 
 y = os.listdir('./debug_files')

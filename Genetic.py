@@ -199,12 +199,7 @@ def save_modified_midi(input_song_path, modified_track, output_song_path):
     print(f"Modified MIDI file saved to: {output_song_path}")
 
 
-# Run the genetic algorithm on an example input song
-# input_song_path = "./midi_files/alone_fixed.mid"
-# midi_data = mido.MidiFile(input_song_path)
-# midi_track0 = midi_data.tracks[0]
-# track1 =  genetic_algorithm(input_song_path,midi_track0=midi_track0)
-# baby
+
 input_song_path = "./midi_files/alone_fixed.mid"
 output_song_path = "./midi_files/alone_fixed_evolved.mid"
 
